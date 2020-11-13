@@ -2,11 +2,12 @@
 **CodersCamp (coderscamp.edu.pl) - Największy otwarty kurs programowania webowego** 
 
 Gratulacje! 
-Dowiedliście swoje umiejętności ze znajomości CSS & HTML. 
+Skoro czytacie ten tekst, oznacza to, że dowiedliście swoich umiejętności ze znajomości HTML & CSS. 
 Zostaliście przydzieleni do zespołu, który będzie się uczył programowania i wykonywał prawdziwe aplikacje webowe.
-Teraz stajecie przed pierwszym większym wyzwaniem. Technologie, o których się uczyliście, trzeba zastosować w praktyce.
+Teraz stajecie przed pierwszym większym wyzwaniem. 
+Technologie, o których się uczyliście, trzeba zastosować w praktyce.
 To pierwszy i ostatni na CodersCamp projekt, który będziecie robić w pojedynkę.
-Jednakżę już macie cały zespół i mentora, który z pewnością będzie Was wspierał.
+Jednakże już macie cały zespół i mentora, który z pewnością będzie Was wspierał.
 
 ## Projekt HTML & CSS — Wizytówka / Portfolio
 
@@ -14,53 +15,59 @@ Jednakżę już macie cały zespół i mentora, który z pewnością będzie Was
 
 ##### W projekcie każdy z uczestników powinien zaprezentować praktyczną znajomość poniższych zagadnień związanych z HTML & CSS:
 - Box-model
-- Kaskadowość
+- Kaskadowość CSS
 - Selektory CSS
 - Popularne tagi HTML
 - Jak podpinać CSSa do HTMLa
 - Zapisywanie kolorów
 - Stylowanie tekstu
 - Zewnętrzne ikony/fonty (fontawesome, google fonts)
-- Flexbox
+- Flexbox i/lub CSS Grid
 - Position (absolute, relative)
 - Animacje keyframes
+- Formularz (wysłanie formularza może powodować przeładowanie strony, gdyż w kursie nie było jeszcze jego obsługi)
 - Responsive Web Design
 
-Nie używaj JavaScriptu, ani żadnego innego frameworka. Nie używaj też gotowych bibliotek styli takich jak Bootstrap. 
+Nie używaj JavaScriptu ani żadnego innego frameworka. 
+Nie używaj też gotowych bibliotek styli takich jak Bootstrap. 
 W trakcie przerabiania działu poznałeś wszystkie umiejętności, które pozwolą Ci wykonać Twoją wizytówkę od podstaw :) 
 
 ##### Sposób oceny projektu (dotyczy tylko projektu pierwszego):
 Zapewne interesuje Was, w jaki sposób projekt zostanie „zaliczony” i oceniony.
 Ocenianie będzie miało kilka etapów.
-- Spotkanie na prezentację i demo: 
-    - Podczas spotkania powinniście zebrać się całą grupą wraz z mentorem. Prezentujecie wykonane przez Was projekty. 
-    Forma prezentacji pozostaje dowolna (musi zmieścić się w 10 minutach + 5 minut na pytania). Możecie przygotować jakieś slajdy, ale niekoniecznie. Na pewno musi zostać pokazana działająca aplikacja, reszta wg uznania. Jeśli robicie wizytówkę o sobie, to być może chcecie też opowiedzieć o swoich zainteresowaniach, żeby inni w zespole poznali Was lepiej :) ? 
-- Ocena dostarczonego kodu i działania aplikacji przez Waszego mentora. Mentor będzie oceniał wasze projekty wg. kryteriów opisanych w arkuszu [TUTAJ](//TODO: LINK!).
-      
-      
-Ale nie musicie poprzestawać tylko na tym co w wymaganiach. Pamiętajcie, że im więcej pracy wykonacie, tym więcej praktycznych umiejętności opanujecie!
-      
-##### Zgłoszenie projektu, jako gotowego do oceny
-Do końca dnia poprzedzającego prezentację należy wypełnić poniższy FORMULARZ.
+
+- Kiedy skończycie pracę nad projektem, odnotujcie ten fakt w specjalnie przygotowanym formularzu — link otrzymacie od swojego mentora.
+Powinno to nastąpić najpóźniej o godzinie 23:59 dnia poprzedzającego prezentację projektu (data dostępna w harmonogramie kursu).
+- Spotkajcie się w wyznaczonym dniu całym zespołem wraz z mentorem (np. za pomocą Google Meet). W trakcie spotkania zaprezentujcie wykonane przez Was projekty.
+Forma prezentacji pozostaje dowolna (musi zmieścić się w 5 minutach + 5 minut na pytania). 
+Możecie przygotować jakieś slajdy, pokaz waszych talentów, czy nawet zaśpiewać — ale nie jest to konieczne. Na pewno musi zostać pokazana działająca strona internetowa, reszta wg Waszego uznania. 
+Jeśli robicie wizytówkę o sobie, to być może chcecie też opowiedzieć o swoich zainteresowaniach, żeby inni w zespole poznali Was lepiej :) ? 
+- Po prezentacji mentor Waszego zespołu oceni projekt wg kryteriów opisanych w specjalnym arkuszu — przykład takiego arkusza możecie zobaczyć [TUTAJ](https://docs.google.com/spreadsheets/d/1mjCi-oDXILKoCReqJlhGYP4NW-HVMCzvdcIy6ntnsog/edit?usp=sharing). 
+Pamiętajcie też odpowiednio opracować README.md Waszego projektu, tak aby prezentowało kto, co, jak i dlaczego zostało wykonane.
+Zawartość, którą macie tutaj aktualnie (to co teraz czytacie) można usunąć — znajdziecie ją zawsze w oryginalnym repozytorium, które forkowaliście.
+- Po zrecenzowaniu waszych projektów mentor powinien przekazać każdemu jego ocenę punktową i feedback jako uzasadnienie.     
 
 
 ### Opis projektu
 Pozyskanie pierwszego klienta nie przychodzi łatwo. 
-Zazwyczaj ważne jest nie tylko jaka firma, ale z jakimi konkretnymi osobami przyjdzie komuś współpracować przy wytwarzaniu oprogramowania.
-Dobrze, żeby wasi przyszli klienci i wasz zespół trochę lepiej Was poznali.
-Dlatego jako pierwszy projekt do Waszego portofolio proponujemy przygotowanie strony — wizytówki właśnie o Was lub o waszych projektach, zainteresowaniach, umiejętnościach — nie koniecznie programistycznych! 
+Dla klienta, który chce otrzymać produkt wysokiej jakości, nie jest ważna tylko firma, która spróbuje zrealizować jego wizję. 
+Równie istotne jest też to, z jakimi konkretnymi osobami przyjdzie komuś współpracować przy wytwarzaniu oprogramowania.
+Dobrze, żeby Wasi przyszli klienci i wasz zespół trochę lepiej Was poznali.
+Dlatego jako pierwszy projekt do Waszego portfolio proponujemy przygotowanie strony — wizytówki.
+Motywem przewodnim powinniście być właśnie Wy sami lub o wasze zrealizowane projekty lub zainteresowania, najważniejsze umiejętności — nie koniecznie programistycznych! 
 Jesteś fotografem? Możesz przygotować stronę reklamującą swoje usługi. 
 Jako fryzjer czy mechanik, możesz zrobić podobnie. 
 Świat web designu stoi przed Tobą otworem. 
 
-W tym pierwszym, rozgrzewkowym projekcie pracujecie jeszcze osobno. Pamiętajcie, że macie zespół i mentora, który jest tutaj, żeby Was wspierać
-przez cały czas trwania kursu. 
+W tym pierwszym, rozgrzewkowym projekcie pracujecie jeszcze osobno. 
+Pamiętajcie, że macie zespół i mentora, który jest tutaj, żeby Was wspierać przez cały czas trwania kursu. 
 
-Daj się lepiej poznać dzięki internetowi i swoim umiejętnością! :) 
+Dajcie się lepiej poznać dzięki internetowi i swoim umiejętnością! :) 
 
 #### Jak rozpocząć pracę nad projektem
 Aby ułatwić prezentację projektu innym osobom, dobrze, gdyby był on dostępny bez problemów pod adresem strony internetowej.
-W tym przypadku większość pracy z tym związanej zrobiliśmy już za Ciebie. Oto co musisz zrobić, żeby zobaczyć efekt i zacząć pracę:
+W tym przypadku większość pracy z tym związanej zrobiliśmy już za Ciebie. 
+Oto co musisz zrobić, żeby zobaczyć efekt i zacząć development:
 
 1. Wykonaj fork tego repozytorium do swojego własnego profilu. 
 Po kliknięciu przycisku pokazanego poniżej GitHub przeniesie Cię automatycznie na Twoją kopię tego repozytorium.
@@ -83,21 +90,22 @@ A Twoja strona jest od razu dostępna w internecie dla każdego, kto chciałby j
 1. Jeśli po kliknięciu w link, pokazała Ci się strona o tej treści, to znaczy, że wszystko jest w porządku.
 ![./.github/images/Project1Prepare6.png](./.github/images/Project1Prepare6.png)
 
-Od teraz każda zmiana, jaką commitujesz do brancha master, będzie się pokazywać pod tym adresem.
-Masz już działające środowisko więc na co czekasz? Do dzieła!
+Od teraz każda zmiana, jaką commitujesz do głównego brancha, będzie się pokazywać pod tym adresem.
+Masz już działające środowisko, więc na co czekasz? Do dzieła!
 
 ### Porady odnośnie do projektu
 
 #### Interfejs
-Możesz posłużyć się projektem interfejsu Twojej strony wykonanym przez organizatorów projektu. Jest to tylko dla ułatwienia Ci pracy.
-Możesz w trakcie implementacji go dowolnie zedytować / zmieniać czy zrobić coś zupełnie innego.
+Możesz posłużyć się projektem interfejsu strony — wizytówki, wykonanym przez organizatorów projektu. 
+Jest to tylko dla ułatwienia Ci pracy.
+Możesz w trakcie implementacji go dowolnie przekształcać / zmieniać czy zrobić coś zupełnie innego.
 https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-id=0%3A1
+Pamiętaj też, że Twoje rozwiązanie musi być responsywne! 
+Czyli odpowiednio dostosowywać sposób wyświetlania treści do rozmiaru okna przeglądarki.
 
-Inspiracją może być także [DevChallenge.io - Portfolio](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt).
+Inspiracją może być także [DevChallenge.io - Portfolio](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt). 
+Pamiętaj tylko, że Ty korzystasz tutaj jedynie z HTML i CSS.
 
-Jeśli nie masz pomysłu na własny projekt, możesz wykorzystać pokazany powyżej.
+Przygotowane projekty interfejsu użytkownika są tutaj po to, żebyś bez problemów postawił swoje pierwsze kroki w praktycznym wykorzystaniu HTML i CSS.
 Jednakże zachęcamy do wykonania czegoś, co ukaże Twoje wnętrze :) 
 Dobrej zabawy!
-
-
-

@@ -75,9 +75,9 @@ To tutaj będziesz wykonywać swoją stronę.
 ![./.github/images/Project1Prepare1.png](./.github/images/Project1Prepare1.png)
 1. Przejdź do zakładki Settings w Twoim repozytorium.
 ![./.github/images/Project1Prepare2.png](./.github/images/Project1Prepare2.png)
-1. Znajdź w zakładce setting sekcję GitHub Pages i wybierz branch master jako source.
+1. Znajdź w zakładce setting sekcję GitHub Pages i wybierz branch *main* jako source (na screenie dawna nazwa głównej gałęzi - master).
 ![./.github/images/Project1Prepare3.png](./.github/images/Project1Prepare3.png)
-1. Po wyborze brancha master, zatwierdź ustawienia, klikając przycisk `Save`. 
+1. Po wyborze brancha *main*, zatwierdź ustawienia, klikając przycisk `Save`. 
 Wszystko powinno wyglądać tak jak w czerwonym polu poniżej.
 Dzięki temu aktywujesz GitHub Pages dla swojego repozytorium.
 ![./.github/images/Project1Prepare4.png](./.github/images/Project1Prepare4.png)

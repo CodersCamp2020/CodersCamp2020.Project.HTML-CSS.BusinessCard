@@ -1,0 +1,149 @@
+body {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0 0 0 0;
+    background-image: url(160189.jpg);
+    background-repeat: no-repeat;
+    
+}
+header {
+    position: fixed;
+    width: 100%;
+    
+    align-items: stretch;
+    
+}
+#icon {
+    /* flex-basis: 15%; */
+    flex-grow: 1;
+}
+#AS {
+    /*flex-basis: 50%; */
+    flex-grow: 4;
+}
+#head {
+    background-color: #FF9F40;
+    position: relative;
+    
+    margin: 0 0 0 0;
+    text-align: center;
+    padding: 1px;
+    color: #ffffff;
+    font-family: sans-serif;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+   
+}
+#menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+   /* flex-basis: 25%; */
+   flex-grow: 2;
+    
+}
+.mButoon
+{
+    background-color: #D92136;
+    border-color: #4D0021 ;
+    border: 10px;
+    border-radius: 25%;
+    margin: 20%;
+
+}
+.mButoon:hover
+{
+    background-color: #4D0021;
+
+}
+#aboutMe img{
+    width : 40%;
+    height: 400px;
+    float: right;
+    /* float:left; */
+}
+
+.grid-item > img {
+    width: 100%;  
+    height: 100%;  
+}
+
+
+p {
+    width : 60%;
+    height: 340px;
+    float: right;
+    color: white;
+    margin: 0%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#technology{
+    background-color: #FF6A38;
+    color: #ffffff;
+}
+#contact{
+    background-color: #D92136;
+    color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    background-color:#4D0021;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    justify-items: stretch;
+  }
+  
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .item5 {
+    grid-column: 2;
+    grid-row: 3 / span 2 ;
+  }
+  .item6 {
+    grid-column: 3 ;
+    grid-row: 3;
+  }
+  .item7 {
+    grid-column: 1 ;
+    grid-row: 2 / span 3;
+  }
+  .item8 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+  }
+  .item9 {
+    grid-column: 3 ;
+    grid-row: 5 / span 2;
+  }
+  .item10 {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+  }
+footer {
+    background-color: #4D0021;
+    text-align: right;;
+    padding: 1px;
+    color: rgb(166, 111, 166);
+    font-family: sans-serif;
+    /* position: static; */
+}
+  

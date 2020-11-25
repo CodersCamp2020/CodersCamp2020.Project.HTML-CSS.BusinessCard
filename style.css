@@ -1,5 +1,5 @@
 body {
-  background: yellow;
+  background: linear-gradient(45deg, yellow, orange);
 }
 
 .test {

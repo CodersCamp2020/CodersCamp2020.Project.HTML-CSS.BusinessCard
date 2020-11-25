@@ -1,0 +1,39 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #DDD;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  cursor: default;
+}
+
+.btn {
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+/*# sourceMappingURL=style.css.map */

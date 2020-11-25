@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "AEAA,WAAW;AACX,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,oBAAoB;CACpC;;AAED,AAAA,IAAI,CAAC;EACD,gBAAgB,EDZA,IAAI;CCavB;;AAED,AAAA,CAAC;AACD,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE,CAAC;EACC,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,OAAO;EACpB,eAAe,EAAE,OAAO;EACxB,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,OAAO;CAClB;;AG7BA,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,GAAG;CAIpB",
+    "sources": [
+        "../Sass/style.scss",
+        "../Sass/_colors.scss",
+        "../Sass/_reset.scss",
+        "../Sass/_global-mixins.scss",
+        "../Sass/_nav.scss",
+        "../Sass/_btn.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

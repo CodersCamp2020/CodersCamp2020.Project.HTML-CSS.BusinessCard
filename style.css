@@ -1,13 +1,19 @@
+:root{
+    --blacktext: #515151;
+    --ornaments: #FFC53D;
+    --customtext: #222222;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-:root{
-    --blacktext: #515151;
-    --ornaments: #FFC53D;
+body{
+    color: var(--customtext, black);
 }
+
 
 .navigation{
     position: fixed;
@@ -56,12 +62,14 @@
     padding: 0 5px;
 }
 
+.logo__link{
+    color: var(--blacktext, black);
+    text-decoration: none;
+}
+
 
 .baner{
-  /*  background-image: url(./images/cover_layer.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.5; */
+
     max-width: 100%;
     width: 100vw;
     max-height: 80vh;
@@ -69,13 +77,7 @@
     position: relative;
     overflow: hidden;
 }
-/*.baner{
-    background-image: url(./images/cover_photo.png); 
-    background-repeat: no-repeat;
-    background-size: contain; 
-    margin-top: 46px;
-    position: relative;
-}*/
+
 
 .baner__photo{
     width: 100%;
@@ -91,19 +93,7 @@
     height: 100%;
     mix-blend-mode: lighten;
 }
-/* działa
-.baner__header{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: var(--ornaments, orange);
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    font-size: 5.5rem;
-    line-height: 6rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-} */
+
 .baner-text{
     position: absolute;
     top: 20%;
@@ -137,6 +127,18 @@
 }
 .icon-color{
     transform: scale(1.4); 
+}
+.baner-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0px;
+}
+.baner-contact__paragraph{
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
 

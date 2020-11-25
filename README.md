@@ -1,5 +1,8 @@
-See live:/\
-https://budnickip.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
+See live main version:\
+https://budnickip.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/ \
+
+See live developer version:\
+https://affectionate-keller-e16e10.netlify.app/
 
 # CodersCamp 2020 - Projekt HTML & CSS
 **CodersCamp (coderscamp.edu.pl) - Największy otwarty kurs programowania webowego** 

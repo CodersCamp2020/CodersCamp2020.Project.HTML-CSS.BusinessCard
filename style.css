@@ -46,16 +46,21 @@ body{
     bottom: 0px;
     left: 0px;
     width: 0px;
-    height: 3px;
+    height: 2px;
     background-color: var(--ornaments, orange);
     transition: width .5s;
 }
+
 .navigation__item:hover::after{
     width: 100%;
 }
 .navigation__link{
     color: var(--blacktext, black);
     text-decoration: none;
+    transition: .5s;
+}
+.navigation__link:hover{
+    color: var(--ornaments, orange);
 }
 .logo{
     justify-self: self-start;
@@ -117,6 +122,21 @@ body{
     font-weight: 700;
     letter-spacing: 0.02em;
     margin-bottom: 10px;
+    opacity: 0;
+    animation-name: baner-text;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    position: relative;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes baner-text {
+    0% {left: -500px; opacity: 0;}
+    25% {left: -200px; opacity: 1;}
+    50% {left: 0px}
+    75% {left: 200px}
+    100% {left: 0px; opacity: 1;}
 }
 
 .baner-text__icons a{
@@ -124,6 +144,11 @@ body{
     font-size: 1.5em;
     background-color: var(--ornaments, orange);
     margin: 6px;
+    transition: .5s;
+}
+.baner-text__icons a:hover{
+    color: var(--ornaments, orange);
+    background-color: white;
 }
 .icon-color{
     transform: scale(1.4); 

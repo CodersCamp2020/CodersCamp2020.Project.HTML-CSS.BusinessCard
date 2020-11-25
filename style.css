@@ -162,6 +162,9 @@
         font-size: 10px;
         top: 5px;
     }
+    .baner-text__header{
+        line-height: 3rem;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px){
@@ -184,6 +187,9 @@
     .baner-text{
         font-size: 12px;
         top: 5px;
+    }
+    .baner-text__header{
+        line-height: 5rem;
     }
 
 }

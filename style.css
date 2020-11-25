@@ -65,6 +65,7 @@
 
 @media (min-width: 1px) and (max-width: 500px) {
     .navigation{
+        position: static;
         justify-content: center;
     }
     .logo{

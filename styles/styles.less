@@ -1,0 +1,153 @@
+@import "reset";
+:root{
+  --background-color: #181818;
+  --background-color-2: #ffffff;
+  //#fab94f
+}
+body{
+  background: var(--background-color);
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .nav_links{
+    width: 100%;
+    height: 40px;
+    background: var(--background-color-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .nav_link{
+      width: 180px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 2vw;
+      position: relative;
+      overflow-y: hidden;
+      transition: all 0.4s ease-out;
+      text-align: center;
+      &:before{
+        content: "";
+        width: 6%;
+        height: 100%;
+        background: #ffffff;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        transition: all 0.3s ease-out;
+      }
+      &:after{
+        content: "";
+        width: 6%;
+        height: 100%;
+        background: #ffffff;
+        position: absolute;
+        top: -50px;
+        right: 0;
+        transition: all 0.3s ease-out;
+      }
+      &:hover{
+        background: #000000;
+        a{
+          color: white;
+        }
+        &:before{
+          bottom:0;
+        }
+        &:after{
+          top: 0;
+        }
+      }
+      a{
+        font-size: 20px;
+        letter-spacing: 1px;
+        width: 80%;
+        color: #000000;
+        transition: all 0.3s ease-out;
+      }
+    }
+  }
+}
+.section-main{
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 16px);
+}
+.about_me{
+  width: 100%;
+  margin-top: 40px;
+  .about_left{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    .photo_frame{
+      width: 220px;
+      height: 220px;
+      margin-top: 80px;
+      background: var(--background-color-2);
+      border-radius: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .inside_p_frame{
+        border-radius: 100%;
+        width: 90%;
+        height: 90%;
+        background: var(--background-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .about_photo{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 90%;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+  }
+  .about_orament{
+    width: 16px;
+    background: var(--background-color-2);
+  }
+  .about_right{
+    width: 100%;
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    article{
+      width: 80%;
+      height: 40%;
+      background: var(--background-color-2);
+      border-radius: 20px;
+      h1{
+        font-size: 2.5rem;
+        margin: 10px;
+        letter-spacing: 2px;
+      }
+      p{
+        font-size: 1.5rem;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+.ornament_horizontal{
+  width: 100%;
+  height: 16px;
+  background: var(--background-color-2);
+}

@@ -1,4 +1,53 @@
+/* Zmienne globalne */
+:root {
+    --bg-H: 0;
+    --bg-S: 0%;
+    --bg-L: 15%;
+    --navbar-border-color: #077;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background-color: #333;
+    background-color: hsl(
+        calc(var(--bg-H)), 
+        calc(var(--bg-S)), 
+        calc(var(--bg-L))
+        );
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+body > *{
+    width: 50%;
+}
+body > header {
+    width: 100%;
+}
+/* Navbar */
+ul.menu {
+    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 5%));
+    display: flex;
+    list-style-type: none;
+    margin-top: 1em;
+    justify-content: center;
+}
+ul.menu li{
+    border-left: var(--navbar-border-color) dotted 0.2em;
+}
+ul.menu li:last-child{
+    border-right: var(--navbar-border-color) dotted 0.2em;
+}
+.menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+}
+.menu a:hover {
+    background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) - 5%));
 }

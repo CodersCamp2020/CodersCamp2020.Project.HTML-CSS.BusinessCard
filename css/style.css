@@ -1,0 +1,38 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Teko', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #ffe6d1;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav > div {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > div > a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav > div:nth-child(3) > a {
+    font-size: 2.7vw;
+    font-weight: bold;
+}

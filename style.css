@@ -10,6 +10,7 @@
     padding: 0;
 }
 body {
+    font-family: sans-serif;
     background-color: hsl(
         calc(var(--bg-H)), 
         calc(var(--bg-S)), 
@@ -29,14 +30,6 @@ body > header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-body > header > div {
-    width: 50%;
-    background-color: hsl(
-        calc(var(--bg-H)), 
-        calc(var(--bg-S)), 
-        calc(var(--bg-L) + 7%)
-        );
 }
 main, footer{
     background-color: hsl(
@@ -71,4 +64,49 @@ ul.menu li:last-child{
 }
 .menu a:hover {
     background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) - 5%));
+}
+/* Body Header */
+body > header > div {
+    width: 50%;
+    background-color: var(--navbar-border-color);
+    padding: 5em 0;
+}
+h1 {
+    font-size: 9em;
+    color: #dd0;
+}
+body > header p{
+    font-size: 1.3em;
+    margin-bottom: 2rem;
+}
+ul.media {
+    list-style-type: none;
+    margin-bottom: 3rem;
+}
+ul.media li{
+    display: inline;
+}
+ul.media a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+#contact-cv{
+    display: flex;
+    justify-content: space-around;
+}
+#contact-cv button{
+    background-image: linear-gradient(to right, #f60, #f90);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1em;
+    padding: calc(0.5em + 0.2rem) calc(1em + 0.2rem);
+    text-decoration: none;
+}
+#contact-cv button:hover{
+    color: orange;
+    background: white;
+    padding: 0.5em 1em;
+    border: 0.2rem solid #f90;
 }

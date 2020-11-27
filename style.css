@@ -26,8 +26,29 @@ body > *{
 }
 body > header {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body > header > div {
+    width: 50%;
+    background-color: hsl(
+        calc(var(--bg-H)), 
+        calc(var(--bg-S)), 
+        calc(var(--bg-L) + 7%)
+        );
+}
+main, footer{
+    background-color: hsl(
+        calc(var(--bg-H)), 
+        calc(var(--bg-S)), 
+        calc(var(--bg-L) + 7%)
+        );
 }
 /* Navbar */
+nav {
+    align-self: stretch;
+}
 ul.menu {
     background-color: hsl(var(--bg-H), var(--bg-S), calc(var(--bg-L) + 5%));
     display: flex;

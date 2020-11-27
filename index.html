@@ -2,17 +2,140 @@
 <html lang="pl">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+    <title>Małgorzata Frydrychowicz - Wizytówka</title>
+    <meta name="description" content="Strona domowa Małgorzata Frydrychowicz">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@300;400&family=Poppins:wght@800&display=swap" rel="stylesheet"> 
+    <link href="./styles/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
+    <nav>
+        <ul>
+            <li><a href="#hireme">Zatrudnij mnie</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#education">Edukacja</a></li>
+            <li><a href="#experience">Doświadczenie</a></li>
+            <li><a href="#about">O mnie</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="name-wrapper">
+        <div class="name-box">
+            <h1>Małgorzata Frydrychowicz</h1>
+            <div class="horizontal-line"></div>
+            <h2>Software Developer</h2> 
+        </div>
+    </section>
+
+    <section class="about-container">
+        <div id="about" class="box">
+            <p class="main-header">O mnie</p>
+            <div class="horizontal-line"></div>
+        </div>
+        <div class="aboutimg">
+            <img src="img/katze.png" alt="Malgorzata Frydrychowicz photo">
+        </div>
+        <div class="abouttxt">
+            <p>Ponieważ cenię sobie prywatność, sekcję tę wypełnię wdzięcznym lorem ipsum pozostawiając temat "o mnie" tajemnicą. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+    <section class="flexbox-wrapper">
+        <div id="skills" class="box">
+            <p class="main-header">Umiejętności</p>
+            <div class="horizontal-line"></div>
+        </div>
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">Języki obce</div>
+            <div class="entry-main-info">Polski, Angielski</div>
+        </div>
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">Języki programowania</div>
+            <div class="entry-main-info">C, C++, Python, Java</div>
+        </div>
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">Narzędzia</div>
+            <div class="entry-main-info">GIT, Gerrit, JIRA, Sourcetree, MS Office, Libre Office, Inkscape</div>
+        </div>
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">IDE</div>
+            <div class="entry-main-info">Visual Studio, Eclipse, QtCreator IDE, Android Studio, PyCharm</div>
+        </div>
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">Systemy operacyjne</div>
+            <div class="entry-main-info">Microsoft Windows, Linux</div>
+        </div>
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">Inne</div>
+            <div class="entry-main-info">Scrum, MISRA C, MISRA C++</div>
+        </div>
+    </section>
+
+    <section class="flexbox-wrapper">
+        <div id="experience" class="box">
+            <p class="main-header">Doświadczenie</p>
+            <div class="horizontal-line"></div>
+        </div>
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">09.2017 - teraz</div>
+            <div class="entry-main-info">Software Developer w Codelab Sp. z o. o. </div>
+            <div class="entry-side-info">(wcześniej BrightOne Poland, InfinIT Codelab)</div>
+        </div>        
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">09.2016 - 04.2017</div>
+            <div class="entry-main-info">Junior Software Developer w GRYFTEC Embedded Systems</div>
+        </div>
+    </section>
+
+    <section class="flexbox-wrapper">
+        <div id="education" class="box">
+            <p class="main-header">Edukacja</p>
+            <div class="horizontal-line"></div>
+        </div>
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">10.2018 - 04.2020</div>
+            <div class="entry-main-info">Zachodniopomorski Uniwersytet Technologiczny w Szczecinie</div>
+            <div class="entry-side-info">Studia magisterskie, Informatyka</div>
+        </div>        
+        <div class="entry-container">
+            <div class="entry-square"></div>
+            <div class="entry-date-interval">10.2014 - 06.2018</div>
+            <div class="entry-main-info">Zachodniopomorski Uniwersytet Technologiczny w Szczecini</div>
+            <div class="entry-side-info">Studia inżynierskie, Informatyka</div>
+        </div>
+    </section>
+
+    <div class="contact-box" id="hireme">
+        <p class="main-header">Wyślij do mnie wiadomość</p>
+
+        <form action="/action_page.php">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Twój e-mail" name="email" required>
+
+            <label for="message-title">Tytuł</label>
+            <input type="text" id="message-title" name="message-title" placeholder="Tytuł wiadomości" required>
+        
+            <label for="subject">Treść wiadomości</label>
+            <textarea id="subject" name="subject" placeholder="..." style="height:200px" required></textarea>
+        
+            <input type="submit" value="Wyślij">
+        </form>
+    </div>
 
 </body>
 </html>

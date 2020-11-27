@@ -37,9 +37,6 @@
   font-variant: normal;
   text-transform: none;
  
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
@@ -59,5 +56,5 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
   margin: 0;
 }
 
-.icon-linkedin:before { content: '\f0e1'; } /* '' */
-.icon-github:before { content: '\f113'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; color: white;} /* '' */
+.icon-github:before { content: '\f113'; color: white;} /* '' */

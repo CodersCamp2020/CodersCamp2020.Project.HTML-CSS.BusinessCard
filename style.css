@@ -87,6 +87,7 @@ ul.media li{
     display: inline;
 }
 ul.media a{
+    font-size: 2rem;
     color: white;
     text-decoration: none;
     text-align: center;

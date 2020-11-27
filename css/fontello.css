@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot');
-  src: url('../font/fontello.eot') format('embedded-opentype'),
-       url('../font/fontello.woff2') format('woff2'),
-       url('../font/fontello.woff') format('woff'),
-       url('../font/fontello.ttf') format('truetype'),
-       url('../font/fontello.svg') format('svg');
+  src: url('../font/fontello.eot?87681740') format('embedded-opentype');
+  src: url('../font/fontello.eot?87681740#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?87681740') format('woff2'),
+       url('../font/fontello.woff?87681740') format('woff'),
+       url('../font/fontello.ttf?87681740') format('truetype'),
+       url('../font/fontello.svg?87681740#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?36071707#fontello') format('svg');
+    src: url('../font/fontello.svg?87681740#fontello') format('svg');
   }
 }
 */
@@ -37,6 +37,9 @@
   font-variant: normal;
   text-transform: none;
  
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
@@ -51,10 +54,6 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-
-i[class^="icon-"]:before, i[class*=" icon-"]:before {
-  margin: 0;
-}
-
-.icon-linkedin:before { content: '\f0e1'; color: white;} /* '' */
-.icon-github:before { content: '\f113'; color: white;} /* '' */
+ 
+.icon-github-circled:before { content: '\e800'; } /* '' */
+.icon-linkedin-1:before { content: '\e801'; } /* '' */

@@ -1,0 +1,48 @@
+.brandIcon {
+  display: block;
+  position: relative;
+  width: 35.95px;
+  height: 24px;
+  border: black solid 3px;
+  padding: 0;
+  transform: translateY(3px);
+
+  // transform: ;
+  &__inside {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: calc(15px);
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100%;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 8px;
+    width: 8px;
+    background-color: #000;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 80%;
+    background-color: #000;
+  }
+}

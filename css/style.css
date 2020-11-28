@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+:root {
+  --color-font: black;
+  --color-font--light: #DDD;
+  --color-font--on-brand-bgc: $color-font--light;
+  --color-bgc: $color-font--light;
+  --color-bgc: #d53;
+  --color-brand--1: FFC53D;
+  --color-brand--2: FF9A3D;
+  --font-family--1: 'Raleway', sans-serif;
+}
+
 /* reset */
 * {
   margin: 0;
@@ -12,7 +24,7 @@ html {
 }
 
 body {
-  background-color: #DDD;
+  background-color: var(--color-bgc);
 }
 
 a,
@@ -30,10 +42,214 @@ h6 {
   cursor: default;
 }
 
+.stickyNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 95px;
+  width: 100vw;
+  background-color: #FFF;
+}
+
+.stickyNav__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  padding: 45px 45px 0;
+  margin: 0 auto;
+}
+
+.stickyNav__logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5px;
+}
+
+.stickyNav__logoContainer:hover {
+  color: red;
+}
+
+.stickyNav__title {
+  padding-left: 13.27px;
+  font-family: var(--font-family--1);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.15em;
+  text-align: left;
+}
+
+.stickyNav__navItemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.stickyNav__navItem {
+  display: inline-block;
+  margin-left: 40.19px;
+  padding: 1.5px;
+  font-family: var(--font-family--1);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.stickyNav li:hover {
+  color: red;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.stickyNav__navItemsContainer li:first-of-type .stickyNav__navItem {
+  margin-left: 0px;
+}
+
+.stickyNav__burger {
+  display: none;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 32px;
+}
+
+.stickyNav__burgerBar {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  -webkit-transition: .5s, background-color 1s;
+  transition: .5s, background-color 1s;
+}
+
+.stickyNav__burgerBar--first {
+  top: 0;
+}
+
+.stickyNav__burgerBar--second {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.stickyNav__burgerBar--third {
+  bottom: 0;
+}
+
+.stickyNav__burger:hover .stickyNav__burgerBar--first {
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.stickyNav__burger:hover .stickyNav__burgerBar--second {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.stickyNav__burger:hover .stickyNav__burgerBar--third {
+  top: 50%;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.stickyNav__burger:hover .stickyNav__burgerBar {
+  background-color: red;
+}
+
+@media (max-width: 700px) {
+  .stickyNav__navItemsContainer {
+    display: none;
+  }
+  .stickyNav__burger {
+    display: block;
+  }
+}
+
 .btn {
   padding: 20px 10px;
   text-align: center;
   font-size: 35px;
   letter-spacing: 3px;
+}
+
+.brandIcon {
+  display: block;
+  position: relative;
+  width: 35.95px;
+  height: 24px;
+  border: black solid 3px;
+  padding: 0;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.brandIcon__inside {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: calc(15px);
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100%;
+}
+
+.brandIcon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 8px;
+  width: 8px;
+  background-color: #000;
+}
+
+.brandIcon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  width: 80%;
+  background-color: #000;
+}
+
+.wrap {
+  display: block;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

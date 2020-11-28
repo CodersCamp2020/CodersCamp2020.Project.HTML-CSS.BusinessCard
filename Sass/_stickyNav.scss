@@ -1,0 +1,178 @@
+.stickyNav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 95px;
+  width: 100vw;
+  background-color: #FFF;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    padding: 45px 45px 0;
+    margin: 0 auto;
+  }
+
+  &__logoContainer {
+    display: flex;
+    padding: 1.5px;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__title {
+    padding-left: 13.27px;
+    font-family: var(--font-family--1);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.15em;
+    text-align: left;
+
+  }
+
+  &__navItemsContainer {
+    display: flex;
+    // padding-left:
+    list-style-type: none;
+  }
+
+  &__navItem {
+    display: inline-block;
+    margin-left: 40.19px;
+    padding: 1.5px;
+    font-family: var(--font-family--1);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  li:hover {
+    color: red;
+    text-shadow: 2px 2px 2px #000000;
+    // FIXME:
+  }
+
+  &__navItemsContainer li:first-of-type &__navItem {
+    margin-left: 0px;
+  }
+
+  &__burger {
+    display: none;
+    position: relative;
+    transition: .5s;
+    top: 0;
+    right: 0;
+    height: 24px;
+    width: 32px;
+  }
+
+  &__burgerBar {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    // border-radius: 10%;
+    background-color: black;
+    transition: .5s, background-color 1s;
+  }
+
+  &__burgerBar--first {
+    top: 0;
+  }
+
+  &__burgerBar--second {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__burgerBar--third {
+    bottom: 0;
+  }
+
+  &__burger:hover &__burgerBar--first {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+
+  &__burger:hover &__burgerBar--second {
+    transform: rotate(-45deg);
+  }
+
+
+  &__burger:hover &__burgerBar--third {
+    top: 50%;
+    transform: rotate(135deg);
+  }
+
+  &__burger:hover &__burgerBar {
+    background-color: rgb(255, 000, 000);
+  }
+
+}
+
+// ~
+
+@media (max-width: 700px) {
+
+
+  .stickyNav {
+
+    &__navItemsContainer {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+
+
+  // .stickyNav {
+  //   &__burger:hover~&__navItemsContainer {
+  //     display: block;
+  //   }
+
+  //   &__navItemsContainer {
+  //     display: none;
+  //     position: absolute;
+  //     flex-direction: column;
+  //     top: 100%;
+  //     left: 0;
+  //     width: 100%;
+  //     background-color: #ccc;
+  //   }
+
+  //   &__navItemsContainer &__navItem {
+  //     width: 100%;
+  //     margin: 15px auto;
+  //     text-align: center;
+  //   }
+
+  //   // &__navItemsContainer:hover li:first-of-type &__navItem {
+  //   &__navItemsContainer:hover li:hover {
+  //     background-color: rgb(255, 255, 255);
+  //   }
+
+
+  //   &__burger {
+  //     display: block;
+  //   }
+  // }
+
+
+}

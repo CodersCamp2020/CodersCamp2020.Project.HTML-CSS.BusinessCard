@@ -1,5 +1,13 @@
-@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+@import 'root';
 @import 'reset';
-@import '_global-mixins.scss';
-@import 'nav';
+@import 'global-mixins';
+@import 'stickyNav';
 @import 'btn';
+@import 'icons';
+
+.wrap {
+  display: block;
+  position: relative;
+}

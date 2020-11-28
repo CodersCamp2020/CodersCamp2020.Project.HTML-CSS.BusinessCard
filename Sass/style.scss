@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
-@import 'root';
-@import 'reset';
-@import 'global-mixins';
+@import 'reset'; // reset standardowy
+@import 'root'; // ustawienie zmiennych
+@import 'main'; // opisanie głównych elementów
+@import 'socialmedia';
 @import 'stickyNav';
+@import 'titleHeader';
 @import 'btn';
 @import 'icons';
 

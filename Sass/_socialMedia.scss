@@ -1,0 +1,28 @@
+.socialMedia {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+  height: 25px;
+  width: 176px;
+
+  &__listitem {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  &__listitem--github {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  &__img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}

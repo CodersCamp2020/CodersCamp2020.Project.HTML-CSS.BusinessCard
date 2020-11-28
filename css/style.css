@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-:root {
-  --color-font: black;
-  --color-font--light: #DDD;
-  --color-font--on-brand-bgc: $color-font--light;
-  --color-bgc: $color-font--light;
-  --color-bgc: #d53;
-  --color-brand--1: FFC53D;
-  --color-brand--2: FF9A3D;
-  --font-family--1: 'Raleway', sans-serif;
-}
-
 /* reset */
 * {
   margin: 0;
@@ -24,7 +13,7 @@ html {
 }
 
 body {
-  background-color: var(--color-bgc);
+  background-color: #FFF;
 }
 
 a,
@@ -42,6 +31,67 @@ h6 {
   cursor: default;
 }
 
+ol,
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --color-font: black;
+  --color-font--light: #FFF;
+  --color-font--on-brand-bgc: var(--color-font--light);
+  --color-bgc: #d53;
+  --color-brand--1: #FFC53D;
+  --color-brand--2: #FF9A3D;
+  --font-family--1: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: var(--color-bgc);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family--1);
+}
+
+.socialMedia {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 25px;
+  width: 176px;
+}
+
+.socialMedia__listitem {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.socialMedia__listitem--github {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.socialMedia__img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .stickyNav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +99,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 9999;
   position: fixed;
   top: 0;
   left: 0;
@@ -84,7 +135,6 @@ h6 {
 
 .stickyNav__title {
   padding-left: 13.27px;
-  font-family: var(--font-family--1);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -97,14 +147,12 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
 }
 
 .stickyNav__navItem {
   display: inline-block;
   margin-left: 40.19px;
   padding: 1.5px;
-  font-family: var(--font-family--1);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -187,6 +235,67 @@ h6 {
   .stickyNav__burger {
     display: block;
   }
+}
+
+.titleHeader {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  height: calc(100vh - 95px - 220px);
+  width: 100vw;
+  margin-top: 95px;
+  background-color: #aaa;
+  text-align: center;
+}
+
+.titleHeader__coverLayer, .titleHeader__coverPhoto {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titleHeader__coverPhoto {
+  z-index: 20;
+}
+
+.titleHeader__coverLayer {
+  z-index: 30;
+  opacity: 50%;
+  mix-blend-mode: lighten;
+}
+
+.titleHeader__titleBox {
+  display: inline-block;
+  z-index: 40;
+  position: relative;
+  text-align: center;
+}
+
+.titleHeader__title {
+  margin-top: 77px;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--color-brand--1);
+}
+
+.titleHeader__subtitle {
+  margin-bottom: 28px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--color-font--on-brand-bgc);
 }
 
 .btn {

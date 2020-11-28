@@ -9,14 +9,14 @@
 // $color-brand--2: FF9A3D;
 :root {
   --color-font: black;
-  --color-font--light: #DDD;
-  --color-font--on-brand-bgc: $color-font--light;
+  --color-font--light: #FFF;
+  --color-font--on-brand-bgc: var(--color-font--light);
 
-  --color-bgc: $color-font--light;
+  // --color-bgc: var(--color-font--light);
   --color-bgc: #d53;
 
-  --color-brand--1: FFC53D;
-  --color-brand--2: FF9A3D;
+  --color-brand--1: #FFC53D;
+  --color-brand--2: #FF9A3D;
 
 
   --font-family--1: 'Raleway', sans-serif;

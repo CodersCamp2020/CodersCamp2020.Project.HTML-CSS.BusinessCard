@@ -1,6 +1,7 @@
 .stickyNav {
   display: flex;
   justify-content: space-between;
+  z-index: 9999;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,7 +30,6 @@
 
   &__title {
     padding-left: 13.27px;
-    font-family: var(--font-family--1);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -41,15 +41,12 @@
 
   &__navItemsContainer {
     display: flex;
-    // padding-left:
-    list-style-type: none;
   }
 
   &__navItem {
     display: inline-block;
     margin-left: 40.19px;
     padding: 1.5px;
-    font-family: var(--font-family--1);
     font-size: 18px;
     font-style: normal;
     font-weight: 700;

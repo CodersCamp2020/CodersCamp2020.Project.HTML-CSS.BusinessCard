@@ -1,9 +1,28 @@
  .btn {
-   padding: 20px 10px;
+   //  display: block;
+   overflow: hidden;
+   height: 50px;
+   width: 200px;
+   border-radius: 15px;
+   border: none;
+   //  background-image: linear-gradient(to right, red, yellow);
+   background-image: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+
+   color: $color-font--on-brand-bgc;
+   font-family: $font-family--1;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 50px;
+   letter-spacing: 0em;
    text-align: center;
-   font-size: 35px;
-   letter-spacing: 3px;
-.btn--small{
-  
-}
+
+
+   .btn--small {
+     width: 100px;
+   }
+
+   .btn--special {
+     width: 200px;
+   }
  }

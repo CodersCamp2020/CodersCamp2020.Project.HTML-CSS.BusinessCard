@@ -1,0 +1,33 @@
+.contactMe {
+  // height: 220px;
+  padding-top: 39px;
+  padding-bottom: 52px;
+  background-color: #fff;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 36px;
+    color: #222222;
+    font-family: $font-family--1;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+
+  }
+
+  &__btnContainer {
+    display: inline-flex;
+    text-align: center;
+
+  }
+
+  &__btn {
+    // display: inline-block;
+
+    margin: 0 40px;
+  }
+}

@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
 
 @import 'reset'; // reset standardowy
-@import 'root'; // ustawienie zmiennych
+@import 'vars'; // ustawienie zmiennych
 @import 'main'; // opisanie głównych elementów
-@import 'socialmedia';
-@import 'stickyNav';
-@import 'titleHeader';
 @import 'btn';
 @import 'icons';
 
-.wrap {
-  display: block;
-  position: relative;
-}
+@import 'stickyNav';
+@import 'titleHeader';
+@import 'socialmedia';
+@import 'contactMe';
+
+@import 'aboutMe';
+@import 'footer';

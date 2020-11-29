@@ -1,14 +1,11 @@
 body {
-  background-color: var(--color-bgc);
-
+  // overflow-x: hidden;
+  background-color: aquamarine;
+  color: $color-font--1;
+  font-family: $font-family--1;
 }
 
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-family--1);
+.wrap {
+  display: block;
+  position: relative;
 }

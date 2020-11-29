@@ -6,8 +6,10 @@
   top: 0;
   left: 0;
   height: 95px;
-  width: 100vw;
+  width: 100%;
   background-color: #FFF;
+  color: $color-font--2;
+
 
   &__wrap {
     display: flex;
@@ -36,7 +38,7 @@
     line-height: 28px;
     letter-spacing: 0.15em;
     text-align: left;
-
+    font-family: $font-family--1;
   }
 
   &__navItemsContainer {
@@ -53,6 +55,8 @@
     line-height: 21px;
     letter-spacing: 0.02em;
     text-align: left;
+    color: $color-font--2;
+    font-family: $font-family--1;
   }
 
   li:hover {
@@ -119,7 +123,6 @@
   &__burger:hover &__burgerBar {
     background-color: rgb(255, 000, 000);
   }
-
 }
 
 // ~

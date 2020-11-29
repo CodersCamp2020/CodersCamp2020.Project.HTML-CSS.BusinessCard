@@ -14,6 +14,7 @@ body {
     background-color: #FFF;
 }
 
+
 a,
 h1,
 h2,
@@ -22,11 +23,31 @@ h4,
 h5,
 h6 {
     text-align: center;
+    font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     text-decoration: inherit;
     color: inherit;
     cursor: default;
+
+}
+
+span {
+    // text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    cursor: default;
+
+}
+
+p {
+    font-family: inherit;
+    text-align: left;
+    font-size: inherit;
+    color: inherit;
 }
 
 ol,

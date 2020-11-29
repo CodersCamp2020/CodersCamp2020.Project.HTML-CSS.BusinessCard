@@ -1,0 +1,135 @@
+.aboutMe {
+
+  position: relative;
+  z-index: 10;
+  height: 430px;
+  width: 100%;
+  margin-bottom: 57px;
+  background-color: $color-bgc;
+  padding: 0 7%;
+
+  // background-color: blue;
+
+  &::after {
+    // content: "xxxxxxxxxxxxx";
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 30%;
+    display: block;
+    background-color: #FAFAFF;
+    // opacity: .5;
+    // background-color: red;
+  }
+
+  &__title {
+    font-family: $font-family--2;
+    position: relative;
+    left: 50px;
+    padding: 18px 0;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 280px;
+    max-width: 1240px;
+    background-color: $color-bgc;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    // padding: 51px 0 0 0;
+  }
+
+  &__personalContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 4;
+    align-self: flex-start;
+    padding-top: 51px;
+    // justify-content: space-around;
+    // position: relative;
+    // height: 280px;
+    // max-width: 1240px;
+    // background-color: $color-bgc;
+    // box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+  }
+
+
+  &__photoBox {
+    // overflow: hidden;
+    padding-left: 47px;
+  }
+
+  &__photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &__personalList {
+    padding-left: 47px;
+
+  }
+
+  &__personalItem {
+
+    display: flex;
+    align-items: center;
+
+    font-family: $font-family--2;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  &__spanSpecial {
+    font-family: $font-family--1;
+    padding-left: 8px;
+    color: $color-brand--1;
+  }
+
+  &__desc {
+    position: relative;
+    display: flex;
+    align-items: center;
+    // display: inline-flex;
+    height: auto;
+    max-width: 60%;
+    flex-grow: 6;
+    padding: 0 55px 0 59px;
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 172.35%;
+    /* or 31px */
+    letter-spacing: 0.04em;
+  }
+
+  &__desc::before {
+    content: "";
+    position: relative;
+    left: -26px;
+    display: blok;
+    height: 196px;
+    border: 2px dashed #FFC53D;
+  }
+
+}

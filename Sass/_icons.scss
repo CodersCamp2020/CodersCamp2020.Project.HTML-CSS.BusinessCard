@@ -3,7 +3,7 @@
   position: relative;
   width: 35.95px;
   height: 24px;
-  border: black solid 3px;
+  border: $color-font--2 solid 3px;
   padding: 0;
   transform: translateY(3px);
 
@@ -31,7 +31,7 @@
     transform: translateX(-50%);
     height: 8px;
     width: 8px;
-    background-color: #000;
+    background-color: $color-font--2;
   }
 
   &::after {
@@ -43,6 +43,6 @@
     transform: translateX(-50%);
     height: 3px;
     width: 80%;
-    background-color: #000;
+    background-color: $color-font--2;
   }
 }

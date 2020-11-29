@@ -1,16 +1,22 @@
 :root {
-    --black: #0d1b2a;
-    --gray: #343436;
+    --bg-blue: #0d1b2a;
+    --light-blue: #3fa8bb;
+    --blue: #2a5bc4;
+    --violet: #8E37D7;
     --white:#e3e5e7;
-    --brown: 591F0A;
+    --dirty-blue: #5c7490;
+    --light-dirty-blue: #778da9;
+
+    --box-max-width: 800px;
 }
 
 html {
     height: 100%;
     box-sizing: border-box;
-    background-color: var(--black);
+    background-color: var(--bg-blue);
     color: var(--white);
     font-family: 'Open Sans', sans-serif;
+    overflow-wrap: break-word;
 }
 
 a {
@@ -20,7 +26,7 @@ a {
 
 a:hover,
 nav li:last-child {
-    background-image: linear-gradient(-225deg, #3fa8bb 0%, #2a5bc4 48%, #8E37D7 70%);
+    background-image: linear-gradient(-225deg, var(--light-blue) 0%, var(--blue) 48%, var(--violet) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -34,12 +40,10 @@ nav ul {
     font-family: 'Poppins', sans-serif;
     margin: 40px;
     padding: 5px;
-    border-radius: 15px;
-    flex-basis: auto;
 }
 
 nav li {
-    font-size: 30px;
+    font-size: 1.8em;
     padding: 5px 10px;
     list-style: none;
     text-transform: uppercase;
@@ -80,11 +84,8 @@ nav li {
     grid-gap: 20px;
     align-items: center;
     padding: 0px 30px;
-    margin: 40px auto;
     max-width: 850px;
-    color:  #5c7490;
-    border: 3px solid;
-    border-image: linear-gradient(-225deg, #3fa8bb 0%, #2a5bc4 48%, #8E37D7 70%) 1;
+    color:  var(--dirty-blue);
 
     position: relative;
     animation: about-keyframes;
@@ -116,34 +117,33 @@ nav li {
     100% {left: 0;}
 }
 
-
+.colorful-frame {
+    margin: 40px auto;
+    border: 3px solid;
+    border-image: linear-gradient(-225deg, var(--light-blue) 0%,var(--blue) 48%, var(--violet) 70%) 1;
+}
 
 .contact-box {
     padding: 20px 60px;
-    margin: 40px auto;
-    max-width: 800px;
+    max-width: var(--box-max-width);
     text-align: center;
-    border: 3px solid;
-    color:  #778da9;
-    border-image: linear-gradient(-225deg, #3fa8bb 0%, #2a5bc4 48%, #8E37D7 70%) 1;
+    color: var(--light-dirty-blue);
 }
 
-
 .name-box h1 {
-    font-size: 54px;
-    color: var(--white);
+    font-size: 1.2em;
 }
 
 .name-box h2 {
-    font-size: 30px;
+    font-size: 0.6em;
     letter-spacing: 2px;
-    color:  #778da9;
+    color:  var(--light-dirty-blue);
 }
 
 .horizontal-line {
     margin: auto;
     height: 5px;
-    background: linear-gradient(-225deg, rgba(63, 168, 187, 0) 0%,  rgba(63, 168, 187) 15%, rgb(42, 91, 196) 48%, rgba(142, 55, 215) 75%, rgba(142, 55, 215, 0) 100%);
+    background: linear-gradient(-225deg, rgba(63, 168, 187, 0) 0%, var(--light-blue) 15%, rgb(42, 91, 196) 48%, var(--violet) 75%, rgba(142, 55, 215, 0) 100%);
 }
 
 .flexbox-wrapper {
@@ -153,7 +153,7 @@ nav li {
     justify-content: left;
     align-content: flex-start;
     margin: auto;
-    max-width: 800px;
+    max-width: var(--box-max-width);
 }
 
 .entry-container {
@@ -162,11 +162,10 @@ nav li {
                          '.            .                  entry-placeholder3';
     grid-template-columns: 1% 30% 69%;
     grid-gap: 5px 20px;
-    max-width: 750px;
+    max-width: var(--box-max-width);
     align-items: center;
     padding: 0px 30px;
     margin: 20px 0px;
-    color: #e0e1dd;
     border-radius: 5px 5px;
 }
 
@@ -175,8 +174,7 @@ nav li {
     grid-area: entry-square;
     width: 5px;
     height: 5px;
-    background-color: #2a5bc4;
-
+    background-color: var(--blue);
 }
 
 .entry-date-interval
@@ -193,7 +191,7 @@ nav li {
 .entry-side-info
 {
     grid-area: entry-placeholder3;
-    color:  #778da9;
+    color: var(--light-dirty-blue);
 }
 
 .box {
@@ -205,14 +203,16 @@ nav li {
 .main-header {
     display: inline-block;
     position: relative;
-    font-size: 44px;
+    font-size: 2.8em;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(-225deg, #3fa8bb 0%, #2a5bc4 48%, #8E37D7 70%);
+    background-image: linear-gradient(-225deg, var(--light-blue) 0%,var(--blue) 48%, var(--violet) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border-radius: 4px;
@@ -222,12 +222,12 @@ input[type=text], select, textarea {
     resize: vertical;
     background: transparent;
     border-style: solid;
-    border-color:  #2a5bc4;
-    color: white;
+    border-color:  var(--blue);
+    color: var(--white);
   }
   
-  input[type=submit] {
-    background-color: #2a5bc4;
+input[type=submit] {
+    background-color: var(--blue);
     color: var(--white);
     padding: 12px 20px;
     border: none;
@@ -236,7 +236,7 @@ input[type=text], select, textarea {
   }
   
 input[type=submit]:hover {
-    background-image: linear-gradient(-225deg, #3fa8bb 0%, #2a5bc4 48%, #8E37D7 70%);
+    background-image: linear-gradient(-225deg, var(--light-blue) 0%,var(--blue) 48%, var(--violet) 70%);
 }
   
 form {

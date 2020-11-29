@@ -1,7 +1,7 @@
 .skills {
   position: relative;
   z-index: 10;
-  height: 430px;
+  // height: 430px;
   width: 100%;
   margin-bottom: 57px;
   background-color: $color-bgc;
@@ -18,7 +18,7 @@
     left: 30%;
     right: 0;
     display: block;
-    background-color: #FAFAFF;
+    background-color: $color-bgc--special;
     // opacity: .5;
     // background-color: red;
   }
@@ -27,6 +27,7 @@
   &__title {
     @include brand-main-title;
     left: calc(30vw - 20px);
+    left: calc(50% - 200px);
 
   }
 
@@ -34,7 +35,9 @@
     display: flex;
     justify-content: space-around;
     position: relative;
-    height: 280px;
+    margin: 0 auto;
+
+    // height: 280px;
     max-width: 1240px;
     background-color: $color-bgc;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);

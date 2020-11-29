@@ -4,12 +4,18 @@
 }
 header{
     width: 100%;
-    height: 7vh;
+    height: 8vh;
     background-color:#FAF0E6;
 }
 nav{
-    float: right;
-    line-height: 7vh;
+    text-align: center;
+    line-height: 8vh;
+}
+.firstphoto{
+    background-image: url("picture/firstphoto.jpeg");
+    background-position: -10%;
+    width: 100%;
+    height: 93vh;
 }
 nav>ul>li{
     list-style-type: none;
@@ -25,41 +31,83 @@ nav>ul>li>a{
    color:#000000;
    font-size: 2vh;
 }
+nav>ul>li>a>img{
+    display: inline;
+    width: 4vh;
+    height: 4vh;
+    vertical-align: middle;
+
+}
 nav>ul>li>a:hover{
     color:#A9A9A9;
 }
-#about{
+#about, #hobby{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#about .leftBoxes, #about .rightBoxes{
+ .leftBoxes,  .rightBoxes{
     width: 44%;
-    height: 90%;
+    height: 80%;
     margin: 5.9vh;
     background-color:#FAF0E6;
     display: flex;
     align-items: center;
 }
 
-#about .leftBoxes{
-    height: 80%;
-    background-image: url("picture/aboutboxpicture.jpg");
+#about .leftBoxes, #hobby .rightBoxes{
+    height: 60%;
+    background-image: url("picture/aboutboxpicture.jpeg");
     background-size: 100% 100%;
 }
 
-#rightContent > p{
+#rightContent > p, #leftContent > p{
     padding: 5vh;
     font-size: 2.5vh;
 }
-#rightContent{
+#rightContent, #leftContent{
     text-align: center;
 }
-#rightContent > button{
+#rightContent > button, #leftContent > button{
     text-decoration: none;
     background-color: transparent;
     border:0;
     font-size: 2vh;
 }
+#portfolio{
+    margin-top: 20vh;
+    width: 100%;
+    height: 80vh;
+    background-color:#FAF0E6;
+}
+.portfolioBoxes{
+    width: 33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    
+}
+.imgPortfolioBoxes{
+    width: 40vh;
+    height: 55vh;
+    margin-top: 2vh;
+}
+.portfolioImgAndP{
+    width: 50vh;
+    height: 90%;
+    background-color: #FFFFFF;
+    margin-top: 4vh;
+}
+#portfolio .portfolioBoxes .portfolioImgAndP > p{
+    margin-top: 2vh;
+    font-size: 3vh;
+    width:30vh;
+}
+.imgPortfolioBoxes, #portfolio .portfolioBoxes > p{
+    background-color: #FFFFFF;
+}
+
+
+

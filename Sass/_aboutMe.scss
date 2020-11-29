@@ -25,10 +25,18 @@
     // background-color: red;
   }
 
+  &__wrapper {
+    // position: relative;
+    // margin: auto;
+    // height: 280px;
+    // max-width: 1240px;
+
+  }
+
   &__title {
     font-family: $font-family--2;
     position: relative;
-    left: 50px;
+    left: calc(30% + 50px);
     padding: 18px 0;
     font-size: 32px;
     font-style: normal;
@@ -39,6 +47,7 @@
 
   }
 
+
   &__box {
     display: flex;
     justify-content: space-around;
@@ -47,7 +56,7 @@
     max-width: 1240px;
     background-color: $color-bgc;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-    // padding: 51px 0 0 0;
+    padding: 0 24px;
   }
 
   &__personalContainer {
@@ -68,7 +77,8 @@
 
   &__photoBox {
     // overflow: hidden;
-    padding-left: 47px;
+    padding-left: 23px;
+    padding-right: 24px;
   }
 
   &__photo {
@@ -80,8 +90,8 @@
   }
 
   &__personalList {
-    padding-left: 47px;
-
+    padding-left: 23px;
+    padding-right: 24px;
   }
 
   &__personalItem {
@@ -96,7 +106,10 @@
     line-height: 29px;
     letter-spacing: 0.02em;
     text-align: left;
+    padding-bottom: 9px;
   }
+
+
 
   &__spanSpecial {
     font-family: $font-family--1;
@@ -112,7 +125,9 @@
     height: auto;
     max-width: 60%;
     flex-grow: 6;
-    padding: 0 55px 0 59px;
+    // padding: 0 55px 0 59px;
+    padding-left: 35px;
+    padding-right: 36px;
 
 
     font-style: normal;
@@ -124,12 +139,8 @@
   }
 
   &__desc::before {
-    content: "";
-    position: relative;
-    left: -26px;
-    display: blok;
-    height: 196px;
-    border: 2px dashed #FFC53D;
+    @include brand-line-vertical;
+
   }
 
 }

@@ -57,16 +57,17 @@
     text-align: center;
     flex-grow: 1;
 
-
+    border-left: 3px dashed #FFC53D;
   }
 
-  &__item::after {
-    @include brand-line-vertical;
+
+  &__item:first-of-type {
+    // display: none;
+    border-left: none;
+    // border-left: 3px dashed black;
+
+
   }
-
-  // &__item {}
-
-  // li:last-child &__personalItem {}
 
 
   &__img {

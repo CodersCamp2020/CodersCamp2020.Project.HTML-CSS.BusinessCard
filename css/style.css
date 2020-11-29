@@ -614,16 +614,11 @@ li:first-of-type .stickyNav__navItem {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  border-left: 3px dashed #FFC53D;
 }
 
-.skills__item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 196px;
-  width: 1px;
-  border-left: 3px dashed #FFC53D;
+.skills__item:first-of-type {
+  border-left: none;
 }
 
 .skills__img {

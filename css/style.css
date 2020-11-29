@@ -440,7 +440,7 @@ li:first-of-type .stickyNav__navItem {
 .aboutMe__title {
   display: inline-block;
   position: relative;
-  left: calc(30vw + 50px);
+  left: calc(0vw + 50px);
   padding: 18px 0;
   font-family: "Ubuntu", "Raleway", sans-serif;
   font-size: 32px;

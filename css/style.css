@@ -5,13 +5,14 @@
 
 body {
     width: 100vw;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Poly', serif;
 }
 
 header {
     width: 100%;
     height: 10vh;
-    background-color: #ffe6d1;
+    background-color: #FFE6D1;
+    font-family: 'Teko', sans-serif;
 }
 
 nav {
@@ -35,4 +36,59 @@ nav > div > a {
 nav > div:nth-child(3) > a {
     font-size: 2.7vw;
     font-weight: bold;
+}
+
+#main_view {
+    clear: both;
+    width: 100%;
+    height: 90vh;
+    background-color: #FFE6D1;
+}
+
+#main_view > div {
+    position: relative;
+}
+
+.main_left {
+    background-color: #FFEE8A;
+    background-image: url('../img/bg2.png');
+    background-size: 100% 100%;
+    background-position: 10% 0 0 10%;
+    width: 40%;
+    top: 30%;
+    left: -40%;
+    z-index: 0;
+    height: 60%;
+}
+
+.main_content {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 40%;
+    left: -10%;
+    top: -55%;
+    z-index: 1;
+}
+
+.main_text {
+    width: 80%;
+    text-align: justify;
+}
+
+.main_text > h1 {
+    width: 50%;
+    text-align: center;
+}
+
+.main_right {
+    background-image: url('../img/bg1.png');
+    background-size: 100% 100%;
+    background-color: #FFA574;
+    width: 45%;
+    height: 60%;
+    top: -85%;
+    left: 27%;
 }

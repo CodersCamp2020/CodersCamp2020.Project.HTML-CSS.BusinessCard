@@ -206,7 +206,7 @@ body {
   display: flex;
 }
 
-.stickyNav__navItem {
+.stickyNav__navLink {
   display: inline-block;
   margin-left: 40.19px;
   padding: 1.5px;
@@ -219,12 +219,12 @@ body {
   color: #515151;
 }
 
-.stickyNav li:hover {
+.stickyNav__navItem:hover .stickyNav__navLink {
   color: red;
   text-shadow: 2px 2px 2px #000000;
 }
 
-li:first-of-type .stickyNav__navItem {
+li:first-of-type .stickyNav__navLink {
   margin-left: 0px;
 }
 

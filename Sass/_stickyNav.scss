@@ -25,9 +25,11 @@
     display: flex;
     padding: 1.5px;
 
-    &:hover {
-      color: red;
-    }
+
+  }
+
+  &__logoContainer:hover {
+    color: red;
   }
 
   &__title {
@@ -47,7 +49,7 @@
     display: flex;
   }
 
-  &__navItem {
+  &__navLink {
     display: inline-block;
     margin-left: 40.19px;
     padding: 1.5px;
@@ -61,13 +63,13 @@
 
   }
 
-  li:hover {
+  &__navItem:hover &__navLink {
     color: red;
     text-shadow: 2px 2px 2px #000000;
-    // FIXME:
+    // text-shadow: 2px 2px 2px #ec0d0d;
   }
 
-  li:first-of-type &__navItem {
+  li:first-of-type &__navLink {
     margin-left: 0px;
   }
 

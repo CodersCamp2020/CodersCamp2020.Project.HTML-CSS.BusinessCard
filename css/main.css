@@ -1,1 +1,6 @@
-@import 'reset.css';
+@import '/css/basics/reset.css';
+@import '/css/section/nav.css';
+
+body {
+    background-color: #fff;
+}

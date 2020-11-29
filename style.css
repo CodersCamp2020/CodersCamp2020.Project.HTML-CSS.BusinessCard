@@ -1,149 +1,226 @@
-body {
-    background-color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:0 0 0 0;
-    background-image: url(160189.jpg);
-    background-repeat: no-repeat;
-    
-}
-header {
-    position: fixed;
-    width: 100%;
-    
-    align-items: stretch;
-    
-}
-#icon {
-    /* flex-basis: 15%; */
-    flex-grow: 1;
-}
-#AS {
-    /*flex-basis: 50%; */
-    flex-grow: 4;
-}
-#head {
-    background-color: #FF9F40;
-    position: relative;
-    
-    margin: 0 0 0 0;
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 60px;
     text-align: center;
-    padding: 1px;
-    color: #ffffff;
-    font-family: sans-serif;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-   
-}
-#menu {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-   /* flex-basis: 25%; */
-   flex-grow: 2;
-    
-}
-.mButoon
-{
-    background-color: #D92136;
-    border-color: #4D0021 ;
-    border: 10px;
-    border-radius: 25%;
-    margin: 20%;
-
-}
-.mButoon:hover
-{
-    background-color: #4D0021;
-
-}
-#aboutMe img{
-    width : 40%;
-    height: 400px;
-    float: right;
-    /* float:left; */
-}
-
-.grid-item > img {
-    width: 100%;  
-    height: 100%;  
-}
-
-
-p {
-    width : 60%;
-    height: 340px;
-    float: right;
+    background: #bc1abc;
     color: white;
-    margin: 0%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-image: url(flower1.jpg);
+    background-size: cover;
+  }
+  
+/* dropdown header */
+.dropbtn {
+    background-color: rgb(110, 110, 110);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #2B1E8B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #251a72;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:  #251a72;
+  }
+
+
+
+  /* Style the top navigation bar */
+  .navbar {
+    display: flex;
+    background-color: rgb(110, 110, 110);
+    justify-content: flex-end;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
     text-align: center;
-}
-#technology{
-    background-color: #FF6A38;
-    color: #ffffff;
-}
-#contact{
-    background-color: #D92136;
-    color: #ffffff;
-}
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #2B1E8B;
+    color: #FFF;
+  }
+
+/* GRID */
+.aboutMeT { grid-area: aboutMeT; }
+.aboutMeF { grid-area: aboutMeF; }
+.tech { grid-area: tech; }
+.contact { grid-area: contact; }
+.form { grid-area: form; }
+.gallery { grid-area: gallery; }
+.footer { grid-area: footer; }
 
 .grid-container {
-    display: grid;
-    grid-gap: 10px;
-    background-color:#4D0021;
-    padding: 10px;
-  }
-  
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-    justify-items: stretch;
-  }
-  
-  .item1 {
-    grid-column: 1 / span 2;
-    grid-row: 1;
-  }
-  
-  .item2 {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-  }
-  
-  .item5 {
-    grid-column: 2;
-    grid-row: 3 / span 2 ;
-  }
-  .item6 {
-    grid-column: 3 ;
-    grid-row: 3;
-  }
-  .item7 {
-    grid-column: 1 ;
-    grid-row: 2 / span 3;
-  }
-  .item8 {
-    grid-column: 1 / span 2;
-    grid-row: 5;
-  }
-  .item9 {
-    grid-column: 3 ;
-    grid-row: 5 / span 2;
-  }
-  .item10 {
-    grid-column: 1 / span 2;
-    grid-row: 6;
-  }
-footer {
-    background-color: #4D0021;
-    text-align: right;;
-    padding: 1px;
-    color: rgb(166, 111, 166);
-    font-family: sans-serif;
-    /* position: static; */
+  display: grid;
+  grid-template-areas:
+    'aboutMeT aboutMeT aboutMeT aboutMeF aboutMeF'
+    'tech tech tech aboutMeF aboutMeF'
+    'gallery gallery gallery gallery gallery'
+    'contact contact form form form'
+    'footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #000000;
+  padding: 10px;
 }
+
+.grid-container > div {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#me{
+        width: 100%;
+        height: auto;
+      }
+
+
+/* GALLERY - FLEX */
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+.col1 {
+    flex: 10%;
+    max-width: 10%;
+    padding: 0 4px;
+  }
   
+  .col1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .col1 {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .col1 {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .icon{
+      width: 30px;
+      height: 30px;
+  }
+
+  /* Forms */
+  .form {
+      color: #2B1E8B;
+      
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 12px;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 12px;
+  }
+  
+  input[type=submit] {
+    background-color:  #2B1E8B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #251a72;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

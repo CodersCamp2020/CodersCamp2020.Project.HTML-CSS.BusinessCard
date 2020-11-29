@@ -7,85 +7,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
 
 <body>
+  
+  <!-- Header -->
+  <div class="header">
+    <h1>Anna Szewczyk</h1>
+    <p> Front-end Developer</p>
+  </div>
+  
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#aboutMe">O mnie</a>
+    <a href="#technology">Technologie</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Kontakt</a>
+  
 
-    <div>   
-        <header>
-            <div id="head"> 
-                <div id="icon"> icon </div>
-                <div id="AS"> 
-                    <h1> Anna Szewczyk</h1>
-                </div>
-                
-                <div id="menu">
-                    <div class="mButton" href="#aboutMe"> O mnie </div>
-                    <div class="mButton" href="#technology"> Technologie </div>
-                    <div class="mButton" href="#portfolio"> Portfolio </div>
-                    <div class="mButton" href="#contact"> Kontakt</div>
-                </div>
-
+  <div class="dropdown" style="float:right;">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+        <a href="#aboutMe">O mnie</a>
+        <a href="#technology">Technologie</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+  </div>
+</div>
+  <!--Grid main-->
+  <div class="grid-container">
+    <div class="aboutMeT" id="aboutMe">
         
-            </div>
-        </header>
-     <div>
-         <div class="aboutMe">
-            <div>
-                Treść o mnie</br> </br> 
-                
-             Anna Szewczyk </br></br> 
-             
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptatem exercitationem incidunt quam culpa eum, explicabo libero distinctio ullam illo deleniti dolore dolorem temporibus dignissimos ducimus iste quos repellat? Earum. </br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum. Quis saepe impedit, voluptate, natus minus, magnam non aliquam numquam iure deserunt repellendus aperiam qui atque ea est obcaecati inventore? </br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nostrum maiores reprehenderit veritatis corrupti reiciendis consequatur blanditiis necessitatibus provident? Tenetur deserunt libero magnam reprehenderit maiores? Labore cumque aliquid placeat ad.</br>
-          
-            </div>
-            <div>
-                <img src="anna.jpg">
-            </div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Id corporis aspernatur excepturi rem sed hic dignissimos in libero tempore, </br>
+             porro iure blanditiis, labore quasi molestiae quam. </br>
+             Accusantium possimus illum odio.
+    </div>
+    <div class="aboutMeF"><img id="me" src="anna.jpg"></div>
+    <div class="tech" id="technology"> Technologie
+        <div> 
+            html
         </div>
-        <div id="technology">
-            Technologie - użycie icon i animacji </br> </br> 
-            
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptatem exercitationem incidunt quam culpa eum, explicabo libero distinctio ullam illo deleniti dolore dolorem temporibus dignissimos ducimus iste quos repellat? Earum. </br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum. Quis saepe impedit, voluptate, natus minus, magnam non aliquam numquam iure deserunt repellendus aperiam qui atque ea est obcaecati inventore? </br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nostrum maiores reprehenderit veritatis corrupti reiciendis consequatur blanditiis necessitatibus provident? Tenetur deserunt libero magnam reprehenderit maiores? Labore cumque aliquid placeat ad.</br>
-          
+        <div> 
+            css
         </div>
-        <div id="portfolio">
-            Galeria na gridzie
-        </br> </br> 
-            
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptatem exercitationem incidunt quam culpa eum, explicabo libero distinctio ullam illo deleniti dolore dolorem temporibus dignissimos ducimus iste quos repellat? Earum. </br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum. Quis saepe impedit, voluptate, natus minus, magnam non aliquam numquam iure deserunt repellendus aperiam qui atque ea est obcaecati inventore? </br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nostrum maiores reprehenderit veritatis corrupti reiciendis consequatur blanditiis necessitatibus provident? Tenetur deserunt libero magnam reprehenderit maiores? Labore cumque aliquid placeat ad.</br>
-            <div class="grid-container">
-                <div class="grid-item item1">1<img src="cats/cat1.jpg"></div>
-                <div class="grid-item item2">2<img src="cats/cat2.jpg"></div>
-                <div class="grid-item item3">3<img src="cats/cat3.jpg"></div>  
-                <div class="grid-item item4">4<img src="cats/cat4.jpg"></div>
-                <div class="grid-item item5">5<img src="cats/cat5.jpg"></div>
-                <div class="grid-item item6">6<img src="cats/cat1.jpg"></div>
-                <div class="grid-item item7">7<img src="cats/cat2.jpg"></div>
-                <div class="grid-item item8">8<img src="cats/cat3.jpg"></div>
-                <div class="grid-item item9">9<img src="cats/cat4.jpg"></div>
-                <div class="grid-item item10">10<img src="cats/cat5.jpg"></div>
-              </div>
+        <div> 
+            js
         </div>
-        <div id="contact">
-            Kontakt - formularz</br> </br> 
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptatem exercitationem incidunt quam culpa eum, explicabo libero distinctio ullam illo deleniti dolore dolorem temporibus dignissimos ducimus iste quos repellat? Earum. </br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rerum. Quis saepe impedit, voluptate, natus minus, magnam non aliquam numquam iure deserunt repellendus aperiam qui atque ea est obcaecati inventore? </br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nostrum maiores reprehenderit veritatis corrupti reiciendis consequatur blanditiis necessitatibus provident? Tenetur deserunt libero magnam reprehenderit maiores? Labore cumque aliquid placeat ad.</br>
-          
+        <div> 
+            testowanie
         </div>
-         </div>
-     </div>
+    </div>  
+    <div class="gallery" id="portfolio">Portfolio
+    <div class="row1"> 
+    <div class="col1">
+      <img src="cats/cat7.jpg" style="width:100%">
+      <img src="cats/cat2.jpg" style="width:100%">
+      <img src="cats/cat3.jpg" style="width:100%">
+      <img src="cats/cat5.jpg" style="width:100%">
+      <img src="cats/cat6.jpg" style="width:100%">
+      <img src="cats/cat1.jpg" style="width:100%">
+    </div>
     
-    <footer>
-           <span> ©2020 yoruko1990@gmail.com, all rights reserved. </span>
-    </footer>
+    <div class="col1">
+      <img src="cats/cat2.jpg" style="width:100%">
+      <img src="cats/cat1.jpg" style="width:100%">
+      <img src="cats/cat5.jpg" style="width:100%">
+      <img src="cats/cat6.jpg" style="width:100%">
+      <img src="cats/cat7.jpg" style="width:100%">
+      <img src="cats/cat3.jpg" style="width:100%">
+    </div> 
+     
+    <div class="col1">
+      <img src="cats/cat1.jpg" style="width:100%">
+      <img src="cats/cat3.jpg" style="width:100%">
+      <img src="cats/cat2.jpg" style="width:100%">
+      <img src="cats/cat7.jpg" style="width:100%">
+      <img src="cats/cat6.jpg" style="width:100%">
+      <img src="cats/cat5.jpg" style="width:100%">
+    </div> 
+    
+    <div class="col1">
+      <img src="cats/cat3.jpg" style="width:100%">
+      <img src="cats/cat2.jpg" style="width:100%">
+      <img src="cats/cat1.jpg" style="width:100%">
+      <img src="cats/cat5.jpg" style="width:100%">
+      <img src="cats/cat6.jpg" style="width:100%">
+      <img src="cats/cat7.jpg" style="width:100%">
+    </div>
+
+    <div class="col1">
+        <img src="cats/cat7.jpg" style="width:100%">
+        <img src="cats/cat2.jpg" style="width:100%">
+        <img src="cats/cat3.jpg" style="width:100%">
+        <img src="cats/cat5.jpg" style="width:100%">
+        <img src="cats/cat6.jpg" style="width:100%">
+        <img src="cats/cat1.jpg" style="width:100%">
+      </div>
+      
+      <div class="col1">
+        <img src="cats/cat2.jpg" style="width:100%">
+        <img src="cats/cat1.jpg" style="width:100%">
+        <img src="cats/cat5.jpg" style="width:100%">
+        <img src="cats/cat6.jpg" style="width:100%">
+        <img src="cats/cat7.jpg" style="width:100%">
+        <img src="cats/cat3.jpg" style="width:100%">
+      </div> 
+       
+      <div class="col1">
+        <img src="cats/cat1.jpg" style="width:100%">
+        <img src="cats/cat3.jpg" style="width:100%">
+        <img src="cats/cat2.jpg" style="width:100%">
+        <img src="cats/cat7.jpg" style="width:100%">
+        <img src="cats/cat6.jpg" style="width:100%">
+        <img src="cats/cat5.jpg" style="width:100%">
+      </div> 
+      
+      <div class="col1">
+        <img src="cats/cat3.jpg" style="width:100%">
+        <img src="cats/cat2.jpg" style="width:100%">
+        <img src="cats/cat1.jpg" style="width:100%">
+        <img src="cats/cat5.jpg" style="width:100%">
+        <img src="cats/cat6.jpg" style="width:100%">
+        <img src="cats/cat7.jpg" style="width:100%">
+      </div>
+
+      <div class="col1">
+        <img src="cats/cat7.jpg" style="width:100%">
+        <img src="cats/cat2.jpg" style="width:100%">
+        <img src="cats/cat3.jpg" style="width:100%">
+        <img src="cats/cat5.jpg" style="width:100%">
+        <img src="cats/cat6.jpg" style="width:100%">
+        <img src="cats/cat1.jpg" style="width:100%">
+      </div>
+      
+      <div class="col1">
+        <img src="cats/cat2.jpg" style="width:100%">
+        <img src="cats/cat1.jpg" style="width:100%">
+        <img src="cats/cat5.jpg" style="width:100%">
+        <img src="cats/cat6.jpg" style="width:100%">
+        <img src="cats/cat7.jpg" style="width:100%">
+        <img src="cats/cat3.jpg" style="width:100%">
+      </div> 
+       
+  </div>
+    </div>
+    <div class="contact" id="contact"> Kontakt </br>
+        <img class="icon" src=icon/GitHub.png> Github </br> 
+        <img class="icon" src=icon/linkedin-logo.png> Linkedin </br>
+        <img class="icon"src=icon/facebook.png> Facebook </br> 
+        <img class="icon" src=icon/gmail.png> Mail</br> 
+    </div>
+    <div class="form"> Formularz 
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Imię i nazwisko</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Imie i nazwisko..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Twój adres email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Twój adres email..">
+          </div>
+        </div>
+          <div class="row">
+          <div class="col-25">
+            <label for="lname">Numer telefonu</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Numer telefonu..">
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Treść</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Treść wiadomości.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Wyślij">
+        </div>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">Footer</div>
+  </div>
+  
+
 </body>
 </html>

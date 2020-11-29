@@ -54,9 +54,9 @@ ul {
 }
 
 body {
-  background-color: aquamarine;
   color: #222;
   font-family: "Raleway", sans-serif;
+  width: 100%;
 }
 
 .wrap {
@@ -422,7 +422,7 @@ li:first-of-type .stickyNav__navItem {
   width: 100%;
   margin-bottom: 57px;
   background-color: #FFF;
-  padding: 0 7%;
+  padding: 0 7% 75px;
 }
 
 .aboutMe::after {
@@ -541,7 +541,7 @@ li:first-of-type .stickyNav__navItem {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  max-width: 700px;
+  max-width: 680px;
   -webkit-box-flex: 6;
       -ms-flex-positive: 6;
           flex-grow: 6;
@@ -563,7 +563,7 @@ li:first-of-type .stickyNav__navItem {
   width: 100%;
   margin-bottom: 57px;
   background-color: #FFF;
-  padding: 0 7%;
+  padding: 0 7% 57px;
 }
 
 .skills::after {
@@ -651,7 +651,7 @@ li:first-of-type .stickyNav__navItem {
   position: relative;
   padding: 34px 0 31px;
   background-color: #FFF;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer__copyrights {

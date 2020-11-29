@@ -25,19 +25,10 @@
   }
 
 
+
   &__title {
-    display: inline-block;
-    position: relative;
+    @include brand-main-title;
     left: calc(0vw + 50px);
-    padding: 18px 0;
-    // padding: 18px 0 18px calc(30% + 50px);
-    font-family: $font-family--2;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 0.02em;
-    text-align: left;
   }
 
 

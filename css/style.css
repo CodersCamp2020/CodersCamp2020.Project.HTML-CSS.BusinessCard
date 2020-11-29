@@ -440,7 +440,7 @@ li:first-of-type .stickyNav__navLink {
 .aboutMe__title {
   display: inline-block;
   position: relative;
-  left: calc(0vw + 50px);
+  left: calc(0);
   padding: 18px 0;
   font-family: "Ubuntu", "Raleway", sans-serif;
   font-size: 32px;
@@ -449,6 +449,7 @@ li:first-of-type .stickyNav__navLink {
   line-height: 38px;
   letter-spacing: 0.02em;
   text-align: left;
+  left: calc(0vw + 50px);
 }
 
 .aboutMe__box {
@@ -581,7 +582,7 @@ li:first-of-type .stickyNav__navLink {
 .skills__title {
   display: inline-block;
   position: relative;
-  left: calc(30vw - 20px);
+  left: calc(0);
   padding: 18px 0;
   font-family: "Ubuntu", "Raleway", sans-serif;
   font-size: 32px;
@@ -590,6 +591,7 @@ li:first-of-type .stickyNav__navLink {
   line-height: 38px;
   letter-spacing: 0.02em;
   text-align: left;
+  left: calc(30vw - 20px);
 }
 
 .skills__box {

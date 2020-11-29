@@ -11,3 +11,19 @@
 //   border-left: 3px dashed #FFC53D;
 
 // }
+
+@mixin brand-main-title {
+
+  display: inline-block;
+  position: relative;
+  left: calc(0);
+  padding: 18px 0;
+  // padding: 18px 0 18px calc(30% + 50px);
+  font-family: $font-family--2;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}

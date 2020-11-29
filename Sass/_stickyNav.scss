@@ -39,6 +39,8 @@
     letter-spacing: 0.15em;
     text-align: left;
     font-family: $font-family--1;
+
+
   }
 
   &__navItemsContainer {
@@ -56,7 +58,7 @@
     letter-spacing: 0.02em;
     text-align: left;
     color: $color-font--2;
-    font-family: $font-family--1;
+
   }
 
   li:hover {
@@ -65,7 +67,7 @@
     // FIXME:
   }
 
-  &__navItemsContainer li:first-of-type &__navItem {
+  li:first-of-type &__navItem {
     margin-left: 0px;
   }
 

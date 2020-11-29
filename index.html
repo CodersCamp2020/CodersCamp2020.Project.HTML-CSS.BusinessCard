@@ -203,63 +203,66 @@
   </section>
 
   <section class="contactUs">
-    <h2 class="contactUs__title">ContactUs</h2>
-    <button class="contactUs__goToFormBtn btn"></button>
-    <div class="contactUs__contactInfo contactInfo">
-      <img src="#" alt="#" class="contactInfo__img">
-      <p class="contactInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, similique possimus dolorum voluptatum id dignissimos.</p>
 
-      <div class="contactInfo__lowerContainer">
+    <h2 class="contactUs__title">Contact us</h2>
 
-        <ol class="linkList">
-          <li class="linkList__listitem">
-            <h6 class="linkList__linkIcon">
-              <a href="">
-                <i></i>
-              </a>
-            </h6>
-          </li>
-          <li class="linkList__listitem">
-            <h6 class="linkList__linkIcon">
-              <a href="">
-                <i></i>
-              </a>
-            </h6>
-          </li>
-          <li class="linkList__listitem">
-            <h6 class="linkList__linkIcon">
-              <a href="">
-                <i></i>
-              </a>
-            </h6>
-          </li>
-          <li class="linkList__listitem">
-            <h6 class="linkList__linkIcon">
-              <a href="">
-                <i></i>
-              </a>
-            </h6>
-          </li>
-        </ol>
+    <div class="contactUs__mainBox">
 
-        <p class="contactInfo__contactData">
-          <span class="contactInfo__boldText">Loremmmmm</span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, totam.
-          <a href="" class="contactInfo__email">Lorem@lorem.pl</a>
-        </p>
+      <section class="contactUs__infoBox">
 
-      </div>
+        <article class="contactUs__encouragingContact">
+          <img src="img/contactUs/logo_message.svg" alt="#" class="contactUs__logoMessage">
+          <p class="contactUs__encouragingText">Please describe your question.
+            Send me a message and I will answer you as soon as possible! </p>
+        </article>
 
+        <article class="contactUs__contactInfo">
 
-    </div>
+          <ol class="socialMedia">
+            <li class="socialMedia__listitem">
+              <a href="#">
+                    <img class="socialMedia__img" src="img/social_media/twitter.svg" alt="">
+                  </a>
+            </li>
+            <li class="socialMedia__listitem">
+              <a href="#">
+                    <img class="socialMedia__img" src="img/social_media/linkedIn.svg" alt="">
+                  </a>
+            </li>
+            <li class="socialMedia__listitem socialMedia__listitem--github">
+              <a href="#">
+                    <img class="socialMedia__img" src="img/social_media/github.svg" alt="">
+                  </a>
+            </li>
+            <li class="socialMedia__listitem">
+              <a href="#">
+                    <img class="socialMedia__img" src="img/social_media/facebook.svg" alt="">
+                  </a>
+            </li>
+          </ol>
 
-    <div class="contactUs__contactForm  contactForm">
-      <h3 class="contactForm__title"></h3>
-      <input type="text" class="contactForm__name">
-      <input type="text" class="contactForm__email">
-      <input type="text" class="contactForm__topic">
-      <input type="text" class="contactForm__message">
-      <button class="contactForm__btn btn btn--special"></button>
+          <h4 class="contactUs__contactData contactUs__contactData--special">
+            Designer <br>
+            Poland, Wrocław
+          </h4>
+
+          <h4 class="contactUs__contactData">
+            ul. Tęczowa 12/3 50-000 <br>
+            +48 123-456-789 <br>
+            <a href="#">night-coding@dev.com</a>
+          </h4>
+
+        </article>
+      </section>
+      <section class="contactUs__formBox">
+        <h3 class="contactUs__formTitle">Let’s start!</h3>
+        <input class="contactUs__formName" type="text" value="Name">
+        <input class="contactUs__formEmail" type="text" value="Your e-mail adress">
+        <input class=" contactUs__formTopic" type="text" value="Topic">
+        <textarea class=" contactUs__formMessage" type="text">Message</textarea>
+        <button class="contactUs__btn btn btn--small">Send</button>
+
+      </section>
     </div>
 
   </section>

@@ -3,6 +3,9 @@
 @import 'reset'; // reset standardowy
 @import 'vars'; // ustawienie zmiennych
 @import 'main'; // opisanie głównych elementów
+
+@import 'mixins';
+
 @import 'btn';
 @import 'icons';
 
@@ -12,4 +15,7 @@
 @import 'contactMe';
 
 @import 'aboutMe';
+@import 'skills';
+@import 'portfolio';
+
 @import 'footer';

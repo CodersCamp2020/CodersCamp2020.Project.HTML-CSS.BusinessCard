@@ -419,7 +419,6 @@ li:first-of-type .stickyNav__navItem {
 .aboutMe {
   position: relative;
   z-index: 10;
-  height: 430px;
   width: 100%;
   margin-bottom: 57px;
   background-color: #FFF;
@@ -439,10 +438,11 @@ li:first-of-type .stickyNav__navItem {
 }
 
 .aboutMe__title {
-  font-family: "Ubuntu", "Raleway", sans-serif;
+  display: inline-block;
   position: relative;
-  left: 50px;
+  left: calc(30vw + 50px);
   padding: 18px 0;
+  font-family: "Ubuntu", "Raleway", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -452,21 +452,23 @@ li:first-of-type .stickyNav__navItem {
 }
 
 .aboutMe__box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
-  height: 280px;
   max-width: 1240px;
   background-color: #FFF;
-  -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-  padding: 0 24px;
+  -webkit-filter: drop-shadow(3px 2px 10px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(3px 2px 10px rgba(0, 0, 0, 0.15));
+  padding: 51px 33px;
 }
 
 .aboutMe__personalContainer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,12 +481,14 @@ li:first-of-type .stickyNav__navItem {
           flex-grow: 4;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding-top: 51px;
 }
 
 .aboutMe__photoBox {
-  padding-left: 23px;
-  padding-right: 24px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .aboutMe__photo {
@@ -498,8 +502,11 @@ li:first-of-type .stickyNav__navItem {
 }
 
 .aboutMe__personalList {
-  padding-left: 23px;
-  padding-right: 24px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .aboutMe__personalItem {
@@ -516,6 +523,7 @@ li:first-of-type .stickyNav__navItem {
   line-height: 29px;
   letter-spacing: 0.02em;
   text-align: left;
+  padding-bottom: 9px;
 }
 
 .aboutMe__spanSpecial {
@@ -533,28 +541,115 @@ li:first-of-type .stickyNav__navItem {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  width: 100%;
   max-width: 700px;
   -webkit-box-flex: 6;
       -ms-flex-positive: 6;
           flex-grow: 6;
-  padding-left: 35px;
-  padding-right: 36px;
+  padding-left: 26px;
+  padding-right: 26px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 172.35%;
   /* or 31px */
   letter-spacing: 0.04em;
+  border-left: 3px dashed #FFC53D;
 }
 
-.aboutMe__desc::before {
-  content: "";
+.skills {
   position: relative;
-  left: -26px;
-  display: blok;
+  z-index: 10;
+  height: 430px;
+  width: 100%;
+  margin-bottom: 57px;
+  background-color: #FFF;
+  padding: 0 7%;
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  right: 0;
+  display: block;
+  background-color: #FAFAFF;
+}
+
+.skills__title {
+  display: inline-block;
+  position: relative;
+  left: calc(30vw - 20px);
+  padding: 18px 0;
+  font-family: "Ubuntu", "Raleway", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.skills__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  height: 280px;
+  max-width: 1240px;
+  background-color: #FFF;
+  -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+  justify-content: space-around;
+  padding: 38px 0px;
+}
+
+.skills__item {
+  position: relative;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.skills__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 196px;
-  border: 2px dashed #FFC53D;
+  width: 1px;
+  border-left: 3px dashed #FFC53D;
+}
+
+.skills__img {
+  display: inline-block;
+}
+
+.skills__name {
+  padding-top: 46px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFC53D;
+}
+
+.skills__secondName {
+  padding-top: 13px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
 }
 
 .footer {

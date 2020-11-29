@@ -1,11 +1,13 @@
 @mixin brand-line-vertical {
   content: "";
   // display: block;
-  position: relative;
-  left: -26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // left: -26px;
   height: 196px;
   // width: 1px;
-  width: 0px;
-  border: 2px dashed #FFC53D;
+  width: 1px;
+  border-left: 3px dashed #FFC53D;
 
 }

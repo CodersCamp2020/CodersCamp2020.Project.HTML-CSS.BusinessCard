@@ -6,6 +6,7 @@
   margin-bottom: 57px;
   background-color: $color-bgc;
   padding: 0 7%;
+  // background-color: blue;
 
   &::after {
     // content: "xxxxxxxxxxxxx";
@@ -22,19 +23,14 @@
     // background-color: red;
   }
 
-  &__wrapper {
-    position: relative;
-    margin: auto;
-    height: 280px;
-    max-width: 1240px;
-
-  }
 
   &__title {
-    font-family: $font-family--2;
+    display: inline-block;
     position: relative;
-    left: calc(30% + 50px);
+    left: calc(30vw - 20px);
     padding: 18px 0;
+    // padding: 18px 0 18px calc(30% + 50px);
+    font-family: $font-family--2;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -52,22 +48,53 @@
     max-width: 1240px;
     background-color: $color-bgc;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-    padding: 38px 0 50px 0;
+    justify-content: space-around;
+    padding: 38px 0px;
   }
 
+  &__item {
+    position: relative;
+    text-align: center;
+    flex-grow: 1;
 
-  &__item {}
 
-  // li:last-child &__personalItem {}
+  }
 
-  &__item::before {
+  &__item::after {
     @include brand-line-vertical;
   }
 
-  &__img {}
+  // &__item {}
 
-  &__name {}
+  // li:last-child &__personalItem {}
 
-  &__desc {}
+
+  &__img {
+    display: inline-block;
+  }
+
+  &__name {
+    padding-top: 46px;
+    font-family: $font-family--1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: $color-brand--1;
+  }
+
+  &__secondName {
+    padding-top: 13px;
+    font-family: $font-family--1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+  }
+
+
 
 }

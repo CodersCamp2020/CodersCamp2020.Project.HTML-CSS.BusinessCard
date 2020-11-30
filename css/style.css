@@ -91,6 +91,13 @@ body {
   width: 100px;
 }
 
+.btn:hover {
+  border: 1px solid #FFC53D;
+  background-image: none;
+  background-color: #fff;
+  color: #FFC53D;
+}
+
 .brandIcon {
   display: block;
   position: relative;

@@ -25,4 +25,14 @@
   &--special {
     //  width: 200px;
   }
+
+  &:hover {
+    border: 1px solid #FFC53D;
+    background-image: none;
+    background-color: #fff;
+    color: $color-brand--1;
+
+  }
+
+
 }

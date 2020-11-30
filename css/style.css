@@ -5,6 +5,7 @@
 
 body {
     width: 100vw;
+    overflow-x: hidden;
     font-family: 'Poly', serif;
 }
 
@@ -13,6 +14,10 @@ header {
     height: 10vh;
     background-color: #FFE6D1;
     font-family: 'Teko', sans-serif;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 nav {
@@ -41,7 +46,7 @@ nav > div > a::before {
     height: .15vw;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color: #000000;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
@@ -57,14 +62,14 @@ nav > div:nth-child(3) > a {
     font-weight: bold;
 }
 
-#main_view {
+.main_view {
     clear: both;
     width: 100%;
     height: 90vh;
     background-color: #FFE6D1;
 }
 
-#main_view > div {
+.main_view > div {
     position: relative;
 }
 
@@ -81,7 +86,7 @@ nav > div:nth-child(3) > a {
 }
 
 .main_content {
-    background-color: white;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,11 +100,13 @@ nav > div:nth-child(3) > a {
 .main_text {
     width: 80%;
     text-align: justify;
+    font-size: 1vw;
 }
 
 .main_text > h1 {
     width: 50%;
     text-align: center;
+    font-size: 3vw;
 }
 
 .main_right {
@@ -110,4 +117,42 @@ nav > div:nth-child(3) > a {
     height: 60%;
     top: -85%;
     left: 27%;
+}
+
+#schools {
+    height: 60vh;
+    width: 100%;
+    clear: both;
+    background-color:  #FFE6D1;
+}
+
+.schools_container {
+    width: 80%;
+    padding-top: 6vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: #FFA574;
+    text-shadow: .2vw .2vw .2vw #FFFFFF;
+}
+
+.schools_logo {
+    margin-top: 2vw;
+    display: flex;
+    width: 60%;
+}
+
+.single_logo {
+    width: 10vw;
+}
+
+.single_logo > img {
+    width: 10vw;
+    height: 25vh;
+}
+
+.single_logo > p {
+    margin-top: 1vw;
+    text-align: center;
+    font-size: .8vw;
 }

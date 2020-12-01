@@ -3,10 +3,45 @@
   }
   
   /* Style the body */
-  body {
-    font-family: Arial;
+  body, html {
+    height: 100%;
     margin: 0;
+    font-family: 'Bree Serif', serif;
   }
+  
+  .bg {
+    /* The image used */
+    background-image: url("cats/mountain.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    
+  }
+
+  /* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
   
   /* Header/logo Title */
   .header {
@@ -20,7 +55,7 @@
   
 /* dropdown header */
 .dropbtn {
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(0, 0, 0);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -62,12 +97,12 @@
     background-color:  #251a72;
   }
 
-
-
   /* Style the top navigation bar */
   .navbar {
+    position: sticky;
+    top: 0;
     display: flex;
-    background-color: rgb(110, 110, 110);
+    background-color: rgb(0, 0, 0);
     justify-content: flex-end;
   }
   
@@ -103,7 +138,7 @@
     'contact contact form form form'
     'footer footer footer footer footer';
   grid-gap: 10px;
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 10px;
 }
 
@@ -113,11 +148,18 @@
   padding: 20px 0;
   font-size: 30px;
 }
-
+.grid-container > .footer {
+  background-color: #251a72;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: #FFF;
+}
 #me{
-        width: 100%;
-        height: auto;
-      }
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
 
 
 /* GALLERY - FLEX */

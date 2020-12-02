@@ -1,0 +1,154 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Poly', serif;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #f0f0f0;
+    font-family: 'Teko', sans-serif;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav > div {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > div > a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+
+nav > div > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .15vw;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav > div > a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+nav > div:nth-child(3) > a {
+    font-size: 2.7vw;
+    font-weight: bold;
+}
+
+.main_view {
+    clear: both;
+    width: 100%;
+    height: 90vh;
+    background-color: #f0f0f0;
+}
+
+.main_view > div {
+    position: relative;
+}
+
+.main_left {
+    background-color: #B8B8B8;
+    background-image: url('../img/bg2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    width: 40%;
+    top: 30%;
+    left: -40%;
+    z-index: 0;
+    height: 40%;
+}
+
+.main_content {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 40%;
+    left: -10%;
+    top: -35%;
+    z-index: 1;
+}
+
+.main_text {
+    width: 80%;
+    text-align: justify;
+    font-size: 1vw;
+}
+
+.main_text > h1 {
+    width: 50%;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.main_right {
+    background-image: url('../img/bg1.jpg');
+    background-size: 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #A0A0A0;
+    width: 45%;
+    height: 60%;
+    top: -65%;
+    left: 27%;
+}
+
+#technologies {
+    height: 60vh;
+    width: 100%;
+    clear: both;
+    background-color: #f0f0f0;
+}
+
+.technologies_container {
+    padding-top: 6vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: #383838;
+    text-shadow: .2vw .2vw .2vw #FFFFFF;
+}
+
+.technologies_logo {
+    margin-top: 2vw;
+    display: flex;
+    width: 70%;
+}
+
+.single_logo > img {
+    width: 70%;
+}
+
+.single_logo > p {
+    text-align: center;
+    font-size: 1.2vw;
+}

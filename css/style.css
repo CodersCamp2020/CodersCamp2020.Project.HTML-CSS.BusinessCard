@@ -12,7 +12,7 @@ body {
 header {
     width: 100%;
     height: 10vh;
-    background-color: #FFE6D1;
+    background-color: #f0f0f0;
     font-family: 'Teko', sans-serif;
     position: sticky;
     z-index: 2;
@@ -66,7 +66,7 @@ nav > div:nth-child(3) > a {
     clear: both;
     width: 100%;
     height: 90vh;
-    background-color: #FFE6D1;
+    background-color: #f0f0f0;
 }
 
 .main_view > div {
@@ -74,15 +74,16 @@ nav > div:nth-child(3) > a {
 }
 
 .main_left {
-    background-color: #FFEE8A;
-    background-image: url('../img/bg2.png');
-    background-size: 100% 100%;
-    background-position: 10% 0 0 10%;
+    background-color: #B8B8B8;
+    background-image: url('../img/bg2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
     width: 40%;
     top: 30%;
     left: -40%;
     z-index: 0;
-    height: 60%;
+    height: 40%;
 }
 
 .main_content {
@@ -93,7 +94,7 @@ nav > div:nth-child(3) > a {
     height: 40%;
     width: 40%;
     left: -10%;
-    top: -55%;
+    top: -35%;
     z-index: 1;
 }
 
@@ -110,49 +111,44 @@ nav > div:nth-child(3) > a {
 }
 
 .main_right {
-    background-image: url('../img/bg1.png');
-    background-size: 100% 100%;
-    background-color: #FFA574;
+    background-image: url('../img/bg1.jpg');
+    background-size: 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #A0A0A0;
     width: 45%;
     height: 60%;
-    top: -85%;
+    top: -65%;
     left: 27%;
 }
 
-#schools {
+#technologies {
     height: 60vh;
     width: 100%;
     clear: both;
-    background-color:  #FFE6D1;
+    background-color: #f0f0f0;
 }
 
-.schools_container {
-    width: 80%;
+.technologies_container {
     padding-top: 6vw;
     text-align: center;
     text-transform: uppercase;
     font-size: 2vw;
-    color: #FFA574;
+    color: #383838;
     text-shadow: .2vw .2vw .2vw #FFFFFF;
 }
 
-.schools_logo {
+.technologies_logo {
     margin-top: 2vw;
     display: flex;
-    width: 60%;
-}
-
-.single_logo {
-    width: 10vw;
+    width: 70%;
 }
 
 .single_logo > img {
-    width: 10vw;
-    height: 25vh;
+    width: 70%;
 }
 
 .single_logo > p {
-    margin-top: 1vw;
     text-align: center;
-    font-size: .8vw;
+    font-size: 1.2vw;
 }

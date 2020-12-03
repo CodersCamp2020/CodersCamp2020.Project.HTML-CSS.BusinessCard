@@ -154,7 +154,7 @@ h1 {
     font-size: 1.2vw;
 }
 
-.gallery_title {
+.gallery_title, #achievements > h1 {
     width: 100%;
     text-align: center;
     text-transform: uppercase; 
@@ -181,3 +181,36 @@ h1 {
 .gallery_container > img {
     width: 100%;
 }
+
+.achievements_container {
+    gap: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.single_achievement > img {
+    width: 8%;
+    padding: 1vw 0 1vw 1vw;
+}
+
+.single_achievement > h3 { 
+    font-size: 1.2vw;
+    padding: 1vw;
+    width: 80%;
+    text-align: center;
+}
+
+.single_achievement {
+    margin: 1vw 0;
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.single_achievement:nth-child(1) { border-left: .2vw solid red; }
+.single_achievement:nth-child(2) { border-left: .2vw solid cyan; }
+.single_achievement:nth-child(3) { border-left: .2vw solid yellow; }
+.single_achievement:nth-child(4) { border-left: .2vw solid purple; }

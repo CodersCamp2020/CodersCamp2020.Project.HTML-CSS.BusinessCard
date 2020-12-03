@@ -62,10 +62,16 @@ nav > div:nth-child(3) > a {
     font-weight: bold;
 }
 
+.blank {
+    display: block;
+    height: 10vh;
+    width: 100%;
+}
+
 .main_view {
     clear: both;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     background-color: #f0f0f0;
 }
 
@@ -74,16 +80,15 @@ nav > div:nth-child(3) > a {
 }
 
 .main_left {
-    background-color: #B8B8B8;
     background-image: url('../img/bg2.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 100%;
     width: 40%;
-    top: 30%;
+    top: 40%;
     left: -40%;
     z-index: 0;
-    height: 40%;
+    height: 50%;
 }
 
 .main_content {
@@ -91,10 +96,10 @@ nav > div:nth-child(3) > a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40%;
+    height: 50%;
     width: 40%;
     left: -10%;
-    top: -35%;
+    top: -40%;
     z-index: 1;
 }
 
@@ -104,9 +109,7 @@ nav > div:nth-child(3) > a {
     font-size: 1vw;
 }
 
-.main_text > h1 {
-    width: 50%;
-    text-align: center;
+h1 {
     font-size: 3vw;
 }
 
@@ -115,22 +118,20 @@ nav > div:nth-child(3) > a {
     background-size: 100%;
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-color: #A0A0A0;
-    width: 45%;
-    height: 60%;
-    top: -65%;
+    width: 40%;
+    height: 70%;
+    top: -70%;
     left: 27%;
 }
 
 #technologies {
-    height: 60vh;
     width: 100%;
     clear: both;
     background-color: #f0f0f0;
 }
 
 .technologies_container {
-    padding-top: 6vw;
+    padding-top: 10vw;
     text-align: center;
     text-transform: uppercase;
     font-size: 2vw;
@@ -151,4 +152,32 @@ nav > div:nth-child(3) > a {
 .single_logo > p {
     text-align: center;
     font-size: 1.2vw;
+}
+
+.gallery_title {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.item-a { grid-area: first; }
+.item-b { grid-area: second; }
+.item-c { grid-area: third; }
+.item-d { grid-area: fourth; }
+.item-e { grid-area: fifth; }
+
+.gallery_container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 1vw;
+    column-gap: 1vw;
+    grid-template-areas: 
+    'first first first second second second'
+    'third third fourth fourth fifth fifth';
+}
+
+.gallery_container > img {
+    width: 100%;
 }

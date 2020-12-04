@@ -31,3 +31,12 @@
     margin: 0 40px;
   }
 }
+
+
+@media (max-width: $mediaQ-tablet) {
+  .contactMe {
+    &__title {
+      font-size: 26px;
+    }
+  }
+}

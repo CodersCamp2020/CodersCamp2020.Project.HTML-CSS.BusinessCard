@@ -52,6 +52,7 @@
     background-color: $color-bgc;
     filter: drop-shadow(3px 2px 10px rgba(0, 0, 0, 0.15));
     padding: 51px 33px;
+    // flex-wrap: wrap;
   }
 
   &__personalContainer {
@@ -61,6 +62,7 @@
     justify-content: space-around;
     flex-grow: 4;
     align-self: flex-start;
+    min-width: 320px;
     // padding-top: 51px;
     // justify-content: space-around;
     // position: relative;
@@ -76,6 +78,8 @@
     // overflow: hidden;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 30px;
+    // text-align: center;
   }
 
   &__photo {
@@ -148,4 +152,49 @@
 
   // }
 
+}
+
+
+@media (max-width: 1300px) {
+  .aboutMe {
+    &__title {
+      left: calc(10%);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutMe {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__title {
+      left: 15%;
+    }
+  }
+}
+
+
+@media (max-width: $mediaQ-tablet) {
+  .aboutMe {
+
+
+    &__box {
+
+      flex-wrap: wrap;
+    }
+
+    &__photoBox {
+      text-align: center;
+    }
+
+    &__desc {
+      padding-top: 25px;
+      margin-top: 25px;
+      border: none;
+      border-top: 3px dashed #FFC53D;
+
+    }
+
+  }
 }

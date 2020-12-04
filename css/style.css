@@ -84,9 +84,9 @@ nav > div:nth-child(3) > a {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 100%;
-    width: 40%;
+    width: 25%;
     top: 40%;
-    left: -40%;
+    left: -35%;
     z-index: 0;
     height: 50%;
 }
@@ -111,6 +111,8 @@ nav > div:nth-child(3) > a {
 
 h1 {
     font-size: 3vw;
+    letter-spacing: .2vw;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.2);
 }
 
 .main_right {
@@ -131,7 +133,7 @@ h1 {
 }
 
 .technologies_container {
-    padding-top: 10vw;
+    padding-top: 12vw;
     text-align: center;
     text-transform: uppercase;
     font-size: 2vw;
@@ -140,21 +142,29 @@ h1 {
 }
 
 .technologies_logo {
-    margin-top: 2vw;
+    margin-top: 4vw;
     display: flex;
+    flex-flow: wrap;
     width: 70%;
 }
 
 .single_logo > img {
-    width: 70%;
+    width: 12vw;
 }
 
 .single_logo > p {
     text-align: center;
-    font-size: 1.2vw;
 }
 
-.gallery_title, #achievements > h1 {
+.second_row {
+    margin-top: 3vw;
+}
+
+.second_row > p {
+    font-size: 1vw;
+}
+
+.gallery_title, h1 {
     width: 100%;
     text-align: center;
     text-transform: uppercase; 
@@ -168,6 +178,7 @@ h1 {
 
 .gallery_container {
     width: 95%;
+    margin-top: 4vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -214,3 +225,76 @@ h1 {
 .single_achievement:nth-child(2) { border-left: .2vw solid cyan; }
 .single_achievement:nth-child(3) { border-left: .2vw solid yellow; }
 .single_achievement:nth-child(4) { border-left: .2vw solid purple; }
+
+.form_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+form {
+    width: 50%;
+}
+
+form > input {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: .2vw solid #C8C8C8 ;
+    padding-left: 2%;
+    margin: 2vw 1vw 0vw 10vw;
+    width: 70%;
+    height: 7vh;
+    font-size: 1.2vw;
+    transition: .5s all;
+}
+
+form > input:hover, form > input:focus {
+    background-color: #FFFFFF;
+
+}
+
+input[type=submit] {
+    background-color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    width: 72%;
+}
+
+.side_form {
+    width: 50%;
+    height: 70vh;
+    background-color: #FFFFFF;
+}
+
+iframe {
+    margin-top: 6vh;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.one_contact {
+    max-width: 40%;
+    float: left;
+    margin: 1vw 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.contact_signs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.one_contact > img {
+    width: 2vw;
+    margin: 1vw;
+}

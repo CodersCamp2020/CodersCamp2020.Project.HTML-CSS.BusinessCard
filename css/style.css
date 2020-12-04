@@ -190,14 +190,8 @@ nav > div:nth-child(3) > a {
     'third third fourth fourth fifth fifth';
 }
 
-.gallery_container > img {
+.gallery_container > img, .achievements_all {
     width: 100%;
-}
-
-.achievements_all {
-    width: 100%;
-    display: flex;
-    align-items: center;
 }
 
 .achievements_photo {
@@ -240,10 +234,10 @@ nav > div:nth-child(3) > a {
     align-items: center;
 }
 
-.single_achievement:nth-child(1) { border-left: .2vw solid red; }
-.single_achievement:nth-child(2) { border-left: .2vw solid cyan; }
-.single_achievement:nth-child(3) { border-left: .2vw solid yellow; }
-.single_achievement:nth-child(4) { border-left: .2vw solid purple; }
+.single_achievement:nth-child(1) { animation: color_1 10s infinite; }
+.single_achievement:nth-child(2) { animation: color_2 10s infinite; }
+.single_achievement:nth-child(3) { animation: color_3 10s infinite; }
+.single_achievement:nth-child(4) { animation: color_4 10s infinite; }
 
 .form_container {
     flex-wrap: wrap;
@@ -267,7 +261,7 @@ nav > div:nth-child(3) > a {
 
 .iframe_side {
     margin-top: 2vw;
-    border-top: .2vw solid red;
+    animation: top_1 10s infinite;
 }
 
 iframe {
@@ -277,7 +271,7 @@ iframe {
 }
 
 .form_side {
-    border-top: .2vw solid purple;
+    animation: top_2 10s infinite;
     width: 25vw;
     padding: 2vw;
 }
@@ -287,7 +281,7 @@ form {
     margin-top: 3vw;
 }
 
-form > input, form > textarea {
+form > * {
     background-color: transparent;
     border: none;
     border-bottom: .2vw solid #C8C8C8;
@@ -311,7 +305,7 @@ input[type=submit] {
 
 .contact_side {
     margin-top: 2vw;
-    border-top: .2vw solid cyan;
+    animation: top_3 10s infinite;
     width: 20vw;
 }
 
@@ -357,9 +351,14 @@ footer {
 footer a {
     text-decoration: none;
     color: #383838;
+    transition: .5s all;
 }
 
-.social_container > img {
+footer a:hover {
+    color: #000000;
+}
+
+.social_container > a > img {
     width: 1.5vw;
     margin: 0 .5vw 0 .5vw;
 }

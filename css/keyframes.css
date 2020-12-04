@@ -1,0 +1,62 @@
+@keyframes color_1 {
+    0% { border-left: .3vw solid gold; }
+    20% { border-left: .3vw solid purple; }
+    40% { border-left: .3vw solid cyan; }
+    60% { border-left: .3vw solid greenyellow; }
+    80% { border-left: .3vw solid red; }
+    100% { border-left: .3vw solid gold; }
+}
+
+@keyframes color_2 {
+    0% { border-left: .3vw solid cyan; }
+    20% { border-left: .3vw solid greenyellow; }
+    40% { border-left: .3vw solid red; }
+    60% { border-left: .3vw solid gold; }
+    80% { border-left: .3vw solid gold; }
+    100% { border-left: .3vw solid cyan; }
+}
+
+@keyframes color_3 {
+    0% { border-left: .3vw solid red; }
+    29% { border-left: .3vw solid gold; }
+    40% { border-left: .3vw solid purple; }
+    60% { border-left: .3vw solid cyan; }
+    80% { border-left: .3vw solid greenyellow; }
+    100% { border-left: .3vw solid red; }
+}
+
+@keyframes color_4 {
+    0% { border-left: .3vw solid purple; }
+    20% { border-left: .3vw solid cyan; }
+    40% { border-left: .3vw solid greenyellow; }
+    60% { border-left: .3vw solid red; }
+    80% { border-left: .3vw solid gold; }
+    100% { border-left: .3vw solid purple; }
+}
+
+@keyframes top_1 {
+    0% { border-top: .3vw solid gold; }
+    20% { border-top: .3vw solid purple; }
+    40% { border-top: .3vw solid cyan; }
+    60% { border-top: .3vw solid greenyellow; }
+    80% { border-top: .3vw solid red; }
+    100% { border-top: .3vw solid gold; }
+}
+
+@keyframes top_2 {
+    0% { border-top: .3vw solid cyan; }
+    20% { border-top: .3vw solid greenyellow; }
+    40% { border-top: .3vw solid red; }
+    60% { border-top: .3vw solid gold; }
+    80% { border-top: .3vw solid purple; }
+    100% { border-top: .3vw solid cyan; }
+}
+
+@keyframes top_3 {
+    0% { border-top: .3vw solid red; }
+    20% { border-top: .3vw solid gold; }
+    40% { border-top: .3vw solid purple; }
+    60% { border-top: .3vw solid cyan; }
+    80% { border-top: .3vw solid greenyellow; }
+    100% { border-top: .3vw solid red; }
+}

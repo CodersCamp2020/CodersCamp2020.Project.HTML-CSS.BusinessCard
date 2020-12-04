@@ -126,17 +126,7 @@
   .portfolio {
 
     &__box {
-      display: grid;
       grid-template: repeat(3, 346px) / repeat(12, 1fr);
-      width: 100%;
-      // grid-template-columns: repeat(11, 1fr);
-      // grid-template-rows: repeat(2, 346px);
-      // grid-gap: 15px;
-    }
-
-    &__item {
-      position: relative;
-
     }
 
     // &__item:nth-child(0) {
@@ -167,5 +157,45 @@
       grid-column: 7 / span 6;
       grid-row: 3 / span 1;
     }
+  }
+}
+
+@media (max-width: $mediaQ-mobile-L) {
+  .portfolio {
+
+
+    &__box {
+      grid-template: repeat(3, 346px) / repeat(2, 1fr);
+    }
+
+    // &__item:nth-child(0) {
+    &__item--one {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+
+    }
+
+    &__item--two {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+
+    }
+
+    &__item--three {
+
+      display: none;
+    }
+
+    &__item--four {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+
+    }
+
+    &__item--five {
+      grid-column: 1 / span 2;
+      grid-row: 3 / span 1;
+    }
+
   }
 }

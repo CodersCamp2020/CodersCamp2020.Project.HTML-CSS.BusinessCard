@@ -87,12 +87,15 @@
   &__encouragingText {
     display: block;
     width: 300px;
+    // !
+    // !
+    // !
     padding: 25px 0 25px;
 
     font-family: $font-family--1;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 172.35%;
     letter-spacing: 0.04em;
 
@@ -113,7 +116,7 @@
     font-family: $font-family--2;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 25px;
     letter-spacing: 0.02em;
   }
@@ -183,7 +186,7 @@
     font-family: $font-family--1;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 25px;
     display: flex;
     align-items: center;
@@ -257,6 +260,17 @@
       border-right: 24px solid transparent;
       border-top: 32px solid $color-brand--2;
       transform: translateX(-50%);
+    }
+
+  }
+}
+
+@media (max-width: $mediaQ-mobile-L) {
+  .contactUs {
+
+    &__title {
+      left: 35%;
+
     }
 
   }

@@ -90,3 +90,13 @@
     }
   }
 }
+
+@media (max-width: $mediaQ-mobile-L) {
+  .titleHeader {
+
+    &__titleBox {
+      font-size: 6px;
+
+    }
+  }
+}

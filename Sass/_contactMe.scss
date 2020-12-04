@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $mediaQ-mobile-L) {
   .contactMe {
     &__title {
       font-size: 18px;
@@ -81,5 +81,15 @@
     &__btn--contact {
       display: none;
     }
+  }
+}
+
+
+@media (max-width: $mediaQ-mobile-M) {
+  .contactMe {
+    &__title {
+      font-size: 16px;
+    }
+
   }
 }

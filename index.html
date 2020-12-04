@@ -35,7 +35,7 @@
     </section>
     <section id="technologies">
         <div class="technologies_container">
-            <h2>some cool technologies</h2>
+            <h1>some cool technologies</h1>
             <div class="technologies_logo">
                 <div class="single_logo">
                     <img src="img/html.png" alt="html5">
@@ -110,32 +110,44 @@
                 </div>
             </div>
     </div>
-        <div class="blank"></div>
     </section>
     <section id="contact">
+        <div class="blank"></div>
         <div class="form_container flex_center">
-            <div class="blank"></div>
             <h1>Contact</h1>
-            <form method="post">
-                <input type="text" name="name" placeholder=" NAME">
-                <input type="text" name="surname" placeholder=" SURNAME">
-                <input type="email" name="email" placeholder=" EMAIL">
-                <input type="submit" name="submit" value="SEND">
-            </form>
-            <div class="side_form">
+            <div class="iframe_side">
+                <h4>Where to find me?</h4>
                 <iframe src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Loreta%C5%84ska,+Krak%C3%B3w&amp;aq=&amp;sll=50.062188,19.932557&amp;sspn=0.003671,0.009645&amp;ie=UTF8&amp;hq=&amp;hnear=Loreta%C5%84ska,+Krak%C3%B3w,+ma%C5%82opolskie&amp;t=p&amp;ll=50.062429,19.932718&amp;spn=0.013224,0.027466&amp;z=15&amp;output=embed" class="flex_center" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-                <div class="flex_center">
-                    <div class="one_contact flex_center">
+            </div>
+            <div class="form_side"> 
+                <h4>Write me!</h4>
+                <form method="post" class="flex_center">
+                    <input type="email" name="email" placeholder=" EMAIL">
+                    <textarea name="message" placeholder=" MESSAGE"></textarea>
+                    <input type="submit" name="submit" value="SEND">
+                </form>
+            </div>
+            <div class="contact_side">
+                <h4>Some information:</h4>
+                <div class="info_container flex_center">
+                    <div class="one_info flex_center">
+                        <img src="img/user.png" alt="name">
+                        <p>Adam Kostuch</p>
+                    </div>
+                    <div class="one_info flex_center">
+                        <img src="img/email.png" alt="email">
+                        <p>name@mail.com</p>
+                    </div>
+                    <div class="one_info flex_center">
                         <img src="img/phone-call.png" alt="phone">
                         <p>+48 000 000 000</p>
                     </div>
-                    <div class="one_contact flex_center">
-                        <img src="img/email.png" alt="phone">
-                        <p>adamkostuch.krakow@gmail.com</p>
+                    <div class="one_info flex_center">
+                        <img src="img/placeholder.png" alt="home">
+                        <p>Cracow, Poland</p>
                     </div>
                 </div>
             </div>
-            <div class="blank"></div>
         </div>
     </section>
 </body>

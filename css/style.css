@@ -432,6 +432,35 @@ li:first-of-type .stickyNav__navLink {
   }
 }
 
+@media (max-width: 600px) {
+  .contactMe__title {
+    font-size: 22px;
+  }
+  .contactMe__btn {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactMe__title {
+    font-size: 20px;
+  }
+  .contactMe__btn {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .contactMe__title {
+    font-size: 18px;
+  }
+  .contactMe__btn--contact {
+    display: none;
+  }
+}
+
 .aboutMe {
   position: relative;
   z-index: 10;
@@ -595,6 +624,9 @@ li:first-of-type .stickyNav__navLink {
 }
 
 @media (max-width: 768px) {
+  .aboutMe__title {
+    left: calc(25%);
+  }
   .aboutMe__box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -667,10 +699,12 @@ li:first-of-type .stickyNav__navLink {
   text-align: center;
   width: 100%;
   border-left: 3px dashed #FFC53D;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .skills__item:first-of-type {
-  border-left: none;
+  border: none;
 }
 
 .skills__img {
@@ -690,8 +724,6 @@ li:first-of-type .stickyNav__navLink {
 
 .skills__secondName {
   padding-top: 13px;
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -711,6 +743,23 @@ li:first-of-type .stickyNav__navLink {
   .skills {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .skills__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills__item {
+    border-left: none;
+    border-top: 3px dashed #FFC53D;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+  .skills__item:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 

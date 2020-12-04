@@ -178,6 +178,9 @@
 @media (max-width: $mediaQ-tablet) {
   .aboutMe {
 
+    &__title {
+      left: calc(25%);
+    }
 
     &__box {
 
@@ -198,3 +201,28 @@
 
   }
 }
+
+
+// @media (max-width: $mediaQ-tablet) {
+//   .aboutMe {
+
+
+//     &__box {
+
+//       flex-wrap: wrap;
+//     }
+
+//     &__photoBox {
+//       text-align: center;
+//     }
+
+//     &__desc {
+//       padding-top: 25px;
+//       margin-top: 25px;
+//       border: none;
+//       border-top: 3px dashed #FFC53D;
+
+//     }
+
+//   }
+// }

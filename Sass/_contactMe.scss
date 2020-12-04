@@ -21,6 +21,7 @@
 
   &__btnContainer {
     display: inline-flex;
+
     text-align: center;
 
   }
@@ -30,6 +31,10 @@
 
     margin: 0 40px;
   }
+
+  &__btn--contact {}
+
+  &__btn--cv {}
 }
 
 
@@ -37,6 +42,44 @@
   .contactMe {
     &__title {
       font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contactMe {
+    &__title {
+      font-size: 22px;
+    }
+
+    &__btn {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contactMe {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__btn {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .contactMe {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__btn--contact {
+      display: none;
     }
   }
 }

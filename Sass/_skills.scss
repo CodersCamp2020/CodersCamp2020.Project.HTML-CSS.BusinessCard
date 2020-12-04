@@ -54,12 +54,15 @@
     width: 100%;
 
     border-left: 3px dashed #FFC53D;
+
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
 
   &__item:first-of-type {
     // display: none;
-    border-left: none;
+    border: none;
     // border-left: 3px dashed black;
 
 
@@ -85,8 +88,6 @@
 
   &__secondName {
     padding-top: 13px;
-    padding-left: 20px;
-    padding-right: 20px;
     font-family: $font-family--1;
     font-style: normal;
     font-weight: normal;
@@ -116,4 +117,33 @@
     padding-right: 0;
 
   }
+}
+
+@media (max-width: 650px) {
+  .skills {
+    // padding-left: 0;
+    // padding-right: 0;
+
+    &__box {
+      flex-wrap: wrap;
+      // display: none;
+      // width: 80%;
+
+    }
+
+    &__item {
+      border-left: none;
+      border-top: 3px dashed #FFC53D;
+      margin-top: 30px;
+      padding-top: 30px;
+    }
+
+
+    &__item:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+  }
+
 }

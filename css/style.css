@@ -9,6 +9,12 @@ body {
     font-family: 'Poly', serif;
 }
 
+.flex_center, nav > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     width: 100%;
     height: 10vh;
@@ -27,9 +33,6 @@ nav {
 
 nav > div {
     height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 nav > div > a {
@@ -93,9 +96,6 @@ nav > div:nth-child(3) > a {
 
 .main_content {
     background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 50%;
     width: 40%;
     left: -10%;
@@ -193,12 +193,30 @@ h1 {
     width: 100%;
 }
 
-.achievements_container {
-    gap: 5%;
-    width: 80%;
+.achievements_all {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+}
+
+.achievements_photo {
+    width: 30%;
+    background-color: #f0f0f0;
+}
+
+.achievements_photo > img {
+    width: 25vw;
+    position: relative;
+    left: 50%;
+    top: 5vh;
+    border: 1vw solid #FFFFFF;
+}
+
+.achievements_container {
+    width: 40%;
+    display: flex;
     flex-wrap: wrap;
+    margin-left: 10vw;
 }
 
 .single_achievement > img {
@@ -227,10 +245,7 @@ h1 {
 .single_achievement:nth-child(4) { border-left: .2vw solid purple; }
 
 .form_container {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     background-color: #f0f0f0;
 }
 
@@ -253,7 +268,6 @@ form > input {
 
 form > input:hover, form > input:focus {
     background-color: #FFFFFF;
-
 }
 
 input[type=submit] {
@@ -273,25 +287,13 @@ iframe {
     margin-top: 6vh;
     width: 80%;
     height: 50vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .one_contact {
     max-width: 40%;
     float: left;
     margin: 1vw 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1vw;
-}
-
-.contact_signs {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .one_contact > img {

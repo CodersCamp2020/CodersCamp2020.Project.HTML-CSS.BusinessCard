@@ -15,6 +15,12 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-size: 3vw;
+    letter-spacing: .2vw;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+}
+
 header {
     width: 100%;
     height: 10vh;
@@ -24,6 +30,12 @@ header {
     z-index: 2;
     top: 0;
     left: 0;
+}
+
+.blank {
+    display: block;
+    height: 10vh;
+    width: 100%;
 }
 
 nav {
@@ -65,12 +77,6 @@ nav > div:nth-child(3) > a {
     font-weight: bold;
 }
 
-.blank {
-    display: block;
-    height: 10vh;
-    width: 100%;
-}
-
 .main_view {
     clear: both;
     width: 100%;
@@ -88,7 +94,7 @@ nav > div:nth-child(3) > a {
     background-repeat: no-repeat;
     background-position: 100%;
     width: 25%;
-    top: 40%;
+    top: 50%;
     left: -35%;
     z-index: 0;
     height: 50%;
@@ -99,7 +105,7 @@ nav > div:nth-child(3) > a {
     height: 50%;
     width: 40%;
     left: -10%;
-    top: -40%;
+    top: -35%;
     z-index: 1;
 }
 
@@ -109,12 +115,6 @@ nav > div:nth-child(3) > a {
     font-size: 1vw;
 }
 
-h1 {
-    font-size: 3vw;
-    letter-spacing: .2vw;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.2);
-}
-
 .main_right {
     background-image: url('../img/bg1.jpg');
     background-size: 100%;
@@ -122,7 +122,7 @@ h1 {
     background-repeat: no-repeat;
     width: 40%;
     height: 70%;
-    top: -70%;
+    top: -60%;
     left: 27%;
 }
 
@@ -136,20 +136,21 @@ h1 {
     padding-top: 12vw;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2vw;
+    font-size: 1.2vw;
     color: #383838;
     text-shadow: .2vw .2vw .2vw #FFFFFF;
 }
 
 .technologies_logo {
-    margin-top: 4vw;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
     display: flex;
     flex-flow: wrap;
-    width: 70%;
+    width: 55%;
 }
 
 .single_logo > img {
-    width: 12vw;
+    width: 10vw;
 }
 
 .single_logo > p {
@@ -247,20 +248,52 @@ h1 {
 .form_container {
     flex-wrap: wrap;
     background-color: #f0f0f0;
+    font-size: 1.2vw;
+    padding-bottom: 2vw;
+}
+
+.form_container > div {
+    background-color: #FFFFFF;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    padding: 2vw;
+    height: 55vh;
+}
+
+.form_container > div > h4 {
+    border-bottom: .2vw solid #C8C8C8;
+    padding: .5vw;
+}
+
+.iframe_side {
+    margin-top: 2vw;
+    border-top: .2vw solid red;
+}
+
+iframe {
+    width: 20vw;
+    height: 45vh;
+    margin-top: 2vw;
+}
+
+.form_side {
+    border-top: .2vw solid purple;
+    width: 25vw;
+    padding: 2vw;
 }
 
 form {
-    width: 50%;
+    flex-wrap: wrap;
+    margin-top: 3vw;
 }
 
-form > input {
-    display: block;
+form > input, form > textarea {
     background-color: transparent;
     border: none;
-    border-bottom: .2vw solid #C8C8C8 ;
+    border-bottom: .2vw solid #C8C8C8;
     padding-left: 2%;
-    margin: 2vw 1vw 0vw 10vw;
-    width: 70%;
+    margin: 2vw auto 0vw auto;
+    width: 20vw;
     height: 7vh;
     font-size: 1.2vw;
     transition: .5s all;
@@ -271,32 +304,28 @@ form > input:hover, form > input:focus {
 }
 
 input[type=submit] {
-    background-color: #FFFFFF;
+    background-color: #f0f0f0;
     border: none;
     font-weight: bold;
-    width: 72%;
 }
 
-.side_form {
-    width: 50%;
-    height: 70vh;
-    background-color: #FFFFFF;
+.contact_side {
+    margin-top: 2vw;
+    border-top: .2vw solid cyan;
+    width: 20vw;
 }
 
-iframe {
-    margin-top: 6vh;
+.info_container {
+    flex-wrap: wrap;
+    height: 60%;
+    margin-top: 20%;
+}
+
+.one_info {
     width: 80%;
-    height: 50vh;
-}
-
-.one_contact {
-    max-width: 40%;
-    float: left;
-    margin: 1vw 5%;
     font-size: 1vw;
 }
 
-.one_contact > img {
+.one_info > img {
     width: 2vw;
-    margin: 1vw;
 }

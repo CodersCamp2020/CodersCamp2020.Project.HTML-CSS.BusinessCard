@@ -249,7 +249,7 @@ nav > div:nth-child(3) > a {
     flex-wrap: wrap;
     background-color: #f0f0f0;
     font-size: 1.2vw;
-    padding-bottom: 2vw;
+    padding-bottom: 4vw;
 }
 
 .form_container > div {
@@ -328,4 +328,38 @@ input[type=submit] {
 
 .one_info > img {
     width: 2vw;
+}
+
+footer {
+    font-size: 1.2vw;
+    height: 15vh;
+    font-family: 'Teko', sans-serif;
+}
+
+.logo_footer, .copy_footer {
+    float: left;
+    flex-wrap: wrap;
+    color: #383838;
+}
+
+.copy_footer {
+    padding: 1vw;
+    width: 15vw;
+}
+
+.logo_footer {
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 1vw;
+    border-right: .1vw solid #000000;
+}
+
+footer a {
+    text-decoration: none;
+    color: #383838;
+}
+
+.social_container > img {
+    width: 1.5vw;
+    margin: 0 .5vw 0 .5vw;
 }

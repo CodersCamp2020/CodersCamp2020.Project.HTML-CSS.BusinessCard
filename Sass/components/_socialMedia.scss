@@ -1,9 +1,9 @@
 .socialMedia {
-  position: relative;
   display: inline-flex;
-  justify-content: space-around;
+  position: relative;
   height: 25px;
   width: 176px;
+  justify-content: space-around;
 
   &__listitem {
     position: relative;
@@ -18,11 +18,10 @@
   }
 
   &__img {
-    position: absolute;
     display: block;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
 }

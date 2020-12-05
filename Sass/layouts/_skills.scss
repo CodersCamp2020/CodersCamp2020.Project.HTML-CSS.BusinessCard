@@ -1,110 +1,82 @@
 .skills {
   position: relative;
   z-index: 10;
-  // height: 430px;
   width: 100%;
   margin-bottom: 57px;
-  background-color: $color-bgc;
   padding: 0 7% 57px;
-  // background-color: blue;
+  background-color: $color-bgc;
 
   &::after {
-    // content: "xxxxxxxxxxxxx";
     content: "";
+    display: block;
     position: absolute;
     z-index: -1;
     top: 0;
     bottom: 0;
     left: 30%;
     right: 0;
-    display: block;
     background-color: $color-bgc--special;
-    // opacity: .5;
-    // background-color: red;
   }
-
 
   &__title {
     @include brand-main-title;
-    left: calc(30vw - 20px);
+    // left: calc(30vw - 20px);
     left: calc(50% - 200px);
-
   }
 
   &__box {
     display: flex;
-    justify-content: space-around;
     position: relative;
-    margin: 0 auto;
-
-    // height: 280px;
     max-width: 1240px;
-
+    margin: 0 auto;
+    padding: 38px 0px;
+    justify-content: space-around;
     background-color: $color-bgc;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
-    justify-content: space-around;
-    padding: 38px 0px;
   }
 
   &__item {
     position: relative;
-    text-align: center;
-    // ! flex-grow: 1;
-    // min-width: 200px;
     width: 100%;
-
-    border-left: 3px dashed #FFC53D;
-
+    border-left: 3px dashed #ffc53d;
     padding-left: 25px;
     padding-right: 25px;
+    text-align: center;
   }
-
 
   &__item:first-of-type {
-    // display: none;
     border: none;
-    // border-left: 3px dashed black;
-
-
   }
-
 
   &__img {
     display: inline-block;
-    // margin-left: 50px;
-    // margin-right: 50px;
   }
 
   &__name {
     padding-top: 46px;
-    font-family: $font-family--1;
+    text-align: center;
+    line-height: 28px;
+    font-family: $font-family--primary;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    color: $color-brand--1;
+    color: $color-brand--primary;
   }
 
   &__secondName {
     padding-top: 13px;
-    font-family: $font-family--1;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
     text-align: center;
+    line-height: 28px;
     color: #000000;
+    font-size: 24px;
+    font-family: $font-family--primary;
+    font-weight: normal;
+    font-style: normal;
   }
-
-
-
 }
-
 
 @media (max-width: 1200px) {
   .skills {
-
     &__title {
       left: 35%;
     }
@@ -115,35 +87,25 @@
   .skills {
     padding-left: 0;
     padding-right: 0;
-
   }
 }
 
 @media (max-width: 650px) {
   .skills {
-    // padding-left: 0;
-    // padding-right: 0;
-
     &__box {
       flex-wrap: wrap;
-      // display: none;
-      // width: 80%;
-
     }
 
     &__item {
       border-left: none;
-      border-top: 3px dashed #FFC53D;
+      border-top: 3px dashed #ffc53d;
       margin-top: 30px;
       padding-top: 30px;
     }
-
 
     &__item:first-of-type {
       margin-top: 0;
       padding-top: 0;
     }
-
   }
-
 }

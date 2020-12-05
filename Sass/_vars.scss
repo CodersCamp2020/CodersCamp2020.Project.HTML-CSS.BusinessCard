@@ -1,41 +1,21 @@
-// $color-font: black;
-// $color-font--light: #DDD;
-// $color-font--on-brand-bgc: $color-font--light;
-
-// $color-bgc: $color-font--light;
-// $color-bgc: #d53;
-
-// $color-brand--1: FFC53D;
-// $color-brand--2: FF9A3D;
-:root {
-
-
-
-  // --font-family--2: FF9A3D;
-}
-
-$color-font--1: #222;
-$color-font--2: #515151;
-$color-font--3: #A0A0A0;
-$color-font--light: #FFF;
+$color-font--primary: #222;
+$color-font--secondary: #515151;
+$color-font--tertiary: #a0a0a0;
+$color-font--light: #fff;
 $color-font--on-brand-bgc: $color-font--light;
 
-// --color-bgc: var(--color-font--light);
-$color-bgc: #FFF;
-$color-bgc--special: #FAFAFF;
+$color-bgc: #fff;
+$color-bgc--special: #fafaff;
 
-$color-brand--1: #FFC53D;
-$color-brand--2: #FF9A3D;
+$color-brand--primary: #ffc53d;
+$color-brand--secondary: #ff9a3d;
 
-
-$font-family--1: 'Raleway',
-sans-serif;
-$font-family--2: 'Ubuntu',
-'Raleway',
-sans-serif;
+$font-family--primary: "Raleway", sans-serif;
+$font-family--secondary: "Ubuntu", "Raleway", sans-serif;
 
 $mediaQ-tablet: 768px;
 $mediaQ-mobile-L: 425px;
 $mediaQ-mobile-M: 375px;
+$mediaQ-mobile-S: 320px;
 
 $font-size-standard: 18px;

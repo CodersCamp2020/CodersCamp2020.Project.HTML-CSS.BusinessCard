@@ -1,31 +1,28 @@
 .stickyNav {
   display: flex;
-  justify-content: space-between;
   z-index: 9999;
   position: fixed;
   top: 0;
   left: 0;
   height: 95px;
   width: 100%;
-  background-color: #FFF;
-  color: $color-font--2;
-
+  justify-content: space-between;
+  background-color: #fff;
+  color: $color-font--secondary;
 
   &__wrap {
     display: flex;
-    justify-content: space-between;
     height: 100%;
     width: 100%;
     max-width: 1440px;
-    padding: 45px 45px 0;
     margin: 0 auto;
+    padding: 45px 45px 0;
+    justify-content: space-between;
   }
 
   &__logoContainer {
     display: flex;
     padding: 1.5px;
-
-
   }
 
   &__logoContainer:hover {
@@ -34,15 +31,13 @@
 
   &__title {
     padding-left: 13.27px;
+    text-align: left;
     font-size: 24px;
+    font-family: $font-family--primary;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0.15em;
-    text-align: left;
-    font-family: $font-family--1;
-
-
   }
 
   &__navItemsContainer {
@@ -53,20 +48,18 @@
     display: inline-block;
     margin-left: 40.19px;
     padding: 1.5px;
+    text-align: left;
+    color: $color-font--secondary;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0.02em;
-    text-align: left;
-    color: $color-font--2;
-
   }
 
   &__navItem:hover &__navLink {
     color: red;
     text-shadow: 2px 2px 2px #000000;
-    // text-shadow: 2px 2px 2px #ec0d0d;
   }
 
   li:first-of-type &__navLink {
@@ -76,7 +69,7 @@
   &__burger {
     display: none;
     position: relative;
-    transition: .5s;
+    transition: 0.5s;
     top: 0;
     right: 0;
     height: 24px;
@@ -92,7 +85,7 @@
     width: 100%;
     // border-radius: 10%;
     background-color: black;
-    transition: .5s, background-color 1s;
+    transition: 0.5s, background-color 1s;
   }
 
   &__burgerBar--first {
@@ -113,11 +106,9 @@
     transform: rotate(45deg);
   }
 
-
   &__burger:hover &__burgerBar--second {
     transform: rotate(-45deg);
   }
-
 
   &__burger:hover &__burgerBar--third {
     top: 50%;
@@ -132,10 +123,7 @@
 // ~
 
 @media (max-width: 700px) {
-
-
   .stickyNav {
-
     &__navItemsContainer {
       display: none;
     }
@@ -147,49 +135,10 @@
 }
 
 @media (max-width: 700px) {
-
-
   .stickyNav {
-
-
     &__wrap {
       padding-left: auto;
       padding-right: auto;
-      // padding: 45px 45px 0;
     }
   }
-
-  // .stickyNav {
-  //   &__burger:hover~&__navItemsContainer {
-  //     display: block;
-  //   }
-
-  //   &__navItemsContainer {
-  //     display: none;
-  //     position: absolute;
-  //     flex-direction: column;
-  //     top: 100%;
-  //     left: 0;
-  //     width: 100%;
-  //     background-color: #ccc;
-  //   }
-
-  //   &__navItemsContainer &__navItem {
-  //     width: 100%;
-  //     margin: 15px auto;
-  //     text-align: center;
-  //   }
-
-  //   // &__navItemsContainer:hover li:first-of-type &__navItem {
-  //   &__navItemsContainer:hover li:hover {
-  //     background-color: rgb(255, 255, 255);
-  //   }
-
-
-  //   &__burger {
-  //     display: block;
-  //   }
-  // }
-
-
 }

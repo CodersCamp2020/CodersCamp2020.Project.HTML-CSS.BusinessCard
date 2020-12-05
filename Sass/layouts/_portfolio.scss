@@ -2,49 +2,35 @@
   overflow: hidden;
   position: relative;
   z-index: 10;
-  // height: 430px;
   width: 100%;
-  // margin-bottom: 57px;
-  background-color: $color-bgc;
-  // background-color: $color-bgc--special;
   padding: 0 0 57px;
+  background-color: $color-bgc;
 
   &__title {
     @include brand-main-title;
     display: block;
-    // left: calc(0);
     left: calc(50%);
     transform: translateX(-50%);
-
   }
 
   &__box {
     display: grid;
-    grid-template: repeat(2, 346px) / repeat(11, 1fr);
     width: 100%;
-    // grid-template-columns: repeat(11, 1fr);
-    // grid-template-rows: repeat(2, 346px);
-    // grid-gap: 15px;
+    grid-template: repeat(2, 346px) / repeat(11, 1fr);
   }
-
-
 
   &__item {
     position: relative;
-
   }
 
-  // &__item:nth-child(0) {
   &__item--one {
     grid-column: 1 / 5;
     grid-row: 1 / span 1;
-
   }
 
   &__item--two {
     grid-column: 5 / 8;
     grid-row: 1 / span 1;
-
   }
 
   &__item--three {
@@ -55,7 +41,6 @@
   &__item--four {
     grid-column: 1/4;
     grid-row: 2 / span 1;
-
   }
 
   &__item--five {
@@ -70,32 +55,26 @@
     left: 0;
     height: 100%;
     width: 100%;
-    // ! max-width: 438px;
     max-width: 490px;
-    // ! margin-top: 26px;
     padding-top: 26px;
-    // ! margin-left: 36px;
     padding-left: 36px;
     padding-right: 26px;
-    // background-color: red;
-    font-family: $font-family--1;
+    font-family: $font-family--primary;
     color: $color-font--on-brand-bgc;
   }
 
   &__name {
     padding-bottom: 4px;
-
+    text-align: left;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
-    text-align: left;
   }
 
   &__desc {
     padding-bottom: 34px;
-
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -103,7 +82,8 @@
     letter-spacing: 0.02em;
   }
 
-  &__btn {}
+  &__btn {
+  }
 
   &__imgFiltr {
     z-index: 15;
@@ -123,26 +103,20 @@
   }
 }
 
-
-
 @media (max-width: $mediaQ-tablet) {
   .portfolio {
-
     &__box {
       grid-template: repeat(3, 346px) / repeat(12, 1fr);
     }
 
-    // &__item:nth-child(0) {
     &__item--one {
       grid-column: 1 / span 6;
       grid-row: 1 / span 1;
-
     }
 
     &__item--two {
       grid-column: 7 / span 6;
       grid-row: 1 / span 1;
-
     }
 
     &__item--three {
@@ -153,7 +127,6 @@
     &__item--four {
       grid-column: 1 / span 6;
       grid-row: 3 / span 1;
-
     }
 
     &__item--five {
@@ -165,8 +138,6 @@
 
 @media (max-width: $mediaQ-mobile-L) {
   .portfolio {
-
-
     &__box {
       grid-template: repeat(3, 346px) / repeat(2, 1fr);
     }
@@ -175,30 +146,25 @@
     &__item--one {
       grid-column: 1 / span 2;
       grid-row: 1 / span 1;
-
     }
 
     &__item--two {
       grid-column: 1 / span 1;
       grid-row: 2 / span 1;
-
     }
 
     &__item--three {
-
       display: none;
     }
 
     &__item--four {
       grid-column: 2 / span 1;
       grid-row: 2 / span 1;
-
     }
 
     &__item--five {
       grid-column: 1 / span 2;
       grid-row: 3 / span 1;
     }
-
   }
 }

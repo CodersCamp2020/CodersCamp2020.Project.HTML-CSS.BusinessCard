@@ -1,19 +1,18 @@
 /* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;
-    font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    background-color: #FFF;
+  background-color: #fff;
 }
-
 
 a,
 h1,
@@ -22,35 +21,32 @@ h3,
 h4,
 h5,
 h6 {
-    text-align: center;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    text-decoration: inherit;
-    color: inherit;
-    cursor: default;
-
+  text-align: center;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+  cursor: default;
 }
 
 span {
-    // text-align: center;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    text-decoration: inherit;
-    color: inherit;
-    cursor: default;
-
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+  cursor: default;
 }
 
 p {
-    font-family: inherit;
-    text-align: left;
-    font-size: inherit;
-    color: inherit;
+  text-align: left;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 ol,
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }

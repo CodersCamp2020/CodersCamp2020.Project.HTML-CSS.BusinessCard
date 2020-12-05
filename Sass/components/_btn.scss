@@ -1,22 +1,18 @@
 .btn {
-  //  display: block;
   overflow: hidden;
   height: 50px;
   width: 200px;
   border-radius: 15px;
   border: none;
-  //  background-image: linear-gradient(to right, red, yellow);
-  background-image: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
-
+  background-image: linear-gradient(270deg, #ffc53d 14%, #ff9a3d 68.5%);
+  text-align: center;
   color: $color-font--on-brand-bgc;
-  font-family: $font-family--1;
+  font-family: $font-family--primary;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 50px;
   letter-spacing: 0em;
-  text-align: center;
-
 
   &--small {
     width: 100px;
@@ -27,12 +23,9 @@
   }
 
   &:hover {
-    border: 1px solid #FFC53D;
+    border: 1px solid #ffc53d;
     background-image: none;
     background-color: #fff;
-    color: $color-brand--1;
-
+    color: $color-brand--primary;
   }
-
-
 }

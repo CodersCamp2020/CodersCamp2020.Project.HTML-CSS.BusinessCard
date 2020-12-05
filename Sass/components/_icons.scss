@@ -3,11 +3,10 @@
   position: relative;
   width: 35.95px;
   height: 24px;
-  border: $color-font--2 solid 3px;
+  border: $color-font--secondary solid 3px;
   padding: 0;
   transform: translateY(3px);
 
-  // transform: ;
   &__inside {
     display: inline-block;
     position: absolute;
@@ -16,9 +15,9 @@
     height: calc(15px);
     width: 100%;
     transform: translate(-50%, -50%);
+    text-align: center;
     font-size: 15px;
     font-weight: bold;
-    text-align: center;
     line-height: 100%;
   }
 
@@ -31,7 +30,7 @@
     transform: translateX(-50%);
     height: 8px;
     width: 8px;
-    background-color: $color-font--2;
+    background-color: $color-font--secondary;
   }
 
   &::after {
@@ -43,6 +42,6 @@
     transform: translateX(-50%);
     height: 3px;
     width: 80%;
-    background-color: $color-font--2;
+    background-color: $color-font--secondary;
   }
 }

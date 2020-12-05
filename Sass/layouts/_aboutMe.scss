@@ -1,161 +1,110 @@
 .aboutMe {
-
-  position: relative;
   z-index: 10;
-  // height: 430px;
+  position: relative;
   width: 100%;
   margin-bottom: 57px;
-  background-color: $color-bgc;
   padding: 0 7% 75px;
-
+  background-color: $color-bgc;
 
   &::after {
-    // content: "xxxxxxxxxxxxx";
     content: "";
-    position: absolute;
     z-index: -1;
+    display: block;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 30%;
-    display: block;
     background-color: $color-bgc--special;
-    // opacity: .5;
-    // background-color: red;
-    // text-align: center;
   }
-
-
 
   &__title {
     @include brand-main-title;
     display: inline-block;
-    // left: calc(0vw + 50px);
-    // left: calc(50% - 450px);
     left: calc(50% - 450px);
     transform: translateX(-50%);
-    // max-width: 1240px;
-    // margin-left: (30vw);
   }
 
-
-
-
   &__box {
-    position: relative;
     display: flex;
-    justify-content: space-between;
     position: relative;
     margin: 0 auto;
-    // height: 280px;
+    padding: 51px 33px;
     max-width: 1240px;
+    justify-content: space-between;
     background-color: $color-bgc;
     filter: drop-shadow(3px 2px 10px rgba(0, 0, 0, 0.15));
-    padding: 51px 33px;
-    // flex-wrap: wrap;
   }
 
   &__personalContainer {
-    position: relative;
     display: flex;
+    position: relative;
+    min-width: 320px;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-grow: 4;
     align-self: flex-start;
-    min-width: 320px;
-    // padding-top: 51px;
-    // justify-content: space-around;
-    // position: relative;
-    // height: 280px;
-    // max-width: 1240px;
-    // background-color: $color-bgc;
-    // box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
   }
 
-
   &__photoBox {
-    flex-grow: 2;
-    // overflow: hidden;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 30px;
-    // text-align: center;
+    flex-grow: 2;
   }
 
   &__photo {
-    border-radius: 50%;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
     object-fit: cover;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-
   }
 
   &__personalList {
-    flex-grow: 2;
-
     padding-left: 10px;
     padding-right: 10px;
+    flex-grow: 2;
   }
 
   &__personalItem {
-
     display: flex;
+    padding-bottom: 9px;
     align-items: center;
-
-    font-family: $font-family--2;
+    text-align: left;
+    font-family: $font-family--secondary;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: 29px;
     letter-spacing: 0.02em;
-    text-align: left;
-    padding-bottom: 9px;
-
-    // flex-wrap: wrap;
   }
 
   // !  daj aby ostatni nie miał paddingu
 
-
   &__spanSpecial {
-    font-family: $font-family--1;
     padding-left: 8px;
-    color: $color-brand--1;
+    font-family: $font-family--primary;
+    color: $color-brand--primary;
   }
 
   &__desc {
     position: relative;
     display: flex;
-    align-items: center;
-    // display: inline-flex;
     height: auto;
     max-width: 680px;
-    flex-grow: 6;
-    // padding: 0 55px 0 59px;
     padding-left: 26px;
     padding-right: 26px;
-    // padding-top: 50px;
-    // padding-bottom: 50px;
-
+    border-left: 3px dashed #ffc53d;
+    align-items: center;
+    flex-grow: 6;
+    line-height: 172.35%;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.8rem;
-    line-height: 172.35%;
-    /* or 31px */
     letter-spacing: 0.04em;
-
-    border-left: 3px dashed #FFC53D;
   }
-
-  // &__desc::before {
-  //   @include brand-line-vertical;
-  //   top: 43px;
-
-  // }
-
 }
-
 
 @media (max-width: 1300px) {
   .aboutMe {
@@ -176,16 +125,13 @@
   }
 }
 
-
 @media (max-width: $mediaQ-tablet) {
   .aboutMe {
-
     &__title {
       left: 25%;
     }
 
     &__box {
-
       flex-wrap: wrap;
     }
 
@@ -199,10 +145,8 @@
       padding-right: 0px;
       margin-top: 25px;
       border: none;
-      border-top: 3px dashed #FFC53D;
-
+      border-top: 3px dashed #ffc53d;
     }
-
   }
 }
 
@@ -210,7 +154,6 @@
   .aboutMe {
     &__title {
       left: 35%;
-
     }
 
     &__box {
@@ -225,37 +168,5 @@
     &__personalItem {
       flex-direction: column;
     }
-
-    &__desc {
-      // padding-left: 5px;
-      // padding-right: 10px;
-
-    }
-
   }
 }
-
-
-// @media (max-width: $mediaQ-tablet) {
-//   .aboutMe {
-
-
-//     &__box {
-
-//       flex-wrap: wrap;
-//     }
-
-//     &__photoBox {
-//       text-align: center;
-//     }
-
-//     &__desc {
-//       padding-top: 25px;
-//       margin-top: 25px;
-//       border: none;
-//       border-top: 3px dashed #FFC53D;
-
-//     }
-
-//   }
-// }

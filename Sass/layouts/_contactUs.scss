@@ -1,45 +1,33 @@
 .contactUs {
   position: relative;
   z-index: 10;
-  // height: 430px;
   width: 100%;
-
-  // margin-bottom: 57px;
-  background-color: $color-bgc--special;
-  // background-color: red;
-  // background-color: $color-bgc--special;
   padding: 0 0 90px;
+  background-color: $color-bgc--special;
 
   &__title {
     @include brand-main-title;
     display: inline-block;
-    // left: calc(0vw + 50px);
-    // left: calc(50% - 450px);
     left: calc(50% - 450px);
     transform: translateX(-50%);
-    // max-width: 1240px;
-    // margin-left: (30vw);
   }
 
   &__mainBox {
     display: flex;
-    flex-direction: row;
     position: relative;
     left: 50%;
     width: 1240px;
     max-width: 100%;
     transform: translateX(-50%);
+    flex-direction: row;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     flex-wrap: wrap;
-
   }
 
   &__infoBox,
   &__formBox {
     position: relative;
     padding: 35px 0 35px 52px;
-    // min-width: calc($mediaQ-tablet);
-
   }
 
   &__infoBox {
@@ -47,13 +35,10 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     flex-grow: 1;
-    // center;
-    background: $color-brand--2;
+    background: $color-brand--secondary;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     color: $color-font--light;
   }
-
-
 
   &__infoBox::after {
     content: "";
@@ -65,18 +50,12 @@
     height: 0;
     border-top: 24px solid transparent;
     border-bottom: 24px solid transparent;
-
-    border-left: 32px solid $color-brand--2;
+    border-left: 32px solid $color-brand--secondary;
   }
 
   &__encouragingContact {
-    // width: 300px;
     flex-grow: 1;
-    // width: auto;
-    // display: none;
     align-self: start;
-
-
   }
 
   &__logoMessage {
@@ -87,33 +66,22 @@
   &__encouragingText {
     display: block;
     width: 300px;
-    // !
-    // !
-    // !
     padding: 25px 0 25px;
-
-    font-family: $font-family--1;
+    font-family: $font-family--primary;
     font-style: normal;
     font-weight: normal;
     font-size: 1.8rem;
     line-height: 172.35%;
     letter-spacing: 0.04em;
-
   }
 
   &__contactInfo {
-    // position: absolute;
     padding: 25px 0 0;
-    // flex-grow: 1;
-    // margin: 0;  
-    // align-self: end;
-
-
   }
 
   &__contactData {
     text-align: left;
-    font-family: $font-family--2;
+    font-family: $font-family--secondary;
     font-style: normal;
     font-weight: normal;
     font-size: 1.8rem;
@@ -124,7 +92,6 @@
   &__contactData a {
     display: inline-block;
     padding: 0;
-    // ! text-decoration: underline;
   }
 
   &__contactData a::after {
@@ -135,7 +102,6 @@
     height: 1px;
     width: 100%;
     background-color: $color-font--light;
-
   }
 
   &__contactData--special {
@@ -143,27 +109,22 @@
     font-weight: bold;
   }
 
-
-
   &__formBox {
     padding: 33px 45px;
+    flex-grow: 3;
     background-color: $color-bgc;
     text-align: right;
-    flex-grow: 3;
   }
 
   &__formTitle {
     padding-bottom: 25px;
-
-    font-family: $font-family--1;
+    text-align: left;
+    font-family: $font-family--primary;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 172.35%;
-    /* or 62px */
-
     letter-spacing: 0.04em;
-    text-align: left;
     color: #222222;
   }
 
@@ -172,27 +133,19 @@
   &__formTopic,
   &__formMessage {
     height: 56px;
-    // ! width: 640px;
     width: 100%;
-    // width: 640px;
-    // min-width: 640px;
-    // margin: auto;
-    // padding: 0 24px;
-    background: #FAFAFF;
+    background: #fafaff;
     border-radius: 15px;
     border: none;
     padding: 24px;
-
-    font-family: $font-family--1;
+    font-family: $font-family--primary;
     font-style: normal;
     font-weight: normal;
     font-size: 1.8rem;
     line-height: 25px;
     display: flex;
     align-items: center;
-
-    color: #A0A0A0;
-
+    color: #a0a0a0;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 
@@ -203,45 +156,34 @@
     margin-bottom: 17px;
   }
 
-  &__formName {}
+  &__formName {
+  }
 
-  &__formEmail {}
+  &__formEmail {
+  }
 
-  &__formTopic {}
+  &__formTopic {
+  }
 
   &__formMessage {
-    // position: absolute;
     height: 180px;
     margin-bottom: 31px;
   }
 
   &__btn {
-    // position: relative;
-    // display: inline-block;
-    // right: 0;
-    // margin-right: 0;
   }
 }
 
-
 @media (max-width: 1240px) {
   .contactUs {
-
-
-
     &__title {
       left: 25%;
-
     }
-
   }
 }
 
 @media (max-width: $mediaQ-tablet) {
   .contactUs {
-
-    // display: none;
-    // min-width: calc($mediaQ-tablet);
     &__infoBox,
     &__formBox {
       width: 100%;
@@ -249,31 +191,25 @@
 
     &__infoBox::after {
       content: "";
-      position: absolute;
       z-index: 50;
+      position: absolute;
       top: 100%;
-      // bottom: 40px;
       left: 50%;
       width: 0;
       height: 0;
       border-left: 24px solid transparent;
       border-right: 24px solid transparent;
-      border-top: 32px solid $color-brand--2;
+      border-top: 32px solid $color-brand--secondary;
       transform: translateX(-50%);
     }
-
   }
 }
 
 @media (max-width: $mediaQ-mobile-L) {
   .contactUs {
-
     &__title {
       left: 35%;
-
     }
-
-
 
     &__formBox {
       padding-left: 0;
@@ -293,37 +229,28 @@
     }
 
     &__btn {
-      position: relative;
       display: block;
-      // right: 0;
-      // margin-right: 0;
+      position: relative;
       width: 100%;
       border-radius: 0;
-      // display: none;
     }
-
   }
 }
 
-
 @media (max-width: $mediaQ-mobile-M) {
   .contactUs {
-
     &__encouragingText {
-      // display: block;
       width: auto;
     }
 
     &__title {
       left: 35%;
-
     }
 
     &__infoBox {
       padding-left: 30px;
       padding-right: 30px;
     }
-
 
     &__formBox {
       padding-left: 0;
@@ -339,14 +266,10 @@
     }
 
     &__btn {
-      position: relative;
       display: block;
-      // right: 0;
-      // margin-right: 0;
+      position: relative;
       width: 100%;
       border-radius: 0;
-      // display: none;
     }
-
   }
 }

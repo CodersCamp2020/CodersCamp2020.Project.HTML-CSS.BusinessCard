@@ -1,29 +1,12 @@
-// @mixin brand-line-vertical {
-//   content: "";
-//   // display: block;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   // left: -26px;
-//   height: 196px;
-//   // width: 1px;
-//   width: 1px;
-//   border-left: 3px dashed #FFC53D;
-
-// }
-
 @mixin brand-main-title {
-
   display: inline-block;
   position: relative;
   left: calc(0);
   padding: 18px 0;
-  // padding: 18px 0 18px calc(30% + 50px);
-  font-family: $font-family--1;
-  // font-family: Raleway;
+  line-height: 38px;
+  font-family: $font-family--primary;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
-  line-height: 38px;
   letter-spacing: 0.02em;
 }

@@ -5,13 +5,13 @@
   width: 100%;
 
   &__copyrights {
-    color: #A0A0A0;
-    font-family: $font-family--2;
+    text-align: center;
+    color: #a0a0a0;
+    font-family: $font-family--secondary;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.02em;
-    text-align: center;
   }
 }

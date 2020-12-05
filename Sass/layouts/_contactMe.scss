@@ -7,35 +7,30 @@
   &__title {
     margin-bottom: 36px;
     color: #222222;
-    font-family: $font-family--1;
+    text-align: center;
+    font-family: $font-family--primary;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: 42px;
     letter-spacing: 0.02em;
-    text-align: center;
-
-
   }
 
   &__btnContainer {
     display: inline-flex;
-
     text-align: center;
-
   }
 
   &__btn {
-    // display: inline-block;
-
     margin: 0 40px;
   }
 
-  &__btn--contact {}
+  &__btn--contact {
+  }
 
-  &__btn--cv {}
+  &__btn--cv {
+  }
 }
-
 
 @media (max-width: $mediaQ-tablet) {
   .contactMe {
@@ -83,12 +78,18 @@
   }
 }
 
-
 @media (max-width: $mediaQ-mobile-M) {
   .contactMe {
     &__title {
       font-size: 16px;
     }
+  }
+}
 
+@media (max-width: $mediaQ-mobile-S) {
+  .contactMe {
+    &__title {
+      font-size: 14px;
+    }
   }
 }

@@ -1064,8 +1064,11 @@ li:first-of-type .stickyNav__navLink {
   line-height: 25px;
   display: flex;
   align-items: center;
-  color: #a0a0a0;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.contactUs__formName::placeholder, .contactUs__formEmail::placeholder, .contactUs__formTopic::placeholder, .contactUs__formMessage::placeholder {
+  color: #a0a0a0;
 }
 
 .contactUs__formName, .contactUs__formEmail, .contactUs__formTopic {

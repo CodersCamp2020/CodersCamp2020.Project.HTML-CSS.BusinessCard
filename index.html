@@ -242,12 +242,12 @@
             </h4>
           </article>
         </section>
-        <form class="contactUs__formBox" action="index.html" method="POST" id="contactForm>
+        <form class="contactUs__formBox" action="index.html" method="POST" id="contactForm">
           <h3 class="contactUs__formTitle">Let’s start!</h3>
-          <input class="contactUs__formName" type="text" value="Name" />
-          <input class="contactUs__formEmail" type="text" value="Your e-mail adress" />
-          <input class="contactUs__formTopic" type="text" value="Topic" />
-          <textarea class="contactUs__formMessage" type="text">Message</textarea>
+          <input class="contactUs__formName" id="username" type="text" placeholder="Name" value="" name="username" required minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+" />
+          <input class="contactUs__formEmail" id="email" type="email" value="" placeholder="Your e-mail adress" pattern=".+@globex.com" size="30" required />
+          <input class="contactUs__formTopic" type="text" value="" id="topic" name="topic" required minlength="3" maxlength="30" pattern="[a-zA-Z0-9]+" placeholder="Topic" />
+          <textarea class="contactUs__formMessage" type="text" id="message" name="message" required minlength="10" maxlength="220" placeholder="Message"></textarea>
           <button class="contactUs__btn btn btn--small" type="submit" form="contactForm" value="Submit">Send</button>
         </form>
       </div>

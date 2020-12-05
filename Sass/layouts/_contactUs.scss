@@ -145,8 +145,14 @@
     line-height: 25px;
     display: flex;
     align-items: center;
-    color: #a0a0a0;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__formName::placeholder,
+  &__formEmail::placeholder,
+  &__formTopic::placeholder,
+  &__formMessage::placeholder {
+    color: #a0a0a0;
   }
 
   &__formName,

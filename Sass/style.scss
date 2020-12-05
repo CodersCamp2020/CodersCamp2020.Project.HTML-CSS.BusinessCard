@@ -6,19 +6,18 @@
 
 @import 'mixins';
 
-@import 'btn';
-@import 'icons';
+@import 'components/btn';
+@import 'components/icons';
+@import 'components/socialmedia';
 
-@import 'stickyNav';
-@import 'titleHeader';
-@import 'socialmedia';
-@import 'contactMe';
+@import 'layouts/stickyNav';
+@import 'layouts/titleHeader';
+@import 'layouts/contactMe';
+@import 'layouts/aboutMe';
+@import 'layouts/skills';
+@import 'layouts/portfolio';
+@import 'layouts/contactUs';
+@import 'layouts/footer';
 
-@import 'aboutMe';
-@import 'skills';
-@import 'portfolio';
-@import 'contactUs';
-
-@import 'footer';
-
-@import 'funnyAnimation/module';
+@import 'components/funnyAnimation/module';
+// @import 'components/funnyAnimation/module';

@@ -151,6 +151,38 @@ body {
   background-color: #515151;
 }
 
+.socialMedia {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 25px;
+  width: 176px;
+}
+
+.socialMedia__listitem {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.socialMedia__listitem--github {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.socialMedia__img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .stickyNav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,38 +408,6 @@ li:first-of-type .stickyNav__navLink {
   .titleHeader__titleBox {
     font-size: 6px;
   }
-}
-
-.socialMedia {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 25px;
-  width: 176px;
-}
-
-.socialMedia__listitem {
-  position: relative;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  background-color: white;
-}
-
-.socialMedia__listitem--github {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.socialMedia__img {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .contactMe {

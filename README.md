@@ -4,7 +4,8 @@
 
 ---
 
-Cześć, w projekcie odwzorowałem stronę 1:1 z przykladu podanego przez organizatorów dostępnego pod [tym linkiem](https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-id=0%3A1). Strona odwzorowana jest dla szerokości 1440px. W projekcie uwzględniłem RWD.
+Cześć, w projekcie odwzorowałem stronę 1:1 z przykladu podanego przez organizatorów dostępnego [pod tym linkiem](https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-id=0%3A1). Strona odwzorowana jest dla szerokości 1440px. W projekcie uwzględniłem RWD.
+Jeśli chcesz zobaczyć napisaną przeze mnie stronę to znajdziesz ją [pod tym linkiem](https://piotrwr.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/)
 
 ---
 

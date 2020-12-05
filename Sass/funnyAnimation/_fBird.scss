@@ -1,0 +1,81 @@
+.fBird {
+    z-index: -2;
+    overflow: hidden;
+    position: absolute;
+    top: 20%;
+    left: -20%;
+    height: 10vh;
+    width: 20vh;
+    // background-color: #000;
+    animation: fBird__portrait 1s linear infinite both alternate-reverse, fBird__landscape 12s linear infinite both;
+
+    // <img class="fBird__img" src="img/fBird/FIB.png" alt="">
+    &__img {
+        height: 30vh;
+        transform: translate(0%, 0%);
+        animation: fBird__anim .2s infinite both steps(3) alternate-reverse;
+    }
+}
+
+@keyframes fBird__anim {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+
+    100% {
+        transform: translate(0%, -99%);
+    }
+
+}
+
+@keyframes fBird__portrait {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+
+    100% {
+        transform: translate(0%, -99%);
+    }
+}
+
+@keyframes fBird__landscape {
+    // 0% {
+    //     left: -20%;
+    // }
+
+    // 100% {
+    //     left: 120%;
+    // }
+
+    0% {
+        top: 20%;
+        left: -20%;
+    }
+
+    33.3333% {
+        top: 20%;
+        left: 120%;
+    }
+
+    33.3334% {
+        top: 50%;
+        left: -20%;
+    }
+
+    66.6666% {
+        top: 50%;
+        left: 120%;
+    }
+
+    66.6667% {
+        top: 35%;
+        left: -20%;
+    }
+
+    100% {
+        top: 35%;
+        left: 120%;
+    }
+}

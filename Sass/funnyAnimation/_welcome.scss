@@ -1,0 +1,207 @@
+/* welcome */
+
+.welcome {
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    height: 105vh;
+    width: 100%;
+    background-color: skyblue;
+    font-family: 'Dancing Script', cursive;
+    font-size: 10px;
+    /* background-image: url("../img/header-bg-mountains.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; */
+
+
+    @media (min-width: 360px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 411px) {
+        font-size: 14px;
+    }
+
+
+    @media (min-width: 768px) {
+        font-size: 21px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 25px;
+    }
+
+
+    @media (orientation: landscape) and (min-width: 360px) {
+        font-size: 10px;
+    }
+
+    @media (orientation: landscape) and (min-height: 411px) {
+        font-size: 12px;
+    }
+
+    @media (orientation: landscape) and (min-width: 812px) {
+        font-size: 13px;
+    }
+
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+        font-size: 20px;
+    }
+
+
+    @media (orientation: landscape) and (min-width: 1366px) {
+        font-size: 25px;
+    }
+
+    &::after {
+        z-index: 3;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 5%;
+        background-color: green;
+    }
+
+    &__title {
+        position: absolute;
+        top: 18%;
+        right: 0;
+        left: 0;
+        font-size: 2em;
+        text-align: center;
+
+        @media (orientation: landscape) {
+            top: 16%;
+        }
+    }
+
+    &__name {
+        position: absolute;
+        top: 23%;
+        right: 0;
+        left: 0;
+        font-size: 3.5em;
+        text-align: center;
+
+
+        @media (orientation: landscape) {
+            top: 25%;
+        }
+
+    }
+
+    &__description {
+        position: absolute;
+        top: 33%;
+        right: 0;
+        left: 0;
+        font-size: 2.5em;
+        text-align: center;
+
+        @media (orientation: landscape) {
+            top: 39%;
+        }
+
+        @media (orientation: landscape) and (min-width: 812px) {
+            top: 42%;
+        }
+    }
+
+
+
+    &__button {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        color: black;
+        font-size: 10em;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        opacity: .5;
+        animation: welcome__button__anim 3s both infinite linear;
+
+        &:hover {
+            color: #222;
+            cursor: pointer;
+
+        }
+
+    }
+
+
+    &__mountainsFront {
+        z-index: -1;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 40%);
+        /* bottom: -20%; */
+        bottom: 0;
+        width: 100%;
+        height: 75%;
+
+        @media (orientation: landscape) {
+            height: 120%;
+        }
+    }
+
+    &__mountainsMiddle {
+        z-index: -2;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        /* bottom: -10%; */
+        bottom: 0%;
+        width: 100%;
+        height: 75%;
+
+        @media (orientation: landscape) {
+            height: 120%;
+        }
+    }
+
+    &__mountainsBack {
+        z-index: -4;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        bottom: 0%;
+        width: 100%;
+        height: 75%;
+
+        @media (orientation: landscape) {
+            height: 120%;
+        }
+    }
+
+
+
+}
+
+@keyframes welcome__button__anim {
+    0% {
+        transform: translate(-50%, 45%);
+    }
+
+    5% {
+        transform: translate(-50%, 45%);
+    }
+
+    20% {
+        transform: translate(-50%, 55%);
+    }
+
+    35% {
+        transform: translate(-50%, 45%);
+    }
+
+    100% {
+        transform: translate(-50%, 45%);
+    }
+
+}

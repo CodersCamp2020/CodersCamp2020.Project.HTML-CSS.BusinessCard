@@ -144,7 +144,20 @@
       display: block;
     }
   }
+}
 
+@media (max-width: 700px) {
+
+
+  .stickyNav {
+
+
+    &__wrap {
+      padding-left: auto;
+      padding-right: auto;
+      // padding: 45px 45px 0;
+    }
+  }
 
   // .stickyNav {
   //   &__burger:hover~&__navItemsContainer {

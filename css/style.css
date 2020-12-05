@@ -299,6 +299,13 @@ li:first-of-type .stickyNav__navLink {
   }
 }
 
+@media (max-width: 700px) {
+  .stickyNav__wrap {
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
 .titleHeader {
   display: inline-block;
   overflow: hidden;
@@ -638,7 +645,7 @@ li:first-of-type .stickyNav__navLink {
 
 @media (max-width: 768px) {
   .aboutMe__title {
-    left: calc(25%);
+    left: 25%;
   }
   .aboutMe__box {
     -ms-flex-wrap: wrap;
@@ -649,9 +656,30 @@ li:first-of-type .stickyNav__navLink {
   }
   .aboutMe__desc {
     padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-top: 25px;
     border: none;
     border-top: 3px dashed #FFC53D;
+  }
+}
+
+@media (max-width: 375px) {
+  .aboutMe__title {
+    left: 35%;
+  }
+  .aboutMe__box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .aboutMe__personalContainer {
+    min-width: auto;
+  }
+  .aboutMe__personalItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1201,10 +1229,6 @@ li:first-of-type .stickyNav__navLink {
   margin-bottom: 31px;
 }
 
-.contactUs__btn {
-  display: inline-block;
-}
-
 @media (max-width: 1240px) {
   .contactUs__title {
     left: 25%;
@@ -1234,6 +1258,50 @@ li:first-of-type .stickyNav__navLink {
 @media (max-width: 425px) {
   .contactUs__title {
     left: 35%;
+  }
+  .contactUs__formBox {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .contactUs__formTitle {
+    text-align: center;
+  }
+  .contactUs__formName, .contactUs__formEmail, .contactUs__formTopic, .contactUs__formMessage {
+    border-radius: 0;
+  }
+  .contactUs__btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .contactUs__encouragingText {
+    width: auto;
+  }
+  .contactUs__title {
+    left: 35%;
+  }
+  .contactUs__infoBox {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contactUs__formBox {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .contactUs__formName, .contactUs__formEmail, .contactUs__formTopic, .contactUs__formMessage {
+    border-radius: 0;
+  }
+  .contactUs__btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 0;
   }
 }
 

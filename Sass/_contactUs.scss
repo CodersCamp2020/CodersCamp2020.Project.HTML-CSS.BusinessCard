@@ -217,7 +217,7 @@
 
   &__btn {
     // position: relative;
-    display: inline-block;
+    // display: inline-block;
     // right: 0;
     // margin-right: 0;
   }
@@ -271,6 +271,81 @@
     &__title {
       left: 35%;
 
+    }
+
+
+
+    &__formBox {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+
+    &__formTitle {
+      text-align: center;
+    }
+
+    &__formName,
+    &__formEmail,
+    &__formTopic,
+    &__formMessage {
+      border-radius: 0;
+    }
+
+    &__btn {
+      position: relative;
+      display: block;
+      // right: 0;
+      // margin-right: 0;
+      width: 100%;
+      border-radius: 0;
+      // display: none;
+    }
+
+  }
+}
+
+
+@media (max-width: $mediaQ-mobile-M) {
+  .contactUs {
+
+    &__encouragingText {
+      // display: block;
+      width: auto;
+    }
+
+    &__title {
+      left: 35%;
+
+    }
+
+    &__infoBox {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+
+    &__formBox {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+
+    &__formName,
+    &__formEmail,
+    &__formTopic,
+    &__formMessage {
+      border-radius: 0;
+    }
+
+    &__btn {
+      position: relative;
+      display: block;
+      // right: 0;
+      // margin-right: 0;
+      width: 100%;
+      border-radius: 0;
+      // display: none;
     }
 
   }

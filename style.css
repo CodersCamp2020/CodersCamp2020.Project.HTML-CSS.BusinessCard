@@ -43,6 +43,7 @@ a:hover {
 }
 
 .nav-wrapper {
+    position: fixed;
     margin: auto;
     height: 60px;
     display: grid;

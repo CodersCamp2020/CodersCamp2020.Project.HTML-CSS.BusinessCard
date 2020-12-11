@@ -1,0 +1,10 @@
+@use "sass:map";
+
+$colors: (
+    black-true: #000,
+    black-lighter: #242424,
+    black-darker: #1F1F1F,
+    grey-main: #757575,
+    yellow-accent: #FF9900,
+    yellow-accent-transparent: rgba(#FF9900, 0.7)
+);

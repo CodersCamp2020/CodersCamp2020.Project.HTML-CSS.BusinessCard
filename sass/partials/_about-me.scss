@@ -1,0 +1,25 @@
+.page__about-me {
+    padding: 13.5vh 8vw;
+}
+
+.about-me {
+    min-height: 750px;
+    background-color: map-get($colors, 'black-darker');
+}
+
+.about-me__title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.about-me__image {
+    float: left;
+    width: 40%;
+    margin-right: 40px;
+}
+
+.about-me__first-paragraph,
+.about-me__second-paragraph {
+    display: inline-block;
+    width: 50%;
+}

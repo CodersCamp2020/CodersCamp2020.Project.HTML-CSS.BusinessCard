@@ -1,0 +1,43 @@
+.title-text {
+    font: 4rem $oswald;
+    color: map-get($colors, 'yellow-accent');
+    letter-spacing: 1px;
+    &--black {
+        color: map-get($colors, 'black-true');
+    }
+}
+
+.subtitle-text {
+    font: 2rem $oswald;
+    color: map-get($colors, 'grey-main');
+    &--bold {
+        font-weight: bold;
+    };
+    &--white {
+        color: white;
+    }
+}
+
+.text {
+    font: 1.2rem $open-sans;
+    color: map-get($colors, 'grey-main');
+    &--bold {
+        font-weight: bold;
+    };
+    &--small {
+        font-size: 1rem;
+    };
+    &--smallest {
+        font-size: 0.8rem;
+    };
+    &--yellow {
+        color: map-get($colors, 'yellow-accent');
+    };
+    &--yellow-transparent {
+        color: map-get($colors, 'yellow-accent-transparent');
+    };
+    &--black-darker {
+        color: map-get($colors, 'black-darker');
+    };
+}
+

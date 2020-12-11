@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    // text-rendering: optimizeSpeed;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

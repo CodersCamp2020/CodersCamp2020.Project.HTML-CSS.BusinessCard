@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodersCamp | Projekt 1 - Aleksander Aamanczuk portfolio</title>
     <meta
       name="description"
-      content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!"
+      content="Pierwszy projekt w ramach kursu CodersCamp 2020 - portfolio fotograficzne"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/loading.css" />
   </head>
 
   <body>
-    <p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
+    <div class="loader">
+      <div class="spin">Loading...</div>
+    </div>
+
+    <header id="topHeader">
+      <div class="header-bar">
+        <div class="header-image">
+          <a href="#">
+            <img src="img/logo.png" alt="Aleksander Foto" class="logo-img" />
+          </a>
+        </div>
+        <nav id="navbar">
+          <div class="header-nav">
+            <div class="normal-menu">
+              <div class="header-list">
+                <ul>
+                  <a href="index.html#about-me"> <li>O Mnie</li></a>
+                  <a href="index.html#news"> <li>Oferta</li></a>
+                  <a href="index.html#projects"> <li>Portfolio</li></a>
+                  <a href="gallery.html"> <li>Galeria</li></a>
+                  <a href="index.html#contact"> <li>Kontakt</li></a>
+                </ul>
+              </div>
+            </div>
+            <div class="toggle-menu">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="header-list">
+                <ul>
+                  <a href="index.html#about-me"> <li>O Mnie</li></a>
+                  <a href="index.html#news"> <li>Oferta</li></a>
+                  <a href="index.html#projects"> <li>Portfolio</li></a>
+                  <a href="gallery.html"> <li>Galeria</li></a>
+                  <a href="index.html#contact"> <li>Kontakt</li></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <script type="text/javascript" src="js/loading.js"></script>
   </body>
 </html>

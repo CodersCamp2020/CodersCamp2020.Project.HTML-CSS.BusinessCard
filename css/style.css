@@ -1,0 +1,102 @@
+:root {
+  --bg-color: #222;
+  --main-color: #ff6347;
+  --font-color: #efefef;
+}
+
+body {
+  background-color: var(--bg-color);
+  /* This pattern is downloaded from www.subtlepatterns.com  */
+  background-image: url("../img/txture.png");
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--font-color);
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header-bar,
+.header-bar ul {
+  display: flex;
+}
+
+.header-bar {
+  position: relative;
+  background-color: #dedede;
+  height: 5rem;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.header-image {
+  position: relative;
+  z-index: 99;
+  background-color: black;
+  height: 5rem;
+  padding: 15px 15px 10px 20px;
+  box-sizing: border-box;
+}
+
+.logo-img {
+  max-width: 15rem;
+  padding: 0px 10px;
+}
+
+.header-nav {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  margin-right: 6rem;
+}
+
+.header-nav li {
+  margin-right: 20px;
+  color: #222;
+  font-weight: 700;
+}
+
+@media (max-width: 840px) {
+  .normal-menu {
+    display: none;
+  }
+
+  .header-list ul {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    right: -55px;
+    top: -180px;
+    background-color: #dededeaa;
+    padding: 20px 120px 20px 40px;
+    z-index: -1;
+  }
+
+  .header-list ul a {
+    display: block;
+    font-size: 1.3rem;
+    margin: 10px 0;
+  }
+
+  .header-nav {
+    margin-right: 0;
+  }
+
+  .header-nav li {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 370px) {
+  .logo-img {
+    max-width: 13rem;
+    padding: 6px 2px;
+  }
+}

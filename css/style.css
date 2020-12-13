@@ -40,8 +40,8 @@ img {
     display: block;
 }
 
-img:hover {
-    transform: scale(1.2);
+a, button {
+    cursor: pointer;
 }
 
 
@@ -61,6 +61,20 @@ img:hover {
     grid-column-start: 2;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
 /***** header ****/
 
 .header {
@@ -74,6 +88,7 @@ img:hover {
     display: flex;
     padding: 0 calc((100vw - 1120px)/2);
     /* color: var(--primary-text-color); */
+    z-index: 1;
 }
 
 .header-logo {
@@ -81,13 +96,25 @@ img:hover {
     display: inline-block;
     /* margin-left: 1rem; */
     /* text-decoration: none; */
+    padding: 0 1rem;
 }
 
 .header-logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
+    /* background-color: var(--secondary-color); */
+    /* background-image:  linear-gradient(0deg, #b3ddd156 50%, var(--background-color)); */
+    /* border-radius: 0 0 1rem 1rem; */
+    border-bottom: 2px solid var(--secondary-color);
 }
-.header-logo a { 
+.header-logo:active {
+    background-color: var(--primary-color);
+}
+
+
+.header-logo a:hover { 
     /* text-decoration: none; */
+    /* background-color: var(--secondary-color); */
+    /* border-radius: .51em; */
 }
 
 .header-navigation {
@@ -116,9 +143,14 @@ img:hover {
 }
 
 .header-item a:hover {
-    /* background-color: var(--secondary-color); */
-    border-radius: 1em;
-    border-bottom: 4px solid var(--secondary-color);
+    /* background-image: linear-gradient(0deg, #b3ddd156 50%, var(--background-color)); */
+    /* border-radius: 0 0 1em 1em; */
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+
+.header-item:active{
+    transform: translateY(3px);
 }
 
 .header-item a:link {
@@ -147,10 +179,36 @@ img:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(45deg, #b3ddd156 50%, var(--background-color)), url('../assets/RIO_104.jpg')  ;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    /* background-image: linear-gradient(to bottom, #ADB2B6, #ABAEB3); */
+    /* box-shadow: -2px 2px 1px 1px #223a3436; */
+}
+
+.hero > * {
+    /* color: var(--secondary-text-color); */
+}
+.hero:hover{
+    /* background-image:  url('../assets/RIO_104.jpg')  ; */
+    /* transform: scale(1.1); */
+}
+
+.hero-header {
+    font-size: 6rem;
+    font-family: var(--text-hidden);
+}
+
+.hero-content {
+
 }
 
 .hero-img {
 
+}
+
+.hero-img img {
+    width: 100%;
 }
 
 .hero-buttons {
@@ -158,17 +216,68 @@ img:hover {
 }
 
 .hero-button {
-
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    opacity: .7;
+    border-radius: 1rem;
 }
+
+.hero-button:hover {
+    transform: scale(1.03);
+    background-color: var(--background-color);
+}
+
+.hero-button:active {
+    transform: translateY(5px);
+}
+
+.hero-button:focus {
+    outline: none;
+}
+
+
 /********SECTIONS ********/
 
 .section-container {
     /* height: calc(100vh - 6em);    */
     height: 100vh;
-    margin-top: 4em;
-    margin-bottom: 2rem;
+    /* margin-top: 4em; */
+    /* margin-bottom: 2rem; */
     /* outline: 2px dotted brown; */
     /* padding: 4rem; */
+
+
+}
+
+.section-header {
+    /* flex-basis: fill; */
+    /* width: 100%; */
+    /* display: flex;
+    flex-direction: column; */
+    padding: 0 4rem;
+}
+
+.section-heading {
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+.section-content {
+    /* display: flex;
+    flex-direction: row; */
+    padding-left: 4rem; 
+}
+
+.section-text {
+    /* padding:  0 2rem; */
+}
+
+.section-text:not(:last-child) {
+    /* border-right: 4px dotted var(--secondary-color); */
 }
 
 .row-break {
@@ -185,39 +294,87 @@ img:hover {
 .about-container {
     /* margin-top: 4rem; */
     height: calc(100vh - 6em);
-    padding: 2rem;
+    padding: 4rem;
     /* border-radius: 40vh ; */
     /* border: var(--fifth-color) 5px solid; */
     /* outline: 2px dashed rgb(42, 116, 165); */
     border-radius: 3rem 3rem 3rem 0;
     border-right: 1rem solid var(--secondary-color);
     border-top: 1rem solid var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* flex-basis: 100%;
+    flex: 1;
+    justify-content: center; */
+    /* align-items: center; */
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: cover;
+    /* background-image: linear-gradient(200deg, #c8f2e636 , var(--background-color)90%), url('../assets/RGN.jpg')  ; */
 }
 
 .about-img {
     border-radius: 3rem;
-    flex: 1;
-    overflow: hidden;
+    /* flex: 1; */
+    /* overflow: hidden; */
+    /* transition: transform 3s ; */
+    /* align-self: center; */
 }
 
 .about-img img {
     width: 100%;
+    /* height: 100%; */
+    border-radius: 10%;
+    max-height: 100%;
 }
 
+.about-side {
+    flex:2;
+}
 .about-content {
-    padding-left: 2rem;
-    flex: 2;
+    /* padding-left: 2rem; */
+    /* flex: 2; */
+    /* min-width: 300px; */
+    
 }
 
 .about-header {
-    
+
 }
 
+.about-heading {
+    font-family: var(--text-hidden);
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--secondary-color);
+    padding: .4rem;
+    /* border-width: 2px 0;
+    border-color: transparent;
+    border-style: dotted; */
+}
+
+.about-heading:hover {
+    /* font-family: var(--primary-font-family); */
+    /* background-color: var(--secondary-color); */
+    /* border-width: 2px 0;
+    border-color: var(--secondary-color);
+    border-style: dotted;
+    font-weight: 900; */
+}
 .about-text {
-    
+    /* flex: 1; */
+    background-color: red;
+}
+
+.about-paragraph:not(:first-child) {
+    margin: 1rem 0;
+}
+
+.about-text--highlighted {
+    /* color: var(--primary-color); */
+    font-weight: 800;
+    font-size: 1.1em;
 }
 
 /********* IDEAS **********/

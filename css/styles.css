@@ -24,6 +24,18 @@ a {
   text-decoration: none;
 }
 
+html {
+  font-size: 16px;
+}
+
+.page__about-me, .page__skills, .page__projects, .page__contact {
+  padding: 13.5vh 8vw;
+}
+
+.page__footer {
+  border-top: 3px solid #FF9900;
+}
+
 .title-text {
   font: 4rem "Oswald", sans-serif;
   color: #FF9900;
@@ -74,6 +86,10 @@ a {
 
 .text--black-darker {
   color: #1F1F1F;
+}
+
+.text--shifted-left {
+  margin-left: 40px;
 }
 
 .button {
@@ -157,29 +173,149 @@ a {
   bottom: 0;
 }
 
-.page__about-me {
-  padding: 13.5vh 8vw;
-}
-
 .about-me {
-  min-height: 750px;
+  min-height: 100vh;
   background-color: #1F1F1F;
+  text-align: center;
 }
 
 .about-me__title {
-  text-align: center;
   padding-bottom: 40px;
 }
 
 .about-me__image {
   float: left;
   width: 40%;
-  margin-right: 40px;
+  margin-right: 8%;
+}
+
+.content-container {
+  display: inline-block;
+  width: 52%;
 }
 
 .about-me__first-paragraph,
 .about-me__second-paragraph {
-  display: inline-block;
-  width: 50%;
+  margin: 20px 0;
+}
+
+.about-me__button {
+  margin: 7vh auto 0 auto;
+  display: block;
+}
+
+.skills {
+  min-height: 100vh;
+  background-color: #242424;
+  text-align: center;
+}
+
+.skills__title {
+  padding-bottom: 60px;
+}
+
+.skills__tiles-second-group, .skills__tiles-first-group {
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills__tiles-first-group {
+  margin-bottom: 40px;
+}
+
+.projects {
+  min-height: 100vh;
+  background-color: #1F1F1F;
+  text-align: center;
+}
+
+.projects__title {
+  padding-bottom: 40px;
+}
+
+.projects__introduction {
+  max-width: 80%;
+  margin: 0 auto 80px auto;
+}
+
+.project-box {
+  width: 265px;
+  height: 265px;
+  background-color: grey;
+  margin: 15px;
+}
+
+.project-box--large {
+  width: 560px;
+  height: 560px;
+}
+
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-container__small-boxes {
+  max-width: 590px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact {
+  min-height: 100vh;
+  background-color: #242424;
+  text-align: center;
+}
+
+.input-container {
+  width: 70%;
+  text-align: left;
+  margin: 40px auto;
+}
+
+.input-container--margin-btm {
+  margin-bottom: 0;
+}
+
+.form__label {
+  display: block;
+  margin: 10px 0;
+}
+
+.form__input {
+  width: 100%;
+  height: 50px;
+  background-color: #1F1F1F;
+  border: none;
+  padding-left: 20px;
+}
+
+.form__input--large {
+  min-height: 160px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.contact__button {
+  margin-top: 60px;
+}
+
+.footer {
+  min-height: 60px;
+  background-color: #1F1F1F;
+  text-align: center;
+}
+
+.footer__copyright {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

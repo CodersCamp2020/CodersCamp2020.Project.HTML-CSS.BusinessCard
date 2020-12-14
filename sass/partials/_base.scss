@@ -1,1 +1,17 @@
+html {
+    font-size: 16px; //default
+}
 
+
+.page {
+    &__about-me,
+    &__skills,
+    &__projects,
+    &__contact {
+        @include padding(13.5vh, 8vw);
+        // padding: 13.5vh 8vw;
+    };
+    &__footer {
+        border-top: 3px solid map-get($colors, 'yellow-accent');
+    }
+}

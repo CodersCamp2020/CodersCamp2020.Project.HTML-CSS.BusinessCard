@@ -39,9 +39,9 @@
     </header>
     <section class="about-me page__about-me" id="about-me">
         <h1 class="about-me__title title-text title-text--yellow">About me</h1>
+        <img class="about-me__image" src="img/section-about-me-decoration-plain-shape.png"
+            alt="Drawing of facial contours on yellow shape.">
         <div class="content-container">
-            <img class="about-me__image" src="img/section-about-me-decoration-plain-shape.png"
-                alt="Drawing of facial contours on yellow shape.">
             <p class="about-me__first-paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse
                 porttitor malesuada ullamcorper. Ut pretium felis leo, vel malesuada metus posuere eu.</p>
@@ -54,81 +54,59 @@
     </section>
     <section class="skills page__skills" id="skills">
         <h1 class="skills__title title-text">Skills</h1>
-        <div class="tile">
-            <img class="tile__logo" src="" alt="">
-            <p class="tile__title subtitle-text subtitle-text--white subtitle-text--bold">HTML5</p>
-        </div>
-        <div class="tile">
-            <img class="tile__logo" src="" alt="">
-            <p class="tile__title subtitle-text subtitle-text--white subtitle-text--bold">CSS3</p>
-        </div>
-        <div class="tile">
-            <img class="tile__logo" src="" alt="">
-            <p class="tile__title subtitle-text subtitle-text--white subtitle-text--bold">JavaScript</p>
-        </div>
-        <div class="tile">
-            <img class="tile__logo" src="" alt="">
-            <p class="tile__title subtitle-text subtitle-text--white subtitle-text--bold">React.js</p>
-        </div>
-        <div class="tile">
-            <img class="tile__logo" src="" alt="">
-            <p class="tile__title subtitle-text subtitle-text--white subtitle-text--bold">Figma</p>
-        </div>
-        <div class="tile">
-            <img class="tile__logo" src="" alt="">
-            <p class="tile__title subtitle-text subtitle-text--white subtitle-text--bold">Node.js</p>
-        </div>
-        <div class="tile">
-            <img class="tile__logo" src="" alt="">
-            <p class="tile__title subtitle-text subtitle-text--white subtitle-text--bold">Angular</p>
-        </div>
-        <div class="tile">
-            <img class="tile__logo" src="" alt="">
-            <p class="tile__title subtitle-text subtitle-text--white subtitle-text--bold">Java</p>
-        </div>
+        <img class="skills__tiles-first-group" src="img/skills-polygons/skill-tile-group-1-crop.webp"
+            alt="Polygonal shapes with HTML5, CSS3, JavaScript and React.js logos.">
+        <img class="skills__tiles-second-group" src="img/skills-polygons/skill-tile-group-2-crop.webp"
+            alt="Polygonal shapes with Figma, Node.js, TypeScript and Java logos.">
     </section>
     <section class="projects page__projects" id="projects">
-        <h1 class="projects__title title-text">Projects/Works</h1>
+        <h1 class="projects__title title-text">Projects</h1>
         <p class="projects__introduction text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
             dolor pulvinar, consectetur lectus ut, ultrices ipsum. Praesent quis est magna.</p>
-        <div class="project-box project-box--large">
-            <img class="project-box__image" src="" alt="">
-        </div>
-        <div class="project-box">
-            <img class="project-box__image" src="" alt="">
-        </div>
-        <div class="project-box">
-            <img class="project-box__image" src="" alt="">
-        </div>
-        <div class="project-box">
-            <img class="project-box__image" src="" alt="">
-        </div>
-        <div class="project-box">
-            <img class="project-box__image" src="" alt="">
+        <div class="projects-container">
+            <div class="project-box project-box--large">
+                <img class="project-box__image" src="" alt="">
+            </div>
+            <div class="projects-container__small-boxes">
+                <div class="project-box">
+                    <img class="project-box__image" src="" alt="">
+                </div>
+                <div class="project-box">
+                    <img class="project-box__image" src="" alt="">
+                </div>
+                <div class="project-box">
+                    <img class="project-box__image" src="" alt="">
+                </div>
+                <div class="project-box">
+                    <img class="project-box__image" src="" alt="">
+                </div>
+            </div>
         </div>
     </section>
     <section class="contact page__contact" id="contact">
         <h1 class="contact-title title-text">Get in touch</h1>
         <form class="form" action="/" id="form-id">
             <div class="input-container">
-                <label for="input-name" class="form__label text text--yellow-transparent text--small">NAME</label>
-                <input type="text" id="input-name" class="form__input text text--smallest"
-                    placeholder="Enter your name">
+                <label for="input-name" class="form__label text text--yellow-transparent">NAME</label>
+                <input type="text" id="input-name" class="form__input text text--small" placeholder="Enter your name">
             </div>
             <div class="input-container">
-                <label for="input-email" class="form__label text text--yellow-transparent text--small">E-MAIL</label>
-                <input type="text" id="input-email" class="form__input text text--smallest"
+                <label for="input-email" class="form__label text text--yellow-transparent">E-MAIL</label>
+                <input type="text" id="input-email" class="form__input text text--small"
                     placeholder="Enter your e-mail">
             </div>
-            <div class="input-container input-container--large">
-                <label for="input-message" class="form__label text text--yellow-transparent text--small">MESSAGE</label>
-                <textarea id="input-message" class="text text--smallest" name="input-message" form="form-id"
-                    placeholder="Enter your message"></textarea>
+            <div class="input-container input-container--margin-btm">
+                <label for="input-message" class="form__label text text--yellow-transparent">MESSAGE</label>
+                <textarea id="input-message" class="form__input form__input--large text text--small"
+                    name="input-message" form="form-id" placeholder="Enter your message"></textarea>
+                <button class="contact__button button text text--black-darker" type="submit" form="form-id"
+                    value="Submit">SEND</button>
             </div>
         </form>
     </section>
     <footer class="footer page__footer">
-        <span class="footer__copyright text text--smallest">Copyright &copy; 2020 Tomasz Dworniczak</span>
+        <p class="footer__copyright text text--smallest text text--yellow">Copyright &copy; 2020 Tomasz
+            Dworniczak</p>
     </footer>
 </body>
 

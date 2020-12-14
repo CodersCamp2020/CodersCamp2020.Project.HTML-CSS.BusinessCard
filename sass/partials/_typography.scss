@@ -39,5 +39,8 @@
     &--black-darker {
         color: map-get($colors, 'black-darker');
     };
+    &--shifted-left {
+        margin-left: 40px;
+    }
 }
 

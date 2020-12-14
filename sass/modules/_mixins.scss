@@ -1,0 +1,4 @@
+// Padding shorthand mixin
+@mixin padding($top-bottom, $left-right) {
+    padding: $top-bottom $left-right;
+}

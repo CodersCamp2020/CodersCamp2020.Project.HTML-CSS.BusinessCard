@@ -1,0 +1,8 @@
+.footer {
+    min-height: 60px;
+    background-color: map-get($colors, 'black-darker');
+    text-align: center;
+    &__copyright {
+        margin-top: 10px;
+    }
+}

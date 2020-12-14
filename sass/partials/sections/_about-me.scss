@@ -1,0 +1,31 @@
+.about-me {
+    min-height: 100vh;
+    background-color: map-get($colors, 'black-darker');
+    text-align: center;
+}
+
+.about-me__title {
+    padding-bottom: 40px;
+}
+
+.about-me__image {
+    float: left;
+    width: 40%;
+    margin-right: 8%;
+    // TODO: Image should stay vertically centered
+}
+
+.content-container {
+    display: inline-block;
+    width: 52%;
+}
+
+.about-me__first-paragraph,
+.about-me__second-paragraph {
+    margin: 20px 0;
+}
+
+.about-me__button {
+    margin: 7vh auto 0 auto;
+    display: block;
+}

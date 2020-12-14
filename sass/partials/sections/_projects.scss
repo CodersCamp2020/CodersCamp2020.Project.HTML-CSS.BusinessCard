@@ -1,0 +1,36 @@
+.projects {
+    min-height: 100vh;
+    background-color: map-get($colors, 'black-darker');
+    text-align: center;
+    &__title {
+        padding-bottom: 40px;
+    };
+    &__introduction {
+        max-width: 80%;
+        margin: 0 auto 80px auto;
+        // margin-right: au to;
+    }
+}
+
+.project-box {
+    width: 265px;
+    height: 265px;
+    background-color: grey;
+    margin: 15px;
+    &--large {
+        width: 560px;
+        height: 560px;
+    };
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    &__small-boxes {
+        max-width: 590px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+//TODO: dodać faktyczne zdjęcia do box'ów, dodać animację dla :hover i nakładkę z opacity

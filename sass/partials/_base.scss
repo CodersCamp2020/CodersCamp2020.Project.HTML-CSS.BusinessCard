@@ -8,7 +8,7 @@ html {
     &__skills,
     &__projects,
     &__contact {
-        @include padding(13.5vh, 8vw);
+        @include padding(13.5vmin, 8vw);
         // padding: 13.5vh 8vw;
     };
     &__footer {

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Portfolio of Tomasz Dworniczak</title>
-    <meta name="description" content="A project of my first portfolio.">
+    <meta name="description" content="My portfolio as a front-end developer.">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
@@ -39,8 +39,7 @@
     </header>
     <section class="about-me page__about-me" id="about-me">
         <h1 class="about-me__title title-text title-text--yellow">About me</h1>
-        <img class="about-me__image" src="img/section-about-me-decoration-plain-shape.png"
-            alt="Drawing of facial contours on yellow shape.">
+        <img class="about-me__image" src="img/section-about-me-decoration.png" alt="Face doodle on yellow shape.">
         <div class="content-container">
             <p class="about-me__first-paragraph text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse
@@ -50,7 +49,7 @@
                 montes,
                 nascetur ridiculus mus. Sed ullamcorper massa sed libero porta convallis. Class aptent taciti.</p>
         </div>
-        <button class="about-me__button button text text--black-darker" type="button">DOWNLOAD CV</button>
+        <button class="about-me__button button text text--yellow" type="button">DOWNLOAD CV</button>
     </section>
     <section class="skills page__skills" id="skills">
         <h1 class="skills__title title-text">Skills</h1>
@@ -63,23 +62,21 @@
         <h1 class="projects__title title-text">Projects</h1>
         <p class="projects__introduction text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
             dolor pulvinar, consectetur lectus ut, ultrices ipsum. Praesent quis est magna.</p>
-        <div class="projects-container">
-            <div class="project-box project-box--large">
-                <img class="project-box__image" src="" alt="">
+        <div class="grid-el-container">
+            <div class="grid-el-first">
+                <img class="projects__image" src="/img/projects-boxes/business-poster.jpg" alt="Project miniature.">
             </div>
-            <div class="projects-container__small-boxes">
-                <div class="project-box">
-                    <img class="project-box__image" src="" alt="">
-                </div>
-                <div class="project-box">
-                    <img class="project-box__image" src="" alt="">
-                </div>
-                <div class="project-box">
-                    <img class="project-box__image" src="" alt="">
-                </div>
-                <div class="project-box">
-                    <img class="project-box__image" src="" alt="">
-                </div>
+            <div class="project-box grid-el-second">
+                <img class="projects__image" src="/img/projects-boxes/circle-poster.jpg" alt="Project miniature.">
+            </div>
+            <div class="project-box grid-el-third">
+                <img class="projects__image" src="/img/projects-boxes/icons-poster.jpg" alt="Project miniature.">
+            </div>
+            <div class="project-box grid-el-fourth">
+                <img class="projects__image" src="/img/projects-boxes/lightbulb-poster.jpg" alt="Project miniature.">
+            </div>
+            <div class="project-box grid-el-fifth">
+                <img class="projects__image" src="/img/projects-boxes/math-poster.jpg" alt="Project miniature.">
             </div>
         </div>
     </section>
@@ -99,7 +96,7 @@
                 <label for="input-message" class="form__label text text--yellow-transparent">MESSAGE</label>
                 <textarea id="input-message" class="form__input form__input--large text text--small"
                     name="input-message" form="form-id" placeholder="Enter your message"></textarea>
-                <button class="contact__button button text text--black-darker" type="submit" form="form-id"
+                <button class="contact__button button text text--yellow" type="submit" form="form-id"
                     value="Submit">SEND</button>
             </div>
         </form>

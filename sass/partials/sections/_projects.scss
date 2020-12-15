@@ -8,29 +8,42 @@
     &__introduction {
         max-width: 80%;
         margin: 0 auto 80px auto;
-        // margin-right: au to;
+    };
+    &__image {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            scale: 1.08;
+        }
     }
 }
 
-.project-box {
-    width: 265px;
-    height: 265px;
-    background-color: grey;
-    margin: 15px;
-    &--large {
-        width: 560px;
-        height: 560px;
+.grid-el {
+    &-container {
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px 30px;
+    };
+    &-first {
+        grid-area: 1 / 1 / 3 / 3;
+    };
+    &-second {
+        grid-area: 1 / 3 / 2 / 4;
+    };
+    &-third {
+        grid-area: 1 / 4 / 2 / 5;
+    };
+    &-fourth {
+        grid-area: 2 / 3 / 3 / 4;
+    };
+    &-fifth {
+        grid-area: 2 / 4 / 3 / 5;
     };
 }
 
-.projects-container {
-    display: flex;
-    justify-content: center;
-    &__small-boxes {
-        max-width: 590px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-//TODO: dodać faktyczne zdjęcia do box'ów, dodać animację dla :hover i nakładkę z opacity
+//TODO: dodać animację dla :hover i nakładkę z opacity dla boxów

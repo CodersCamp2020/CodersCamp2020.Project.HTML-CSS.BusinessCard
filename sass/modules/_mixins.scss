@@ -2,3 +2,11 @@
 @mixin padding($top-bottom, $left-right) {
     padding: $top-bottom $left-right;
 }
+
+@mixin bg-colr-blk ($hue) {
+    background-color: map-get($colors, $hue);
+}
+
+@mixin font-clr-blk ($hue) {
+    color: map-get($colors, $hue);
+}

@@ -10,168 +10,110 @@
     content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="bg">    
+  <div class="header">    
     
-
-    <div class="bg-text">
-      <h1>I am Anna Szewczyk</h1>
-      <p>And I'm a <span>Front-end</span> Developer</p>
+    <div class="header-text">
+      <h1>I'm your future Front-end Developer</h1>
     </div>
   </div>
   
-  <!-- Header -->
-  <!-- <div class="header">
-
-    <h1>Anna Szewczyk</h1>
-    <p> Front-end Developer</p>
-  </div>-->
 
   <!-- Navigation Bar -->
   <div class="sticky">
     <div class="navbar">
-      <a href="#aboutMe">O mnie</a>
+      <a href="#me">O mnie</a>
       <a href="#technology">Technologie</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Kontakt</a>
-
-
-      <div class="dropdown" style="float:right;">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-          <a href="#aboutMe">O mnie</a>
-          <a href="#technology">Technologie</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Kontakt</a>
-        </div>
-      </div>
-    </div>
+    </div> 
+  
     <!--Grid main-->
     <div class="grid-container">
+      <div class="aboutMeF"><img id="me" src="anna.jpg"  alt="zdjęcie_autorki">
+      </div>
       <div class="aboutMeT" id="aboutMe">
 
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Id corporis aspernatur excepturi rem sed hic dignissimos in libero tempore, </br>
-        porro iure blanditiis, labore quasi molestiae quam. </br>
-        Accusantium possimus illum odio.
+        <span>Hej! Nazywam się Anna Szewczyk i jestem front-end developerem.</span> </br> </br>
+        W mojej pracy szczególnie wazne jest dla mnie dbanie o szczegóły, jak i kontakt z klientem. </br>
+        Każdy nowy projekt do dla mnie cenne doswiadczenie, dlatego nie straszne mi różnorodne projekty.</br>
+        Jestem absolwentką Uniwersytetu Łódźkiego. Skończyłam studia o kierunku Informatyka, specjalizacja Bazy Danych, ze stopniem licencjata.</br>
+        Po za tworzeniem stron zajmuje się również testowaniem oprogramowania. </br>
+
+        W wolnych chwilach uwielbiam podróżować, czytać kryminały, i spędzać czas z rodziną.</br>
       </div>
-      <div class="aboutMeF"><img id="me" src="anna.jpg"></div>
       <div class="tech" id="technology"> Technologie
-        <div>
-          html
+        <p>HTML</p>
+        <div class="technologie">
+          <div class="skills html">95%</div>
         </div>
-        <div>
-          css
+
+        <p>CSS</p>
+        <div class="technologie">
+          <div class="skills css">90%</div>
         </div>
-        <div>
-          js
+
+        <p>JavaScript</p>
+        <div class="technologie">
+          <div class="skills js">80%</div>
         </div>
-        <div>
-          testowanie
+
+        <p>TypeScript</p>
+        <div class="technologie">
+          <div class="skills typescript">1%</div>
+        </div>
+
+        <p>Node.js</p>
+        <div class="technologie">
+          <div class="skills node">1%</div>
+        </div>
+
+        <p>React</p>
+        <div class="technologie">
+          <div class="skills react">1%</div>
         </div>
       </div>
       <div class="gallery" id="portfolio">Portfolio
         <div class="row1">
           <div class="col1">
-            <img src="cats/cat7.jpg" style="width:100%">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat3.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat1.jpg" style="width:100%">
+            <img src="cats/cat7.jpg" alt="kot">
+            <img src="cats/cat2.jpg" alt="kot">
+            <img src="cats/cat5.jpg" alt="kot">
+            <img src="cats/cat6.jpg" alt="kot">
           </div>
 
           <div class="col1">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat1.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat7.jpg" style="width:100%">
-            <img src="cats/cat3.jpg" style="width:100%">
+            <img src="cats/cat2.jpg" alt="kot">
+            <img src="cats/cat5.jpg" alt="kot">
+            <img src="cats/cat6.jpg" alt="kot">
+            <img src="cats/cat7.jpg" alt="kot">
           </div>
 
           <div class="col1">
-            <img src="cats/cat1.jpg" style="width:100%">
-            <img src="cats/cat3.jpg" style="width:100%">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat7.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
+            <img src="cats/cat2.jpg" alt="kot">
+            <img src="cats/cat7.jpg" alt="kot">
+            <img src="cats/cat6.jpg" alt="kot">
+            <img src="cats/cat5.jpg" alt="kot">
           </div>
 
           <div class="col1">
-            <img src="cats/cat3.jpg" style="width:100%">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat1.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat7.jpg" style="width:100%">
-          </div>
-
-          <div class="col1">
-            <img src="cats/cat7.jpg" style="width:100%">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat3.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat1.jpg" style="width:100%">
-          </div>
-
-          <div class="col1">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat1.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat7.jpg" style="width:100%">
-            <img src="cats/cat3.jpg" style="width:100%">
-          </div>
-
-          <div class="col1">
-            <img src="cats/cat1.jpg" style="width:100%">
-            <img src="cats/cat3.jpg" style="width:100%">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat7.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
-          </div>
-
-          <div class="col1">
-            <img src="cats/cat3.jpg" style="width:100%">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat1.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat7.jpg" style="width:100%">
-          </div>
-
-          <div class="col1">
-            <img src="cats/cat7.jpg" style="width:100%">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat3.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat1.jpg" style="width:100%">
-          </div>
-
-          <div class="col1">
-            <img src="cats/cat2.jpg" style="width:100%">
-            <img src="cats/cat1.jpg" style="width:100%">
-            <img src="cats/cat5.jpg" style="width:100%">
-            <img src="cats/cat6.jpg" style="width:100%">
-            <img src="cats/cat7.jpg" style="width:100%">
-            <img src="cats/cat3.jpg" style="width:100%">
+            <img src="cats/cat7.jpg" alt="kot">
+            <img src="cats/cat2.jpg" alt="kot">
+            <img src="cats/cat5.jpg" alt="kot">
+            <img src="cats/cat6.jpg" alt="kot">
           </div>
 
         </div>
       </div>
       <div class="contact" id="contact"> Kontakt </br>
-        <img class="icon" src=icon/GitHub.png> Github </br>
-        <img class="icon" src=icon/linkedin-logo.png> Linkedin </br>
-        <img class="icon" src=icon/facebook.png> Facebook </br>
-        <img class="icon" src=icon/gmail.png> Mail</br>
+        <a href="https://github.com/Yoruko90"><img class="icon" src=icon/GitHub.png> Github </a></br>
+        <a href="https://www.linkedin.com/in/anna-szewczyk-it/"><img class="icon" src=icon/linkedin-logo.png> Linkedin </a></br>
+        <a href="https://www.facebook.com/Yorukochan/"><img class="icon" src=icon/facebook.png> Facebook </a></br>
+        <a href="#me"><img class="icon" src=icon/gmail.png> Mail</a></br>
       </div>
       <div class="form"> Formularz
         <div class="container">
@@ -215,11 +157,10 @@
           </form>
         </div>
       </div>
-      <!-- Footer -->
-      <div class="footer">Footer</div>
     </div>
   </div>
-
+   <!-- Footer -->
+  <div class="footer">Footer</div>
 </body>
 
 </html>

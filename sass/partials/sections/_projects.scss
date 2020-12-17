@@ -4,11 +4,11 @@
     text-align: center;
     &__title {
         padding-bottom: 40px;
-    };
+    }
     &__introduction {
         max-width: 80%;
         margin: 0 auto 80px auto;
-    };
+    }
     &__image {
         width: 100%;
         height: 100%;
@@ -16,6 +16,7 @@
         &:hover {
             cursor: pointer;
             scale: 1.08;
+            box-shadow: 0px 5px 5px 5px map-get($colors, 'black-true');
         }
     }
 }
@@ -28,22 +29,20 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px 30px;
-    };
+    }
     &-first {
         grid-area: 1 / 1 / 3 / 3;
-    };
+    }
     &-second {
         grid-area: 1 / 3 / 2 / 4;
-    };
+    }
     &-third {
         grid-area: 1 / 4 / 2 / 5;
-    };
+    }
     &-fourth {
         grid-area: 2 / 3 / 3 / 4;
-    };
+    }
     &-fifth {
         grid-area: 2 / 4 / 3 / 5;
     };
 }
-
-//TODO: dodać animację dla :hover i nakładkę z opacity dla boxów

@@ -1,0 +1,20 @@
+// Hover animation ov nav bar items
+.hover-animation {
+    position: relative;
+    &:after {
+        transition: all 0.5s;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: map-get($colors, 'yellow-accent');
+        height: 3px;
+    }
+    &:hover:after {
+        width: 100%;
+    }
+}

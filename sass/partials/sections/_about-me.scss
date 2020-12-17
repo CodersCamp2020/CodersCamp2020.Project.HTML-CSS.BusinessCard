@@ -2,18 +2,23 @@
     min-height: 100vh;
     background-color: map-get($colors, 'black-darker');
     text-align: center;
+    // Tablet
+    @include media-tablet-desktop() {
+        min-height: 100vmin;
+    }
+
     &__title {
         padding-bottom: 40px;
-    };
+    }
     &__image {
         float: left;
     width: 40%;
     margin-right: 8%;
-    };
+    }
     &__first-paragraph,
     &__second-paragraph {
         margin: 20px 0;
-    };
+    }
     &__button {
         @extend .button;
         @include bg-colr-blk('black-darker');
@@ -21,7 +26,7 @@
         margin: 7vh auto 0 auto;
         &:hover {
             @include font-clr-blk('black-darker');
-    }
+        }
     }
 }
 

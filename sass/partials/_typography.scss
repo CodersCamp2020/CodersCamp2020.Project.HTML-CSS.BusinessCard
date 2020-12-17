@@ -5,6 +5,21 @@
     &--black {
         color: map-get($colors, 'black-true');
     }
+    &--large {
+        font-size: 5.5rem;
+        //Tablet
+        @include media-tablet-desktop() {
+            font-size: 5rem;
+        }
+        //Mobile
+        @include media-mobile() {
+            font-size: 5rem;
+        }
+        //Between
+        @include media-mobile-tablet() {
+            font-size: 4.5rem;
+        }
+    }
 }
 
 .subtitle-text {
@@ -12,7 +27,7 @@
     color: map-get($colors, 'grey-main');
     &--bold {
         font-weight: bold;
-    };
+    }
     &--white {
         color: white;
     }
@@ -23,22 +38,22 @@
     color: map-get($colors, 'grey-main');
     &--bold {
         font-weight: bold;
-    };
+    }
     &--small {
         font-size: 1rem;
-    };
+    }
     &--smallest {
         font-size: 0.8rem;
-    };
+    }
     &--yellow {
         color: map-get($colors, 'yellow-accent');
-    };
+    }
     &--yellow-transparent {
         color: map-get($colors, 'yellow-accent-transparent');
-    };
+    }
     &--black-darker {
         color: map-get($colors, 'black-darker');
-    };
+    }
     &--shifted-left {
         margin-left: 40px;
     }

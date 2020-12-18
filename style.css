@@ -1,0 +1,58 @@
+html, body {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex1;
+    background: #ecf0f1;
+    width: 90%;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: #95a5a6;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    height: 80px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 0 10px;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+    text-transform: uppercase;
+    color: #2c3e50;
+    font-weight: bold;
+    transition: .5s;
+}
+.section {
+    margin: 0 auto;
+    padding: 0 10px;
+    background: #ecf0f1;
+    display: inline-block;
+    width: 100%;
+    padding-top: 80px;
+
+}
+

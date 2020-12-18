@@ -94,6 +94,24 @@ input[type=text], input[type=email], select, textarea{
     flex:3;
 }
 
+.toTop {
+    position: fixed;
+    background-color: transparent;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 4;
+    border: none;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    opacity: .4;
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+
+
 /***** header ****/
 
 .header {
@@ -577,7 +595,7 @@ input[type=text], input[type=email], select, textarea{
     /* display: block; */
 }
 .footer-button:hover .fa-paper-plane{
-    animation: plane-fly 1s 1 linear alternate;
+    animation: plane-fly 2s 1 linear alternate;
 }
 
 @keyframes plane-fly {
@@ -690,10 +708,10 @@ label {
 
 @media only screen and (max-width: 992px) {
     .header-logo {
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
     .header-navigation {
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
     .header-item {
         padding: 0 .4rem;
@@ -713,7 +731,13 @@ label {
     .container {
         grid-template-columns: 0 1fr 0;
     }
-    
+    .header-item a{
+        font-size: 1rem;
+    }
+    .hero {
+        box-shadow: 10px 15px 15px #c9d5d8;
+        /* padding-bottom: 2rem; */
+    }
     .hero-buttons {
         display: flex;
         flex-direction: column;
@@ -721,9 +745,28 @@ label {
     .section-container {
         border-radius: unset;
         background-color: unset;
+        box-shadow: 10px 15px 15px #c9d5d8;
     }
     .section-header {
         padding: 1rem 2rem;
+    }
+    .section-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .about-container {
+        /* margin-top: 2rem; */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-img {
+        border-radius: unset;
+        max-width: unset;
+        min-width: unset;
+        margin-left: unset;
+    }
+    .about-img img {
+        border-radius: unset;
     }
     .skills-icons {
         padding: .5rem;
@@ -746,6 +789,19 @@ label {
     .skills-item:nth-child(2) {
         flex-basis: 100%;
         border: unset;
+    }
+    .gallery-content {
+        padding-left: unset;
+        padding-right: unset;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer-address {
+        padding-top: 2rem;
+    }
+    .copyrights {
+        margin: 1rem 0 1rem 0;
     }
 }
 
@@ -773,8 +829,31 @@ label {
     }
     .hero-header {
         text-align: center;
+        font-size: 4rem;
+    }
+
+    .hero-buttons {
+        padding-bottom: 3rem;
+    }
+    .about-container {
+        padding-top: 2rem;
     }
     .skills-icon {
         flex-basis: 50% ;
     }
+    .footer-media {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .media-icons{
+        flex-direction: column;
+        max-width: 3rem;
+    }
+    .row-break {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+/*CHANGE!*/
 }

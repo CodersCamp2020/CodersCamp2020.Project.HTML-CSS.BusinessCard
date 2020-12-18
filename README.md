@@ -1,18 +1,18 @@
-#CodersCamp2020 | Projekt HTML & CSS - Portfolio
+# CodersCamp2020 | Projekt HTML & CSS - Portfolio
 
-##Informacje ogólne
+## Informacje ogólne
 Projekt strony wizytówki. Ideą projektu było zaznajomienie się z podstawowymi technologiami webowymi - HTML i CSS. Dodatkowo portfolio zostało wykonane w podejściu RWD (Responsive Web Design), aby dopsować wyświetlaną zawartość do szerokiej gamy ekranów.
 
-##Technologie
+## Technologie
 * HTML5
 * CSS3
 * SASS
 
-##Narzędzia
+## Narzędzia
 * Visual Studio Code 1.52
 * Live Sass Compiler 3.0.0
 
-##Strona
+## Strona
 Efekt prac nad tym projektem znajdziesz tutaj:
 https://tomdworniczak.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
 

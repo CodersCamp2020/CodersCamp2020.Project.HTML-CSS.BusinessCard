@@ -2,22 +2,27 @@
     font: 4rem $oswald;
     color: map-get($colors, 'yellow-accent');
     letter-spacing: 1px;
+    line-height: 4rem;
     &--black {
         color: map-get($colors, 'black-true');
     }
     &--large {
+        line-height: 5.5rem;
         font-size: 5.5rem;
         //Tablet
         @include media-tablet-desktop() {
             font-size: 5rem;
+            line-height: 5rem;
         }
         //Mobile
         @include media-mobile() {
             font-size: 5rem;
+            line-height: 5rem;
         }
         //Between
         @include media-mobile-tablet() {
             font-size: 4.5rem;
+            line-height: 4.5rem;
         }
     }
 }
@@ -53,9 +58,6 @@
     }
     &--black-darker {
         color: map-get($colors, 'black-darker');
-    }
-    &--shifted-left {
-        margin-left: 40px;
     }
 }
 

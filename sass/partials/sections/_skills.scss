@@ -2,6 +2,18 @@
     min-height: 100vh;
     background-color: map-get($colors, 'black-lighter');
     text-align: center;
+    //Tablet
+    @include media-tablet-desktop() {
+        min-height: 100vmin;
+    }
+    //Mobile
+    @include media-mobile() {
+        min-height: auto;
+    }
+    //Between
+    @include media-mobile-tablet() {
+        min-height: auto;
+    }
     &__title {
         padding-bottom: 60px;
     }
@@ -10,6 +22,12 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        //Tablet
+
+        //Mobile
+        @include media-mobile() {
+            width: 100%;
+        }
     }
     &__tiles-first-group {
         @extend .skills__tiles-second-group;

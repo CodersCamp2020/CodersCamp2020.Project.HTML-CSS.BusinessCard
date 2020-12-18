@@ -19,8 +19,7 @@
     &__projects,
     &__contact {
         @include padding(13.5vmin, 8vw);
-        // padding: 13.5vh 8vw;
-    };
+    }
     &__footer {
         border-top: 3px solid map-get($colors, 'yellow-accent');
     }

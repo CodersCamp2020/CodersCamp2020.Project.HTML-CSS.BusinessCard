@@ -6,14 +6,36 @@
     @include media-tablet-desktop() {
         min-height: 100vmin;
     }
-
+    //Mobile
+    @include media-mobile() {
+        min-height: auto;
+    }
+    //Between
+    @include media-mobile-tablet() {
+        min-height: auto;
+    }
     &__title {
         padding-bottom: 40px;
     }
     &__image {
         float: left;
-    width: 40%;
-    margin-right: 8%;
+        width: 40%;
+        margin-right: 5%;
+        //Tablet
+        //Mobile
+        @include media-mobile() {
+            float: none;
+            display: block;
+            margin: 2% auto;
+            width: 60%;
+        }
+        //Between
+        @include media-mobile-tablet() {
+            float: none;
+            display: block;
+            margin: 3% auto;
+            width: 60%;
+        }
     }
     &__first-paragraph,
     &__second-paragraph {
@@ -23,7 +45,7 @@
         @extend .button;
         @include bg-colr-blk('black-darker');
         display: block;
-        margin: 7vh auto 0 auto;
+        margin: 5vh auto 0 auto;
         &:hover {
             @include font-clr-blk('black-darker');
         }
@@ -33,4 +55,12 @@
 .content-container {
     display: inline-block;
     width: 52%;
+    //Mobile
+    @include media-mobile() {
+        width: 100%;
+    }
+    //Between
+    @include media-mobile-tablet() {
+        width: 100%;
+    }
 }

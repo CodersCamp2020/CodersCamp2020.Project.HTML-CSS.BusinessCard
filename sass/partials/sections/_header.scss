@@ -6,16 +6,13 @@
     //Tablet
     @include media-tablet-desktop() {
         min-height: 100vmin;
-        // background-color: white;
     }
     //Mobile
     @include media-mobile() {
         min-height: 90vh;
-        // background-color: pink;
     }
     //Between
     @include media-mobile-tablet() {
-        // background-color: coral;
         min-height: 80vh;
     }
     &__image {
@@ -44,6 +41,32 @@
             right: 40vw;
         }
     }
+    &__image-developer {
+        max-width: 80vw;
+        max-height: 80vh;
+        position: absolute;
+        z-index: 2000;
+        bottom: 0;
+        right: 50vw;
+        //Tablet
+        @include media-tablet-desktop() {
+            max-width: 80vmin;
+            max-height: 80vmin;
+            right: 40vmin;
+        }
+        //Mobile
+        @include media-mobile() {
+            max-width: 80vw;
+            max-height: 80vh;
+            right: 10vw;
+        }
+        //Between
+        @include media-mobile-tablet() {
+            max-width: 70vw;
+            max-height: 70vh;
+            right: 30vw;
+        }
+    }
 }
 
 .menu {
@@ -57,7 +80,7 @@
     padding: 0 5vw;
     //Mobile
     @include media-mobile() {
-        padding: 0 2vw;
+        padding: 0 2vw 0 0;
     }
     //Between
     @include media-mobile-tablet() {

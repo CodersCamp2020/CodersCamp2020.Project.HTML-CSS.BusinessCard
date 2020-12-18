@@ -2,6 +2,18 @@
     min-height: 100vh;
     background-color: map-get($colors, 'black-lighter');
     text-align: center;
+    // Tablet
+    @include media-tablet-desktop() {
+        min-height: 100vmin;
+    }
+    //Mobile
+    @include media-mobile() {
+        min-height: auto;
+    }
+    //Between
+    @include media-mobile-tablet() {
+        min-height: auto;
+    }
     &__button {
         @extend .button;
         @include bg-colr-blk('black-lighter');
@@ -13,9 +25,12 @@
 }
 
 .input-container {
-    width: 70%;
+    width: 80%;
     text-align: left;
     margin: 40px auto;
+    @include media-mobile() {
+
+    }
     &--margin-btm {
         margin-bottom: 0;
     }

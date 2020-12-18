@@ -12,6 +12,7 @@
 }
 body{
     color: var(--customtext, black);
+    font-size: 18px;
 }
 
 
@@ -166,7 +167,91 @@ body{
     padding-bottom: 2rem;
 }
 
+.baner-contant__button{
+    background: white;
+    color: var(--ornaments, orange);
+    font-weight: 700;
+    box-sizing: border-box;
+    border: none;
+    margin: 10px 40px;
+    width: 200px;
+    padding: 15px 0px 15px;
+    cursor: pointer;
+    position: relative;
+}
+/* jak chcę zrobić border powyżej, a nie na pseudoklasie after
+to przy hoverze zostaje mi puste miejsce u góry i na dole, nie wiem jak to naprawić, dlatego
+znalazłem inne, działające rozwiązanie*/
+.baner-contant__button::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    z-index: 50;
+}
 
+.baner-contant__button::before{
+    content: 'Contact me!';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+}
+.baner-contant__button:hover::before, .baner-contant__button:focus::before {
+    animation: btn-contact 1s forwards;
+}
+
+@keyframes btn-contact {
+    100% {
+      opacity: 1;
+    }
+  }
+
+.baner-contact__cv{
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    margin: 10px 40px;
+    width: 200px;
+    padding: 15px 0px 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.baner-contact__cv::before{
+    content: 'Check my CV';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--ornaments, orange);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    background: white;
+}
+.baner-contact__cv:hover::before, .baner-contact__cv:focus::before {
+    animation: btn-contact 1s forwards;
+}
 
 @media (min-width: 1px) and (max-width: 480px) {
     .navigation{

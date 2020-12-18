@@ -7,12 +7,14 @@ html, body {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    max-width: 100%;
 }
 
 header {
     display: flex1;
     background: #ecf0f1;
-    width: 90%;
 }
 
 nav {
@@ -42,17 +44,75 @@ nav ul li a {
     line-height: 80px;
     list-style: none;
     text-transform: uppercase;
-    color: #2c3e50;
     font-weight: bold;
     transition: .5s;
 }
+
 .section {
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 80px;
     background: #ecf0f1;
     display: inline-block;
-    width: 100%;
     padding-top: 80px;
-
 }
 
+.about {
+    background: url(img/balticSea.JPG) no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+}
+
+.welcome span {
+    font-size: 80px;
+    line-height: 100px;
+    margin-top: 0px;
+    /* margin-bottom: 80px; */
+}
+
+.welcome p {
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+}
+
+.socials ul {
+    list-style: none;
+}
+.socials ul li {
+    background: url(/img/Ellipse.png) no-repeat center center;
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: center;
+    
+}
+.no-ellipse {
+    background: none !important;
+}
+.socials ul li {
+    width: 25px;
+    height: 25px;
+}
+.socials ul li img {
+    vertical-align: middle;
+}
+
+.info {
+    color: #bdc3c7;
+    list-style: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.info ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.description {
+    text-align: justify;
+}

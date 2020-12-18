@@ -14,7 +14,7 @@ Project of a business card webiste. The idea of this project was to better under
 * Figma
 
 ## Site
-Below You can find effects of my work:
+Here You can find effects of my work:
 https://tomdworniczak.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
 
 ## Sources

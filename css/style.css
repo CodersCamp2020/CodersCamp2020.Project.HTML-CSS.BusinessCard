@@ -107,7 +107,7 @@ input[type=text], input[type=email], select, textarea{
     /* background-image: linear-gradient(90deg, var(--background-color), var(--secondary-color)); */
     display: flex;
     padding: 0 calc((100vw - 1120px)/2);
-    /* z-index: 1; */
+    z-index: 1;
     background-image:linear-gradient(0deg, #f8f7f3 10%, #a9cac13d);
 }
 
@@ -196,6 +196,7 @@ input[type=text], input[type=email], select, textarea{
     font-size: 6rem;
     font-family: var(--text-hidden);
     text-shadow: 2px 2px var(--secondary-color);
+    margin-bottom: 2rem;
 }
 
 .hero-header:hover {
@@ -296,10 +297,12 @@ input[type=text], input[type=email], select, textarea{
 }
 
 .about-container {
+    min-height: 360px;
 }
 
 .about-img {
     border-radius: 50%;
+    max-width: 300px;
     min-width: 300px;
     overflow: hidden;
     align-self: center;
@@ -683,41 +686,95 @@ label {
     .container {
         grid-template-columns: 2rem 1fr 2rem;
     }
-
 }
 
+@media only screen and (max-width: 992px) {
+    .header-logo {
+        margin-left: 1rem;
+    }
+    .header-navigation {
+        margin-right: 1rem;
+    }
+    .header-item {
+        padding: 0 .4rem;
+        width: unset;
+    }
+    .skills-icon {
+        font-size: 4rem;
+        min-width: 4rem;
+    }
+    .skills-content {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+}
 
-@keyframes slide {
-    0% {
-      left: 0;
-      top: 0;
+@media only screen and (max-width: 688px) {
+    .container {
+        grid-template-columns: 0 1fr 0;
     }
-    50% {
-      left: 244px;
-      top: 100px;
+    
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
     }
-    100% {
-      left: 488px;
-      top: 0;
+    .section-container {
+        border-radius: unset;
+        background-color: unset;
     }
-  }
-  .stage {
-    background: #eaeaed;
-    border-radius: 6px;
-    height: 150px;
-    position: relative;
-    min-width: 538px;
-  }
-  .stage:hover .ball {
-    animation: slide 2s ease-in-out .5s infinite alternate;
-  }
-  .stage:active .ball {
-    animation-play-state: paused;
-  }
-  .ball {
-    background: #2db34a;
-    border-radius: 50%;
-    height: 50px;
-    position: absolute;
-    width: 50px;
-  }
+    .section-header {
+        padding: 1rem 2rem;
+    }
+    .skills-icons {
+        padding: .5rem;
+    }
+    .skills-icon {
+        font-size: 5rem;
+        padding-top: 1rem;
+    }
+    .skills-item{
+        border-right: unset;
+    }
+    .skills-item:first-child{
+        order: 1;
+        border: unset;
+    }
+    .skills-item:last-child{
+        order: 2;
+        /* border: unset; */
+    }
+    .skills-item:nth-child(2) {
+        flex-basis: 100%;
+        border: unset;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        position: unset;
+    }
+    .header-navigation {
+        /* width: 100%; */
+        margin: 0;
+    }
+    .header-menu {
+        flex-direction: column;
+    }
+    .header-item {
+        padding: unset;
+        background-image: linear-gradient(0deg, #f8f7f359 10%, #a9cac10d);
+    }
+    .hero {
+        margin-top: unset;
+        align-items: unset;
+        justify-content: flex-end;
+    }
+    .hero-header {
+        text-align: center;
+    }
+    .skills-icon {
+        flex-basis: 50% ;
+    }
+}

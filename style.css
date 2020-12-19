@@ -1,4 +1,4 @@
-html, body {
+head, body {
     scroll-behavior: smooth;
     margin: 0px;
     padding: 0px;
@@ -115,4 +115,11 @@ nav ul li a {
 
 .description {
     text-align: justify;
+}
+
+.skill-icon {
+    height: 100px;
+    width: 100%;
+    font-size: 100px;
+    display: inline;
 }

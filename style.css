@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 .about {
-    background: url(img/balticSea.JPG) no-repeat center center;
+    background: url(./img/balticSea.JPG) no-repeat center center;
     background-size: cover;
     height: 700px;
     text-align: center;

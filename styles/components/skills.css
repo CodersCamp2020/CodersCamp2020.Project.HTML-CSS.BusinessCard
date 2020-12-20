@@ -1,0 +1,67 @@
+.skills{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.skills__header{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8em;
+    color: var(--customtext, black);
+    padding: 17px 0px 27px 52px;
+}
+
+.skills-info{
+    background: #ffffff;
+    position: relative;
+    left: -29%;
+    width: 80vw;
+    padding: 20px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skills-item{
+    min-width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-item:nth-child(2){
+    border-right: 4px dashed var(--ornaments, orange);
+    border-left: 4px dashed var(--ornaments, orange);
+}
+
+.skills-item__header{
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--ornaments, orange);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px;
+}
+
+.skills-item__paragraph{
+    width: 100%;
+    font-size: 1.3em;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-react{
+    font-size: 83px;
+    color: var(--blacktext, black);
+}
+
+.skills-back{
+    background-color: var(--greyback, grey);
+    margin-top: 57px;
+    width: 70%;
+    padding-bottom: 75px;
+}

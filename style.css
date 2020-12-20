@@ -1,9 +1,11 @@
-head,
-body {
-    scroll-behavior: smooth;
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+html body {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -81,28 +83,24 @@ nav ul li a {
 
 .socials ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .socials ul li {
     background: url(/img/Ellipse.png) no-repeat center center;
-    display: inline-block;
-    padding: 0 10px;
-    vertical-align: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 26px;
+    width: 25px;
 }
 
 .no-ellipse {
     background: none !important;
 }
 
-.socials ul li {
-    width: 25px;
-    height: 25px;
-}
-
-.socials ul li img {
-    vertical-align: middle;
-}
 
 .info {
     color: #bdc3c7;

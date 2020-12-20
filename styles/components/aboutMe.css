@@ -6,6 +6,7 @@
 }
 
 .about-me__header{
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.8em;
     color: var(--customtext, black);
     padding: 17px 0px 27px 52px;

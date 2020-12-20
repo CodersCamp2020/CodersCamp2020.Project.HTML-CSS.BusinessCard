@@ -1,0 +1,52 @@
+@media (min-width: 1px) and (max-width: 480px) {
+    .navigation{
+        position: static;
+        justify-content: center;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 5px;
+    }
+    .navigation__item{
+        padding: 10px 15px;
+    }
+    .baner{
+        margin-top: 0px;
+    }
+    .baner-text{
+        font-size: 10px;
+        top: 5px;
+    }
+    .baner-text__header{
+        line-height: 3rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .navigation{
+        position: static;
+        justify-content: center;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 5px;
+    }
+    .navigation__item{
+        padding: 10px 15px;
+    }
+    .baner{
+        margin-top: 0px;
+    }
+    .baner-text{
+        font-size: 12px;
+        top: 5px;
+    }
+    .baner-text__header{
+        line-height: 5rem;
+    }
+
+}

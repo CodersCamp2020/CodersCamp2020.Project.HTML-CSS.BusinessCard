@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-h1 {
+h1, h2 {
     font-size: 3vw;
     letter-spacing: .2vw;
     text-shadow: 4px 4px 2px rgba(0,0,0,0.2);
@@ -115,6 +115,10 @@ nav > div:nth-child(3) > a {
     font-size: 1vw;
 }
 
+.main_text > h2 {
+    padding: 0 0 2% 10%;
+}
+
 .main_right {
     background-image: url('../img/bg1.jpg');
     background-size: 100%;
@@ -126,14 +130,14 @@ nav > div:nth-child(3) > a {
     left: 27%;
 }
 
-#technologies {
+#portfolio {
     width: 100%;
     clear: both;
     background-color: #f0f0f0;
 }
 
-.technologies_container {
-    padding-top: 12vw;
+.portfolio_container {
+    padding-top: 8vw;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2vw;
@@ -141,28 +145,44 @@ nav > div:nth-child(3) > a {
     text-shadow: .2vw .2vw .2vw #FFFFFF;
 }
 
-.technologies_logo {
-    margin-top: 2vw;
-    margin-bottom: 3vw;
+.portfolio_logo {
+    margin: 3vw auto;
     display: flex;
     flex-flow: wrap;
-    width: 55%;
+    width: 90%;
 }
 
-.single_logo > img {
-    width: 10vw;
+.single_project {
+    background-image: url('../img/project1.jpg');
+    background-repeat: no-repeat;
+    background-size: 101% 100%;
+    width: 40%;
+    height: 55vh;
 }
 
-.single_logo > p {
-    text-align: center;
+.single_project:nth-child(2) {
+    background-image: url('../img/project2.jpg');
 }
 
-.second_row {
-    margin-top: 3vw;
+.project_hover {
+    transition: 1s all;
+    width: 100%;
+    height: 100%;
 }
 
-.second_row > p {
-    font-size: 1vw;
+.hover_animation > a > img {
+    width: 3vw;
+    display: none;
+    float: left;
+    margin: 0 1vw;
+}
+
+.project_hover:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.project_hover:hover a > img {
+    display: block;
 }
 
 .gallery_title, h1 {
@@ -200,7 +220,7 @@ nav > div:nth-child(3) > a {
 }
 
 .achievements_photo > img {
-    width: 25vw;
+    width: 22.5vw;
     position: relative;
     left: 50%;
     top: 5vh;
@@ -316,7 +336,7 @@ input[type=submit] {
 }
 
 .one_info {
-    width: 80%;
+    width: 75%;
     font-size: 1vw;
 }
 

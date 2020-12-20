@@ -170,6 +170,7 @@ body{
 .baner-contant__button{
     background: white;
     color: var(--ornaments, orange);
+    font-size: 1em;
     font-weight: 700;
     box-sizing: border-box;
     border: none;
@@ -220,8 +221,11 @@ znalazłem inne, działające rozwiązanie*/
     }
   }
 
-.baner-contact__cv{
+
+.baner-contact__link{
     background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    text-decoration: none;
+    font-size: 1em;
     color: white;
     font-weight: 700;
     border-radius: 15px;
@@ -229,11 +233,12 @@ znalazłem inne, działające rozwiązanie*/
     margin: 10px 40px;
     width: 200px;
     padding: 15px 0px 15px;
+    text-align: center;
     cursor: pointer;
     position: relative;
 }
 
-.baner-contact__cv::before{
+.baner-contact__link::before{
     content: 'Check my CV';
     display: flex;
     justify-content: center;
@@ -249,7 +254,7 @@ znalazłem inne, działające rozwiązanie*/
     border-radius: 15px;
     background: white;
 }
-.baner-contact__cv:hover::before, .baner-contact__cv:focus::before {
+.baner-contact__link:hover::before, .baner-contact__link:focus::before {
     animation: btn-contact 1s forwards;
 }
 

@@ -60,7 +60,7 @@ input[type=text], input[type=email], select, textarea{
 .container {
     display: grid;
     grid-template-columns: 1fr 1120px 1fr;
-
+    overflow: hidden;
 }
 
 .container > * {
@@ -97,13 +97,13 @@ input[type=text], input[type=email], select, textarea{
 .toTop {
     position: fixed;
     background-color: transparent;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 2rem;
+    right: 2rem;
     z-index: 4;
     border: none;
     text-decoration: none;
     /* text-transform: uppercase; */
-    opacity: .4;
+    opacity: .8;
     font-size: 2rem;
     height: 2rem;
     width: 2rem;
@@ -150,7 +150,9 @@ input[type=text], input[type=email], select, textarea{
 .header-logo a:hover { 
 
 }
-
+.navigation-mobile {
+    display: none;
+}
 .header-navigation {
     margin-left: auto;
 }
@@ -189,6 +191,9 @@ input[type=text], input[type=email], select, textarea{
     transform: translateY(.1rem);
 }
 
+.menu-btn, #menuToggle span {
+    display: none;
+}
 /***** hero ****/
 
 .hero {
@@ -319,23 +324,27 @@ input[type=text], input[type=email], select, textarea{
 }
 
 .about-img {
-    border-radius: 50%;
-    max-width: 300px;
-    min-width: 300px;
+    /* border-radius: 50%; */
+    /* max-width: 300px; */
+    /* min-width: 300px; */
     overflow: hidden;
-    align-self: center;
-    justify-self: center;
+    /* align-self: center; */
+    /* justify-self: center; */
     box-shadow: 2px 2px 2px #c1c1c1;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
 
 }
 
 .about-img img {
-    flex: 1;
+    /* flex: 1; */
     width: 100%;
-    border-radius: 50%;
-    height: auto;
+    /* width: auto; */
+    /* border-radius: 50%; */
+    /* height: auto; */
+    height: 100%;
     transition: transform .1s linear;
+    object-fit: cover;
+    object-position: center;
 }
 
 .about-img:hover img {
@@ -731,11 +740,18 @@ label {
     .container {
         grid-template-columns: 0 1fr 0;
     }
+    .header-menu {
+        /* display: none; */
+    }
+    .header-item {
+        text-align: right;
+        padding: 0 2rem;
+    }
     .header-item a{
         font-size: 1rem;
     }
     .hero {
-        box-shadow: 10px 15px 15px #c9d5d8;
+        box-shadow: 0px 15px 15px #c9d5d8;
         /* padding-bottom: 2rem; */
     }
     .hero-buttons {
@@ -745,7 +761,7 @@ label {
     .section-container {
         border-radius: unset;
         background-color: unset;
-        box-shadow: 10px 15px 15px #c9d5d8;
+        box-shadow: 0px 15px 15px #c9d5d8;
     }
     .section-header {
         padding: 1rem 2rem;
@@ -803,24 +819,170 @@ label {
     .copyrights {
         margin: 1rem 0 1rem 0;
     }
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 1rem;
+        /* left: 50px; */
+        height: 100%;
+        z-index: 1;
+        
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+
+    #menuToggle input
+    {
+    display: block;
+    width: 40px; 
+    height: 3rem;
+    position: absolute;
+    /* top: -7px; */
+    /* left: -5px; */
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+    }
+
+    /*
+    * Just a quick hamburger
+    */
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+
+    /*
+    * But let's hide the middle one.
+    */
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+    * Ohyeah and the last one should go the other direction
+    */
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+    .header-menu
+    {
+    position: absolute;
+    flex-direction: column;
+    width: 10rem;
+    top: 2rem;
+    right: -12rem;
+    /* margin: -100px 0 0 -50px; */
+    /* right: 0; */
+    /* padding: 50px; */
+    /* padding-top: 125px; */
+    
+    /* background: #ededed; */
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    /* transform-origin: 0% 0%; */
+    /* transform: translate(-100%, 0); */
+    transform: none;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+    padding: 10px 0;
+    font-size: 22px;
+    }
+
+    /*
+    * And let's slide it in from the left
+    */
+    #menuToggle input:checked ~ ul
+    {
+    transform: translate(-100%, 0);
+    }
 }
 
 @media only screen and (max-width: 440px) {
+    .toTop {
+        bottom: 1rem;
+        right: 1rem;
+    }
     .header {
         display: flex;
         flex-direction: column;
         position: unset;
     }
+
     .header-navigation {
         /* width: 100%; */
-        margin: 0;
+        /* margin: 0; */
+        transform: translateY(-3rem);
     }
+    .navigation-mobile {
+        display: inline-block;
+    }
+    /* .header-logo:focus, .header-logo:focus-within { */
+    .header-logo:focus-within .header-menu {
+        display: block;
+    } 
+
     .header-menu {
         flex-direction: column;
     }
     .header-item {
-        padding: unset;
-        background-image: linear-gradient(0deg, #f8f7f359 10%, #a9cac10d);
+        /* padding: unset;
+        background-image: linear-gradient(0deg, #f8f7f359 10%, #a9cac10d); */
     }
     .hero {
         margin-top: unset;
@@ -841,6 +1003,14 @@ label {
     .skills-icon {
         flex-basis: 50% ;
     }
+    .gallery-content {
+        flex-direction: column;
+    }
+    .gallery-img {
+        flex: unset;
+        align-items: unset;
+        height: 300px;
+    }
     .footer-media {
         flex-direction: row;
         flex-wrap: wrap;
@@ -857,3 +1027,5 @@ label {
 @media only screen and (max-width: 320px) {
 /*CHANGE!*/
 }
+
+

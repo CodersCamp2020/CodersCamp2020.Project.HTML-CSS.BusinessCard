@@ -16,17 +16,26 @@
 
 <body>
     <div class="container" id="home">
-    <button class="toTop"><i class="far fa-arrow-alt-circle-up"></i></button>
+    <div class="toTop"><a href=#home><i class="far fa-arrow-alt-circle-up"></i></a></div>
         <header class="header">
-            <h1 class="header-logo"><a href=#home>vBS</a></h1>
+            <h1 class="header-logo" tabindex="0">
+                <!-- <div class="navigation-mobile"><i class="fas fa-bars"></i></div> -->
+                <a href=#home>vBS</a>
+            </h1>
             <nav class="header-navigation">
-                <ul class="header-menu">
-                    <!-- <li class="header-item"><a href=#><i class="fas fa-warehouse"></i></a></li> -->
+                <div id="menuToggle">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <!-- <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="header-menu" id="#menu">
                     <li class="header-item"><a href=#about>ABOUT</a></li>
                     <li class="header-item"><a href=#skills>SKILLS</a></li>
                     <li class="header-item"><a href=#gallery>GALLERY</a></li>
                     <li class="header-item"><a href=#contact>CONTACT</a></li>
                 </ul>
+            </div>
             </nav>
         </header>
 
@@ -153,9 +162,8 @@
                 </div>
             </section>
 
-            <aside>
 
-            </aside>
+
         </main>
 
         <div class="row-break"></div>

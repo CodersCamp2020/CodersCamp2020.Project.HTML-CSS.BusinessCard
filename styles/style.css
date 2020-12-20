@@ -1,5 +1,12 @@
 @import './components/navigation.css';
-@import './components//baner.css';
+@import './components/baner.css';
+@import './components/aboutMe.css';
+
+@import './layout/header.css';
+
 @import './base/base.css';
+
 @import './abstracts/variables.css';
+
+
 @import './mediaquery/query.css';

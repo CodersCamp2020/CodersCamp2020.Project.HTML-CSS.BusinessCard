@@ -1,0 +1,56 @@
+.about-me{
+    background-color: var(--greyback, grey);
+    width: 70%;
+    padding-bottom: 75px;
+    padding-left: 10%;
+}
+
+.about-me__header{
+    font-size: 1.8em;
+    color: var(--customtext, black);
+    padding: 17px 0px 27px 52px;
+}
+
+.about-info{
+    background: #ffffff;
+    width: 80vw;
+    padding: 20px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-photo{
+    width: 150px;
+    height: 150px;
+    background-image: url('/images/myphoto.jpg');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+
+.about-details{
+    padding: 20px 20px 20px 40px;
+    /*dodaj padding-top dla mniejszych rozdzielczosci */ 
+    border-right: 4px dashed var(--ornaments, orange);
+}
+
+.about-details__list{
+    list-style: none;
+    font-weight: 700;
+    color: var(--ornaments, orange);
+}
+
+.about-details__span{
+    color: var(--customtext, black);
+}
+
+.about-description{
+    width: 300px;
+    padding: 20px 0px 20px 20px;
+    flex-grow: 1;
+}

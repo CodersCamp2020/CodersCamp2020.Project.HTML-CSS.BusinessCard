@@ -1,0 +1,8 @@
+.baner{
+    max-width: 100%;
+    width: 100vw;
+    max-height: 80vh;
+    margin-top: 46px;
+    position: relative;
+    overflow: hidden;
+}

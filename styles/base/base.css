@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    Word-wrap: break-word; 
 }
 body{
     color: var(--customtext, black);

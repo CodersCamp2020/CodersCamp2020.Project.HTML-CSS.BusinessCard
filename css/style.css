@@ -80,7 +80,6 @@ nav > div:nth-child(3) > a {
 .main_view {
     clear: both;
     width: 100%;
-    height: 70vh;
     background-color: #f0f0f0;
 }
 
@@ -94,18 +93,18 @@ nav > div:nth-child(3) > a {
     background-repeat: no-repeat;
     background-position: 100%;
     width: 25%;
-    top: 50%;
+    top: 40%;
     left: -35%;
     z-index: 0;
-    height: 50%;
+    height: 30%;
 }
 
 .main_content {
     background-color: #FFFFFF;
-    height: 50%;
+    height: 40%;
     width: 40%;
     left: -10%;
-    top: -35%;
+    top: -15%;
     z-index: 1;
 }
 
@@ -125,9 +124,13 @@ nav > div:nth-child(3) > a {
     background-position: 100% 100%;
     background-repeat: no-repeat;
     width: 40%;
-    height: 70%;
-    top: -60%;
+    height: 50%;
+    top: -40%;
     left: 27%;
+}
+
+.main_view, #portfolio, #gallery, #achievements, #contact {
+    height: 100vh;
 }
 
 #portfolio {
@@ -137,7 +140,7 @@ nav > div:nth-child(3) > a {
 }
 
 .portfolio_container {
-    padding-top: 8vw;
+    padding-top: 5vw;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2vw;
@@ -146,7 +149,7 @@ nav > div:nth-child(3) > a {
 }
 
 .portfolio_logo {
-    margin: 3vw auto;
+    padding: 3vw auto;
     display: flex;
     flex-flow: wrap;
     width: 90%;
@@ -234,24 +237,23 @@ nav > div:nth-child(3) > a {
     margin-left: 10vw;
 }
 
-.single_achievement > img {
-    width: 8%;
-    padding: 1vw 0 1vw 1vw;
-}
-
-.single_achievement > h3 { 
-    font-size: 1.2vw;
-    padding: 1vw;
-    width: 80%;
-    text-align: center;
-}
-
 .single_achievement {
     margin: 1vw 0;
     width: 30vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+.single_achievement > img {
+    width: 8%;
+    padding: 1vw 0 1vw 1vw;
+}
+
+.single_achievement > h3 { 
+    font-size: 1.4vw;
+    padding: 1vw;
+    width: 80%;
+    text-align: center;
 }
 
 .single_achievement:nth-child(1) { animation: color_1 10s infinite; }
@@ -345,6 +347,7 @@ input[type=submit] {
 }
 
 footer {
+    clear: both;
     font-size: 1.2vw;
     height: 15vh;
     font-family: 'Teko', sans-serif;

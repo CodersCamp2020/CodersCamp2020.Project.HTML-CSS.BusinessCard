@@ -1,0 +1,679 @@
+@media (min-width: 1201px) 
+    and (max-width: 1440px) {
+        .main_view {
+            padding-bottom: 1vw;
+        }
+
+        .main_text > h2 {
+            font-size: 4vw;
+        }
+
+        .main_text > p {
+            font-size: 1.2vw;
+        }
+
+        #portfolio {
+            padding-top: 5vw;
+        }
+
+        .portfolio_logo {
+            width: 100%;
+        }
+
+        .portfolio_container > h1 {
+            padding-bottom: 1vw;
+        }
+
+        .single_project {
+            height: 45vh;
+        }
+
+        #gallery > h1 {
+            margin-top: 8vw;
+        }
+        
+        #contact {
+            margin-top: -6vw;
+        }
+
+        .form_container > h1 {
+            margin: 5vw auto 3vw auto;
+        }
+
+        .form_container > div {
+            height: 45vh;
+            margin-bottom: 10vw;
+        }
+
+        iframe {
+            height: 37.5vh;
+        }
+
+        footer {
+            margin-top: 3vw;
+        }
+}
+
+@media (min-width: 1001px) 
+    and (max-width: 1200px) {
+        nav > div > a {
+            font-size: 2.5vw;
+        }
+
+        nav > div:nth-child(3) > a {
+            font-size: 3vw;
+        }
+
+        .main_view, #portfolio, #gallery, #achievements, #contact {
+            height: 70vh;
+        }
+
+        .main_view {
+            padding-top: 2vw;
+        }
+
+        .main_text > h2 {
+            font-size: 3vw;
+        }
+
+        .main_text > p {
+            font-size: 1.2vw;
+        }
+
+        .main_left {
+            width: 35%;
+            height: 40%;
+            left: -25%;
+            top: 35%;
+        }
+
+        .main_content {
+            top: -30%;
+            height: 35%;
+        }
+
+        .main_right {
+            width: 45%;
+            top: -50%;
+            left: 25%;
+        }
+
+        .portfolio_logo {
+            width: 100%;
+            padding-bottom: 2vw;
+        }
+
+        .portfolio_container > h1 {
+            padding-top: 4vw;
+            padding-bottom: 1vw;
+        }
+
+        .single_project {
+            height: 40vh;
+            margin: 0 auto;
+        }
+
+        #gallery > h1 {
+            margin-top: 8vw;
+        }
+        
+        #achievements {
+            height: 70vh;
+        }
+
+        .single_achievement > h3 {
+            font-size: 2vw;
+        }
+
+        #contact {
+            height: 50vh;
+        }
+
+        .contact_side {
+            font-size: 2vw;
+        }
+
+        .form_container > div {
+            height: 40vh;
+        }
+
+        iframe {
+            height: 35vh;
+        }
+
+        footer {
+            margin-top: 17vw;
+        }
+}
+
+@media (min-width: 769px) 
+    and (max-width: 1000px) {
+        h1 {
+            font-size: 4vw;
+        }
+        nav > div > a {
+            font-size: 2.8vw;
+        }
+
+        nav > div:nth-child(3) > a {
+            font-size: 3.5vw;
+        }
+
+        .main_view, #portfolio, #gallery, #achievements, #contact {
+            height: 60vh;
+        }
+
+        .main_view {
+            padding-top: 2vw;
+        }
+
+        .main_text > h2 {
+            font-size: 3vw;
+        }
+
+        .main_text > p {
+            font-size: 1.3vw;
+        }
+
+        .main_left {
+            width: 35%;
+            height: 40%;
+            left: -25%;
+            top: 35%;
+        }
+
+        .main_content {
+            top: -30%;
+            height: 35%;
+        }
+
+        .main_right {
+            width: 45%;
+            top: -50%;
+            left: 25%;
+        }
+
+        #portfolio {
+            height: 110vh;
+        }
+
+        .portfolio_logo {
+            width: 100%;
+            padding-bottom: 2vw;
+            flex-wrap: wrap;
+        }
+
+        .portfolio_container > h1 {
+            padding-top: 4vw;
+            padding-bottom: 1vw;
+        }
+
+        .single_project {
+            height: 40vh;
+            width: 55%;
+            margin: 1vw auto;
+        }
+
+        .hover_animation > a > img {
+            width: 5vw;
+        }
+
+        #gallery {
+            height: 180vh;
+        }
+
+        #gallery > h1 {
+            margin-top: 8vw;
+        }
+        
+        .gallery_container {
+            width: 80%;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            'first'
+            'second'
+            'third'
+            'fourth'
+            'fifth';
+        }
+
+        #achievements {
+            height: 70vh;
+        }
+
+        .achievements_photo > img {
+            width: 25vw;
+            left: 20%;
+        }
+
+        .achievements_container {
+            margin-top: 5vw;
+            width: 50%;
+        }
+
+        .single_achievement {
+            width: 40vw;
+        }
+        
+        .single_achievement > h3 { 
+            font-size: 2vw;
+        }
+
+        #contact {
+            height: 100vh;
+        }
+
+        .contact_side {
+            font-size: 2vw;
+        }
+
+        .form_container {
+            flex-wrap: wrap;
+            gap: 2vw;
+        }
+
+        .form_container > div {
+            height: 40vh;
+            width: 30vh;
+        }
+
+        .form_container > div > h4 {
+            font-size: 2.2vw;
+        }
+
+        .one_info > p {
+            font-size: 1.8vw;
+        }
+
+        iframe {
+            height: 30vh;
+            width: 30vw;
+        }
+
+        input[type=submit] {
+            height: 3vw;
+        }
+
+        footer {
+            margin-top: 17vw;
+        }
+}
+
+@media (min-width: 460px) 
+    and (max-width: 768px) {
+        h1 {
+            font-size: 5vw;
+        }
+        nav > div > a {
+            font-size: 4vw;
+        }
+
+        nav > div:nth-child(3) > a {
+            font-size: 5vw;
+        }
+
+        .blank {
+            height: 0;
+        }
+
+        .main_view, #portfolio, #gallery, #achievements, #contact {
+            height: 60vh;
+        }
+
+        .main_view {
+            padding-top: 2vw;
+        }
+
+        .main_text > h2 {
+            font-size: 3vw;
+        }
+
+        .main_text > p {
+            font-size: 1.3vw;
+        }
+
+        .main_left {
+            width: 50%;
+            height: 40%;
+            left: -20%;
+            top: 0;
+        }
+
+        .main_content {
+            top: -10%;
+            left: 0;
+            width: 70%;
+            height: 30%;
+        }
+
+        .main_text > h2 {
+            font-size: 5vw;
+        }
+
+        .main_text > p {
+            font-size: 2.1vw;
+        }
+
+        .main_right {
+            width: 70%;
+            top: -30%;
+            left: 10%;
+        }
+
+        #portfolio {
+            height: 90vh;
+        }
+
+        .portfolio_logo {
+            width: 100%;
+            padding-bottom: 2vw;
+            flex-wrap: wrap;
+        }
+
+        .portfolio_container > h1 {
+            padding-top: 4vw;
+            padding-bottom: 1vw;
+        }
+
+        .single_project {
+            height: 35vh;
+            width: 80%;
+            margin: 1vw auto;
+        }
+
+        .hover_animation > a > img {
+            width: 5vw;
+        }
+
+        #gallery {
+            height: 98vh;
+        }
+
+        #gallery > h1 {
+            margin-top: 8vw;
+        }
+        
+        .gallery_container {
+            width: 80%;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            'first'
+            'second'
+            'third'
+            'fourth'
+            'fifth';
+        }
+
+        #achievements {
+            height: 70vh;
+        }
+
+        .achievements_all {
+            flex-wrap: wrap;
+        }
+
+        .achievements_photo {
+            width: 40vw;
+            left: 30%;
+        }
+
+        .achievements_photo > img {
+            width: 40vw;
+            left: 20%;
+        }
+
+        .achievements_container {
+            margin-top: 10vw;
+            width: 70%;
+        }
+
+        .single_achievement {
+            width: 100%;
+            margin-left: 25%;
+        }
+
+        .single_achievement > h3 { 
+            font-size: 3.5vw;
+            width: 85%;
+        }
+
+        #contact {
+            height: 100vh;
+        }
+
+        .contact_side {
+            font-size: 2vw;
+        }
+
+        .form_container {
+            flex-wrap: wrap;
+            gap: 2vw;
+        }
+
+        .form_container > div {
+            height: 30vh;
+            width: 30vh;
+        }
+
+        .form_container > div > h4 {
+            font-size: 4vw;
+        }
+
+        .one_info > img {
+            width: 12%;
+        }
+
+        .one_info > p {
+            font-size: 3vw;
+        }
+
+        iframe {
+            height: 25vh;
+            width: 45vw;
+        }
+
+        input, textarea {
+            width: 95%;
+            font-size: 2.5vw;
+        }
+
+        input[type=submit] {
+            height: 7vw;
+        }
+
+        .info_container {
+            margin-top: 15%;
+        }
+
+        footer {
+            margin-top: 17vw;
+        }
+}
+
+@media (min-width: 300px) 
+    and (max-width: 461px) {
+        header {
+            height: 6vh;
+        }
+
+        h1 {
+            font-size: 5vw;
+        }
+        nav > div > a {
+            font-size: 4vw;
+        }
+
+        nav > div:nth-child(3) > a {
+            font-size: 5vw;
+        }
+
+        .blank {
+            height: 0;
+        }
+
+        .main_view, #portfolio, #gallery, #achievements, #contact {
+            height: 60vh;
+        }
+
+        .main_view {
+            padding-top: 2vw;
+        }
+
+        .main_text > h2 {
+            font-size: 5vw;
+        }
+
+        .main_text > p {
+            font-size: 2vw;
+        }
+
+        .main_left {
+            width: 50%;
+            height: 40%;
+            left: -20%;
+            top: 0;
+        }
+
+        .main_content {
+            top: -10%;
+            left: 0;
+            width: 70%;
+            height: 30%;
+        }
+
+        .main_right {
+            width: 70%;
+            top: -30%;
+            left: 10%;
+        }
+
+        #portfolio {
+            height: 90vh;
+        }
+
+        .portfolio_logo {
+            width: 100%;
+            padding-bottom: 2vw;
+            flex-wrap: wrap;
+        }
+
+        .portfolio_container > h1 {
+            padding-top: 4vw;
+            padding-bottom: 1vw;
+        }
+
+        .single_project {
+            height: 35vh;
+            width: 80%;
+            margin: 1vw auto;
+        }
+
+        .hover_animation > a > img {
+            width: 5vw;
+        }
+
+        #gallery {
+            height: 120vh;
+        }
+
+        #gallery > h1 {
+            margin-top: 8vw;
+        }
+        
+        .gallery_container {
+            width: 80%;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            'first'
+            'second'
+            'third'
+            'fourth'
+            'fifth';
+        }
+
+        #achievements {
+            height: 85vh;
+        }
+
+        .achievements_all {
+            flex-wrap: wrap;
+        }
+
+        .achievements_photo {
+            width: 40vw;
+            left: 30%;
+        }
+
+        .achievements_photo > img {
+            width: 40vw;
+            left: 20%;
+        }
+
+        .achievements_container {
+            margin-top: 10vw;
+            width: 70%;
+        }
+
+        .single_achievement {
+            width: 100%;
+            margin-left: 20%;
+        }
+
+        .single_achievement > h3 { 
+            font-size: 3.5vw;
+            width: 85%;
+        }
+
+        #contact {
+            height: 117vh;
+        }
+
+        .contact_side {
+            font-size: 2vw;
+        }
+
+        .form_container {
+            flex-wrap: wrap;
+            gap: 2vw;
+        }
+
+        .form_container > div {
+            height: 35vh;
+            width: 40vh;
+        }
+
+        .form_container > div > h4 {
+            font-size: 4vw;
+        }
+
+        .one_info > img {
+            width: 12%;
+        }
+
+        .one_info > p {
+            font-size: 3vw;
+        }
+
+        iframe {
+            height: 30vh;
+            width: 50vw;
+        }
+
+        input, textarea {
+            width: 95%;
+            font-size: 2.5vw;
+        }
+
+        input[type=submit] {
+            height: 7vw;
+        }
+
+        .info_container {
+            margin-top: 15%;
+        }
+
+        footer {
+            margin-top: 17vw;
+            font-size: 1.2vw;
+        }
+}

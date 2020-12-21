@@ -90,12 +90,25 @@
     .skills-info{
         width: 90vw;
         padding: 10px;
+        left: -36%;
     }
     .contact-details::before{
         bottom: 0px;
         left: 32px;
         right: unset;
         top: unset;
+    }
+    .contact-box{
+        width: 90%;
+    }
+    .contact-text{
+        padding: 0px 0px 2em 34px;
+    }
+    .contact-adress{
+        padding-left: 34px;
+        padding-bottom: 10px;
+        line-height: 25px;
+        font-family: 'Ubuntu', sans-serif;
     }
 }
 
@@ -200,6 +213,18 @@
         left: 32px;
         right: unset;
         top: unset;
+    }
+    .contact-box{
+        width: 90%;
+    }
+    .contact-text{
+        padding: 0px 0px 2em 34px;
+    }
+    .contact-adress{
+        padding-left: 34px;
+        padding-bottom: 10px;
+        line-height: 25px;
+        font-family: 'Ubuntu', sans-serif;
     }
 
 }

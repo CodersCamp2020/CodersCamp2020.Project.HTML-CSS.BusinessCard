@@ -26,6 +26,7 @@
 .contact-details{
     background-color: var(--contactorange, orange);
     width: 500px;
+    padding-bottom: 35px;
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -65,7 +66,6 @@
 
 .contact-adress{
     padding-left: 68px;
-    padding-bottom: 10px;
     line-height: 25px;
     font-family: 'Ubuntu', sans-serif;
 }

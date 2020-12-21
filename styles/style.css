@@ -2,6 +2,7 @@
 @import './components/baner.css';
 @import './components/aboutMe.css';
 @import './components/skills.css';
+@import './components/portfolio.css';
 
 @import './layout/header.css';
 @import './layout/main.css';

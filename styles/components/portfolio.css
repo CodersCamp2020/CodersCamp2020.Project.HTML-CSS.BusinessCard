@@ -1,0 +1,139 @@
+.portfolio{
+    margin-top: 43px;
+    width: 100%;
+}
+
+.portfolio__header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8em;
+    color: var(--customtext, black);
+    padding-bottom: 20px;
+}
+
+.portfolio-items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 346px 345px;
+    position: relative;
+}
+
+.calc{
+    background-color: #182C61;
+    background-image: url("../../images/calc.PNG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 1/3;
+    grid-row: 1;
+    position: relative;
+}
+.drumMachine{
+    background-color:#2ecc71;
+    grid-column: 1/3;
+    grid-row: 2;
+    background-image: url("../../images/drumMachine.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.toDoList{
+    background-color: #1f2427;
+    grid-column: 4/6;
+    grid-row: 1;
+    background-image: url("../../images/toDoList.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.stopwatch{
+    background-color: #192a56;
+    grid-column: 3/4;
+    grid-row: 1;
+    background-image: url("../../images/stopwatch.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.zonex{
+    background-color: blue;
+    grid-column: 3/6;
+    grid-row: 2;
+    background-image: url("../../images/zonex.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.portfolio-items__image{
+    display: none;
+}
+/*
+.portfolio-hover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+} 
+
+/*
+.portfolio-hover:hover{
+    opacity: 0.3;
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+} 
+.portfolio-items__image{
+    object-fit: fill;
+    max-width: 100%;
+}
+
+calc{
+    background-color: #182C61;
+    grid-column: 1/3;
+    grid-row: 1;
+    position: relative;
+    max-width: 100%;
+}
+.drumMachine{
+    background-color:#2ecc71;
+    grid-column: 1/3;
+    grid-row: 2;
+    position: relative;
+    max-width: 100%;
+}
+.toDoList{
+    background-color: #1f2427;
+    grid-column: 4/6;
+    grid-row: 1;
+    position: relative;
+    max-width: 100%;
+}
+.stopwatch{
+    background-color: #192a56;
+    grid-column: 3/4;
+    grid-row: 1;
+    position: relative;
+    max-width: 100%;
+}
+.zonex{
+    background-color: blue;
+    grid-column: 3/6;
+    grid-row: 2;
+    position: relative;
+    max-width: 100%;
+}
+
+.portfolio-hover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+} 
+.portfolio-hover:hover{
+    z-index: 5;
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+} */

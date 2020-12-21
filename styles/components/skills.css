@@ -29,6 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 25px;
 }
 
 .skills-item:nth-child(2){

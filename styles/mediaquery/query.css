@@ -52,11 +52,28 @@
         display: block;
         max-width: 100%;
     }
+    .portfolio-hover{
+        opacity: 1;
+        background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+    }
+    .portfolio-hover__header{
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.2em;
+        padding: 8px 0px 8px 10px;
+    }
+    .portfolio-hover__paragraph{
+        padding-left: 10px;
+    }
+    .portfolio-hover__live, .portfolio-hover__code{
+        margin: 10px 20px;
+        width: 130px;
+    }
     .stopwatch-hover__live, .stopwatch-hover__code{
         font-size: 1em;
         font-weight: 700;
-        margin: 10px 40px;
-        width: 200px;
+        margin: 10px 20px;
+        width: 130px;
         padding: 15px 0px 15px;
         margin-bottom: 1em;
     }
@@ -128,11 +145,28 @@
         max-width: 100%;
     }
 
+    .portfolio-hover{
+        opacity: 1;
+        background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+    }
+    .portfolio-hover__header{
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.2em;
+        padding: 8px 0px 8px 10px;
+    }
+    .portfolio-hover__paragraph{
+        padding-left: 10px;
+    }
+    .portfolio-hover__live, .portfolio-hover__code{
+        margin: 10px 20px;
+        width: 130px;
+    }
     .stopwatch-hover__live, .stopwatch-hover__code{
         font-size: 1em;
         font-weight: 700;
-        margin: 10px 40px;
-        width: 200px;
+        margin: 10px 20px;
+        width: 130px;
         padding: 15px 0px 15px;
         margin-bottom: 1em;
     }

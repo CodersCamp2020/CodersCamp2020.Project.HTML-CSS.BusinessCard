@@ -91,6 +91,12 @@
         width: 90vw;
         padding: 10px;
     }
+    .contact-details::before{
+        bottom: 0px;
+        left: 32px;
+        right: unset;
+        top: unset;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px){
@@ -187,6 +193,13 @@
         width: 90vw;
         left: -37%;
         padding: 10px;
+    }
+
+    .contact-details::before{
+        bottom: -20px;
+        left: 32px;
+        right: unset;
+        top: unset;
     }
 
 }

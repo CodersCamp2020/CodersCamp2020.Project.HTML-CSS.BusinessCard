@@ -3,6 +3,7 @@
 @import './components/aboutMe.css';
 @import './components/skills.css';
 @import './components/portfolio.css';
+@import './components/contact.css';
 
 @import './layout/header.css';
 @import './layout/main.css';

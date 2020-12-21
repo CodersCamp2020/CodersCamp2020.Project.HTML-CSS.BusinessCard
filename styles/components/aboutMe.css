@@ -50,6 +50,11 @@
     color: var(--customtext, black);
 }
 
+.about-details__link{
+    color: var(--ornaments, orange);
+    text-decoration: none;
+}
+
 .about-description{
     width: 300px;
     padding: 20px 0px 20px 20px;

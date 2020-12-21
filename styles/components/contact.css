@@ -1,0 +1,94 @@
+.contact{
+    background-color: var(--greyback, grey);
+    width: 100%;
+    margin-top: 36px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact__header{
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8em;
+    color: var(--customtext, black);
+    padding: 17px 0px 27px 15%;
+}
+
+.contact-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-details{
+    background-color: var(--contactorange, orange);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    position: relative;
+}
+
+.contact-details::before{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 32px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--contactorange, orange);
+    transform: rotate(45deg);
+}
+
+.contact.form{
+    background-color: white;
+    flex-grow: 1;
+}
+
+.fa-paper-plane{
+    font-size: 40px;
+    color: white;
+    padding: 36px 0px 40px 0px;
+}
+
+.contact-text{
+    padding: 0px 0px 2em 68px;
+}
+
+.contact-text__paragraph{
+    color: white;
+    line-height: 1.7rem;
+}
+
+.contact-adress{
+    padding-left: 68px;
+    padding-bottom: 10px;
+    line-height: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact-adress__icon{
+    color: white;
+    font-size: 1.4em;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+.contact-adress__link{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-adress__paragraph{
+    color: white;
+}
+
+.contact-adress__paragraphB{
+    color: white;
+    font-weight: 700;
+}
+

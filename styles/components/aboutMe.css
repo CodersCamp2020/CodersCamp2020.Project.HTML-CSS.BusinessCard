@@ -16,6 +16,8 @@
     background: #ffffff;
     width: 80vw;
     padding: 20px;
+    -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-wrap: wrap;

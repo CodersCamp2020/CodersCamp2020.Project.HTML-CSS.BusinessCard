@@ -1,5 +1,6 @@
 .portfolio{
     margin-top: 43px;
+    margin-bottom: 36px;
     width: 100%;
 }
 
@@ -71,20 +72,197 @@
 .portfolio-items__image{
     display: none;
 }
-/*
+
 .portfolio-hover{
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
 } 
 
-/*
+
 .portfolio-hover:hover{
-    opacity: 0.3;
+    opacity: 1;
     background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
-} 
+}
+
+.portfolio-hover__header{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.1em;
+    padding: 25px 0px 10px 36px;
+}
+
+.portfolio-hover__paragraph{
+    word-wrap: break-word; 
+    color: #ffffff;
+    font-size: 0.9em;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    padding-left: 36px;
+}
+
+.portfolio-hover__live, .portfolio-hover__code{
+    display: inline-block;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    margin: 10px 40px;
+    width: 200px;
+    padding: 15px 0px 15px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.portfolio-hover__live::before{
+    content: 'View Live';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--ornaments, orange);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    background: white;
+}
+
+.portfolio-hover__live:hover::before, .portfolio-hover__live:focus::before, .portfolio-hover__code:hover::before, .portfolio-hover__code:focus::before {
+    animation: btn-details 1s forwards;
+}
+
+@keyframes btn-details {
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.portfolio-hover__code::before{
+    content: 'View Code';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--ornaments, orange);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    background: white;
+}
+
+
+
+
+.stopwatch-hover__header{
+    color: #ffffff;
+    max-width: 90%;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding: 25px 0px 10px 16px;
+}
+
+.stopwatch-hover__paragraph{
+    max-width: 80%;
+    word-wrap: break-word; 
+    color: #ffffff;
+    font-size: 0.9em;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    padding-left: 16px;
+}
+
+.stopwatch-hover__live, .stopwatch-hover__code{
+    display: inline-block;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    text-decoration: none;
+    font-size: 0.8em;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    border: none;
+    margin: 10px 10px;
+    width: 80px;
+    padding: 10px 0px 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.stopwatch-hover__live::before{
+    content: 'View Live';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--ornaments, orange);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    background: white;
+}
+
+.stopwatch-hover__live:hover::before, .stopwatch-hover__live:focus::before, .stopwatch-hover__code:hover::before, .stopwatch-hover__code:focus::before {
+    animation: btn-details 1s forwards;
+}
+
+@keyframes btn-details {
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  .stopwatch-hover__code::before{
+    content: 'View Code';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--ornaments, orange);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    background: white;
+}
+ /* Na mniejszych rozdzielczościach ustaw taką samą szerokość jak u pozostałych*/
+
+.stopwatch-buttons, .portfolio-buttons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/*
 .portfolio-items__image{
     object-fit: fill;
     max-width: 100%;

@@ -52,6 +52,25 @@
         display: block;
         max-width: 100%;
     }
+    .stopwatch-hover__live, .stopwatch-hover__code{
+        font-size: 1em;
+        font-weight: 700;
+        margin: 10px 40px;
+        width: 200px;
+        padding: 15px 0px 15px;
+        margin-bottom: 1em;
+    }
+    .about-me{
+        padding-left: 5%;
+    }
+    .about-info{
+        width: 90vw;
+        padding: 10px;
+    }
+    .skills-info{
+        width: 90vw;
+        padding: 10px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px){
@@ -107,6 +126,27 @@
     .portfolio-items__image{
         display: block;
         max-width: 100%;
+    }
+
+    .stopwatch-hover__live, .stopwatch-hover__code{
+        font-size: 1em;
+        font-weight: 700;
+        margin: 10px 40px;
+        width: 200px;
+        padding: 15px 0px 15px;
+        margin-bottom: 1em;
+    }
+    .about-me{
+        padding-left: 5%;
+    }
+    .about-info{
+        width: 90vw;
+        padding: 10px;
+    }
+    .skills-info{
+        width: 90vw;
+        left: -37%;
+        padding: 10px;
     }
 
 }

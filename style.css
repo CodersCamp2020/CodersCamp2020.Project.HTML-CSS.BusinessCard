@@ -2,9 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-html body {
     scroll-behavior: smooth;
 }
 
@@ -15,65 +12,80 @@ body {
     max-width: 100%;
 }
 
-header {
-    display: flex1;
+.header {
+    position: relative;
     background: #ecf0f1;
+    height: 80px;
 }
 
-nav {
-    height: 80px;
+.nav {
+    position: fixed;
     width: 100%;
     background: #95a5a6;
     overflow: hidden;
-    position: fixed;
     top: 0;
+    z-index: 999999999999999;
 }
 
-nav ul {
+.nav-links {
     height: 80px;
     padding: 0;
     margin: 0 auto;
     list-style: none;
 }
 
-nav li {
+.nav-link-container {
     float: left;
 }
 
-nav ul li a {
+.nav-link {
     padding: 0 10px;
     display: inline-block;
     height: 80px;
-    line-height: 80px;
+    line-height: 5rem ;
     list-style: none;
     text-transform: uppercase;
     font-weight: bold;
     transition: .5s;
 }
 
+.sections {
+    margin: 80px 0 0;
+}
 .section {
+    position: relative;
     margin: 0 auto;
-    padding: 0 80px;
     background: #ecf0f1;
     display: inline-block;
-    padding-top: 80px;
+}
+
+.section-link {
+    position: absolute;
+    top: -80px;
+}
+
+.section-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .about {
     background: url(./img/balticSea.JPG) no-repeat center center;
     background-size: cover;
-    height: 700px;
+    /* height: 700px; */
     text-align: center;
+    position: relative;
 }
 
-.welcome span {
+
+.welcome-text {
     font-size: 80px;
-    line-height: 100px;
+    line-height: 1.5em;
     margin-top: 0px;
-    /* margin-bottom: 80px; */
+    margin-bottom: 80px;
 }
 
-.welcome p {
+.name {
     font-weight: 500;
     letter-spacing: 8px;
     margin-bottom: 40px;
@@ -81,13 +93,13 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-.socials ul {
+.social-icons {
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-.socials ul li {
+.social-icon {
     background: url(/img/Ellipse.png) no-repeat center center;
     display: flex;
     align-items: center;
@@ -108,21 +120,22 @@ nav ul li a {
     text-align: left;
     font-size: 16px;
     font-weight: bold;
+    line-height: 1.5;
     padding: 0 10px;
 }
 
-.info ul {
+.info-lines {
     list-style: none;
-    padding-inline-start: 0;
 }
 
-.description {
+.description-paragraph {
     text-align: justify;
+    line-height: 1.5;
 }
 
 .skill-icon {
-    height: 100px;
-    width: 100%;
+    /* height: 100px; */
+    /* width: 100%; */
     font-size: 100px;
-    display: inline;
+    /* display: inline; */
 }

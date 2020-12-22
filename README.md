@@ -35,7 +35,7 @@ https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-
 
 
 Cały kod projektu został oparty na metodologii BEM w celu przejrzystego czytania kodu oraz stylów.
-Jedynym wnioskiem podczas tworzenia projektu używając tylko css'a, stwierdziłem, że jest to dosyć uciążliwe i zdecydowanie łatwiej
+Podczas tworzenia projektu używając tylko css'a, stwierdziłem, że jest to dosyć uciążliwe i zdecydowanie łatwiej
 korzystać z tej metodologii wykorzystując scss.
 
 
@@ -95,7 +95,7 @@ Widok desktopowy z podświetlonym elementem:\
 
 
 Na widoku mobilnym opcja hover działa według mnie średnio(na iphone w ogóle nie chciała się uruchomić), dlatego każdy projekt z portfolio
-posiada od razu szczegółowe informacje na jego temat. Gdybym mógł używać javascripta, z chęcią skorzystałbym z biblioteki Glider.js
+posiada od razu szczegółowe informacje na jego temat. Gdybym mógł używać javascript z chęcią skorzystałbym z biblioteki Glider.js
 do stworzenia ładniej przewijanych projektów w portfolio.\
 ![./.github/images/portfolio-m.PNG](./.github/images/portfolio-m.PNG)
 

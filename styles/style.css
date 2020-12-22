@@ -4,9 +4,11 @@
 @import './components/skills.css';
 @import './components/portfolio.css';
 @import './components/contact.css';
+@import './components/footer.css';
 
 @import './layout/header.css';
 @import './layout/main.css';
+@import './layout/footercss';
 
 @import './base/base.css';
 

@@ -1,47 +1,112 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wizytówka Radosław Wojaczek</title>
+    <meta
+      name="description"
+      content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!"
+    />
+  </head>
 
-	<head>
-			<!-- Required meta tags -->
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-			<link rel="stylesheet" href="style.css">
-			<link rel="preconnect" href="https://fonts.gstatic.com">
-			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
-			<title>Wizytówka Radosław Wojaczek</title>
-			<meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+  <body>
+    <section id="main">
+      <nav>
+        <a href="#" class="logo">
+          <img src="images/logo.png" />
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="nav-icon"></span>
+        </label>
+        <ul class="menu">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#recent">Recent</a></li>
+          <li><a href="#client">Client</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="hey">Say Hi!</a>
+      </nav>
+      <div class="content">
+        <div class="model">
+          <img src="images/model.png" />
+        </div>
+        <div class="main-text">
+          <h1>Hello, I am Smith</h1>
+          <p>
+            Hey, In this video i am gonna show you how to make a responisve
+            personal website only using HTML and CSS.
+          </p>
+          <a href="#" class="portfolio-btn">See My Portfolio</a>
+        </div>
+      </div>
+    </section>
 
-	</head>
-
-	<body>
-		<section id="main">
-			<nav>
-				<a href="#" class="logo">
-						<img src="images/logo.png"/>	
-				</a>
-				<input class="menu-btn" type="checkbox" id="menu-btn">
-				<label class="menu-icon" for="menu-btn">
-						<span class="nav-icon"></span>
-				</label>
-				<ul class="menu">
-						<li><a href="#main">Home</a></li>	
-						<li><a href="#skills">Skills</a></li>	
-						<li><a href="#recent">Recent</a></li>	
-						<li><a href="#client">Client</a></li>	
-						<li><a href="#contact">Contact</a></li>	
-				</ul>
-				<a href="#" class="hey">Say Hi!</a>
-				</nav>
-				<div class="content">
-					<div class="model">
-						<img src="images/model.png"/>	
-					</div>
-					<div class="main-text">
-						<h1>Hello, I am Smith</h1>
-						<p>Hey, In this video i am gonna show you how to make a responisve personal website only using HTML and CSS.</p>
-						<a href="#" class="portfolio-btn">See My Portfolio</a>
-					</div>
-					</div>
-		</section>
-	</body>
+    <section id="skills">
+      <div class="skill-text">
+        <div class="skill-heading">
+          <span>My Skills</span>
+          <h2>My Experties</h2>
+        </div>
+        <div class="s-box-container">
+          <div class="skill-box">
+            <div class="s-box-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="s-box-text">
+              <strong>Hyper Text Markup Language(HTML)</strong>
+              <p>
+                I have 3 years experience in HTML and i completed 100+ HTML
+                project.
+              </p>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="s-box-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <!--skill-box-text--------->
+            <div class="s-box-text">
+              <strong>Cascading Style Sheets(CSS)</strong>
+              <p>
+                I have 3 years experience in CSS and i completed 100+ CSS
+                project.
+              </p>
+            </div>
+          </div>
+          <!--skill-box-------------->
+          <div class="skill-box">
+            <!--icon------->
+            <div class="s-box-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <!--skill-box-text--------->
+            <div class="s-box-text">
+              <strong>JavaScript(Js)</strong>
+              <p>
+                I have 3 years experience in JavaScript and i completed 100+ Js
+                project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--img--------------->
+      <div class="skill-img">
+        <img src="images/skill2.png" />
+      </div>
+    </section>
+  </body>
 </html>

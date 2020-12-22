@@ -31,7 +31,12 @@ Nie został użyty żaden framework.
 ### Opis projektu
 
 Projekt został stworzony na podstawie opracowanego przez CodersCamp projektu:
-https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-id=0%3A1
+https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-id=0%3A1 \
+
+
+Cały kod projektu został oparty na metodologii BEM w celu przejrzystego czytania kodu oraz stylów.
+Jedynym wnioskiem podczas tworzenia projektu używając tylko css'a, stwierdziłem, że jest to dosyć uciążliwe i zdecydowanie łatwiej
+korzystać z tej metodologii wykorzystując scss.
 
 
 #### Menu oraz Header
@@ -44,48 +49,66 @@ Menu na dużych rozdzielczościach podąża za oknem przeglądarki dzięki posit
 Menu na mniejszych rozdzielczościach(dla telefonów oraz tabletów) nie podąża za oknem przeglądarki, aby nie zasłaniać widoku strony.\
 ![./.github/images/header-m.PNG](./.github/images/header-m.PNG)\
 
+Dodatkowo w Headerze została wykorzystana animacja, która animuje napis "My name is Patryk" przy przeładowaniu strony.\
+Małym wyzwaniem było ustawienie odpowiedniej animacji za pomocą transition na ikonach pobranych z fontawesome w headerze, ponieważ domyślnie
+nie miały one pomarańczowego tła(były przezroczyste).\
 
-Aby ułatwić prezentację projektu innym osobom, dobrze, gdyby był on dostępny bez problemów pod adresem strony internetowej.
-W tym przypadku większość pracy z tym związanej zrobiliśmy już za Ciebie. 
-Oto co musisz zrobić, żeby zobaczyć efekt i zacząć development:
+#### Buttony oraz sekcja About me
 
-1. Wykonaj fork tego repozytorium do swojego własnego profilu. 
-Po kliknięciu przycisku pokazanego poniżej GitHub przeniesie Cię automatycznie na Twoją kopię tego repozytorium.
-To tutaj będziesz wykonywać swoją stronę.
-![./.github/images/Project1Prepare1.png](./.github/images/Project1Prepare1.png)
-1. Przejdź do zakładki Settings w Twoim repozytorium.
-![./.github/images/Project1Prepare2.png](./.github/images/Project1Prepare2.png)
-1. Znajdź w zakładce setting sekcję GitHub Pages i wybierz branch *main* jako source (na screenie dawna nazwa głównej gałęzi - master).
-![./.github/images/Project1Prepare3.png](./.github/images/Project1Prepare3.png)
-1. Po wyborze brancha *main*, zatwierdź ustawienia, klikając przycisk `Save`. 
-Wszystko powinno wyglądać tak jak w czerwonym polu poniżej.
-Dzięki temu aktywujesz GitHub Pages dla swojego repozytorium.
-![./.github/images/Project1Prepare4.png](./.github/images/Project1Prepare4.png)
-1. Znajdź sekcję GitHub Pages w zakładce Setting jeszcze raz.
-Teraz powinien znajdować się w tym miejscu link. Po kliknięciu zaprowadzi Cię do Twojej strony.
-Ten link możesz przekazać teraz kolegom z zespołu i mentorowi. 
-Będą mogli dać Ci cenne wskazówki i pomóc z błędami bez pobierania całego repozytorium.
-A Twoja strona jest od razu dostępna w internecie dla każdego, kto chciałby ją odwiedzić. I to kompletnie za darmo!
-![./.github/images/Project1Prepare5.png](./.github/images/Project1Prepare5.png)
-1. Jeśli po kliknięciu w link, pokazała Ci się strona o tej treści, to znaczy, że wszystko jest w porządku.
-![./.github/images/Project1Prepare6.png](./.github/images/Project1Prepare6.png)
+Przy przyciskach ciężko było wymyślić sposób na animacje gradientu - gradient nie podlega animacji, a więc, żeby zrobić "udawaną" animację
+gradientu, nadałem na przycisk za pomocą pseudoklas dodatkową warstwę, która miała białe tło oraz przezroczystość ustawioną na 0, a kiedy użytkownik najechał na przycisk myszką to przezroczystość zwiększała się płynnie do 1, dzięki czemu został uzyskany płynny efekt animacji.
 
-Od teraz każda zmiana, jaką commitujesz do głównego brancha, będzie się pokazywać pod tym adresem.
-Masz już działające środowisko, więc na co czekasz? Do dzieła!
+W sekcji About me musiałem wykorzystać position: relative do ustawienia odpowiednio tła oraz białego diva, w którym zostały zawarte wszystkie
+moje informacje. To rozwiązanie zostało również zastosowane w sekcji Skills.\
 
-### Porady odnośnie do projektu
+Widok desktopowy:\
+![./.github/images/aboutme.PNG](./.github/images/aboutme.PNG)
 
-#### Interfejs
-Możesz posłużyć się projektem interfejsu strony — wizytówki, wykonanym przez organizatorów projektu. 
-Jest to tylko dla ułatwienia Ci pracy.
-Możesz w trakcie implementacji go dowolnie przekształcać / zmieniać czy zrobić coś zupełnie innego.
-https://www.figma.com/file/WHtiMfcNHt4tc7mDamNBYa/CodersCamp2020-Wizytowka?node-id=0%3A1
-Pamiętaj też, że Twoje rozwiązanie musi być responsywne! 
-Czyli odpowiednio dostosowywać sposób wyświetlania treści do rozmiaru okna przeglądarki.
 
-Inspiracją może być także [DevChallenge.io - Portfolio](https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt). 
-Pamiętaj tylko, że Ty korzystasz tutaj jedynie z HTML i CSS.
+Widok mobilny:\
+![./.github/images/aboutme.PNG](./.github/images/aboutme-m.PNG)
 
-Przygotowane projekty interfejsu użytkownika są tutaj po to, żebyś bez problemów postawił swoje pierwsze kroki w praktycznym wykorzystaniu HTML i CSS.
-Jednakże zachęcamy do wykonania czegoś, co ukaże Twoje wnętrze :) 
-Dobrej zabawy!
+#### Sekcja Skills
+
+W sekcji skills zostały wykorzystane ikony ikony fontawesome i ikony pobrane z projektu opracowanego przez CodersCamp\
+
+Widok desktopowy:\
+![./.github/images/skills.PNG](./.github/images/skills.PNG)
+
+
+Widok mobilny:\
+![./.github/images/skills-m.PNG](./.github/images/skills-m.PNG)
+
+#### Sekcja Portfolio
+
+Jest to sekcja, która najmniej mi się podoba, jest to prawdopodobnie spowodowane tym, że projekty które przedstawiam w swoim portfolio
+mają brzydkie kolory, przez co psują wygląd strony. Sekcja ta na widoku desktopowym została stworzona z wykorzystaniem siatki grid,
+zaś widok mobilny jest już oparty o flex. Dodatkowo do wyświetlania dodatkowych informacji o danym projekcie, została wykorzystana opcja
+position absolute i relative.\
+
+Widok desktopowy:\
+![./.github/images/portfolio.PNG](./.github/images/portfolio.PNG)
+
+
+Widok desktopowy z podświetlonym elementem:\
+![./.github/images/portfolio-h.PNG](./.github/images/portfolio-h.PNG)
+
+
+Na widoku mobilnym opcja hover działa według mnie średnio(na iphone w ogóle nie chciała się uruchomić), dlatego każdy projekt z portfolio
+posiada od razu szczegółowe informacje na jego temat. Gdybym mógł używać javascripta, z chęcią skorzystałbym z biblioteki Glider.js
+do stworzenia ładniej przewijanych projektów w portfolio.\
+![./.github/images/portfolio-m.PNG](./.github/images/portfolio-m.PNG)
+
+
+#### Sekcja Contact
+
+W sekcji kontakt przedstawione są informacje o adresie oraz formularz kontaktowy. Elementem ozdobnym jest kwadrat obrócony o 90 stopni,
+który na widoku desktopowym wskazuje w prawą stronę na formularz kontaktowy, a na widoku mobilnym przenosi się na dół pomarańczowego diva
+i w dalszym ciągu wskazuje na formularz kontaktowy, który zawija się pod spód, aby był bardziej czytelny.\
+
+Widok desktopowy:\
+![./.github/images/contact.PNG](./.github/images/contact.PNG) 
+
+
+Widok mobilny:\
+![./.github/images/contact-m.PNG](./.github/images/contact-m.PNG) 

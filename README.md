@@ -41,8 +41,8 @@ Dzięki wykorzystaniu flexboxa wszystkie pozycje menu są czytelne na każdym do
 Menu na dużych rozdzielczościach podąża za oknem przeglądarki dzięki position: fixed
 ![./.github/images/header.PNG](./.github/images/header.PNG)
 
-Menu na mniejszych rozdzielczościach(dla telefonów oraz tabletów) nie podąża za oknem przeglądarki, aby nie zasłaniać widoku strony.
-![./.github/images/header-m.PNG](./.github/images/header-m.PNG)
+Menu na mniejszych rozdzielczościach(dla telefonów oraz tabletów) nie podąża za oknem przeglądarki, aby nie zasłaniać widoku strony.\
+![./.github/images/header-m.PNG](./.github/images/header-m.PNG)\
 
 
 Aby ułatwić prezentację projektu innym osobom, dobrze, gdyby był on dostępny bez problemów pod adresem strony internetowej.

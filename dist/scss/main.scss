@@ -1,0 +1,17 @@
+@import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import 'menu';
+
+body {
+  width: 1440px;
+  color: $background-color;
+}
+
+a.menu-nav_link {
+  font-family: Raleway;
+  text-decoration: none;
+  color: $text-color;
+  font-weight: 700;
+  font-size: 18px;
+}
+
